@@ -1,11 +1,12 @@
 ---
 import CustomerTestimonials from "../components/sections/testimonials/CustomerTestimonials.astro";
 import EnvironmentalImpact from "../components/sections/environment/EnvironmentalImpact.astro";
-import FeaturedProjects from "../components/sections/featured/FeaturedProjects.astro";
+import FeaturedProjects from "../components/sections/featured/PonenteCard.astro";
 import GetInvolved from "../components/sections/cta/GetInvolved.astro";
 import Hero from "../components/sections/hero/Hero.astro";
 import KeyServices from "../components/sections/services/KeyServices.astro";
 import LatestInnovations from "../components/sections/innovations/LatestInnovations.astro";
+import { TimeLine } from "../components/sections/timeLine/TimeLine"
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -16,6 +17,7 @@ import Layout from "../layouts/Layout.astro";
     <!-- Headline and subheading centered on the page. -->
     <Hero />
 
+<<<<<<< Updated upstream
     <EnvironmentalImpact />
     <KeyServices />
     
@@ -25,6 +27,12 @@ import Layout from "../layouts/Layout.astro";
     <!-- Use engaging visuals and concise text to highlight the benefits. -->
     <!-- Include a call-to-action button leading to detailed service information. -->
     
+=======
+    <!-- GRID - CARDS INFO (no relevante) -->
+    <!-- <KeyServices /> -->
+    <!-- Key Services Overview: -->
+
+>>>>>>> Stashed changes
     <LatestInnovations />
     <!-- Latest Innovations: -->
     <!-- Highlight any recent advancements or innovations in your green energy solutions. -->
@@ -41,15 +49,21 @@ import Layout from "../layouts/Layout.astro";
     <!-- Use statistics, infographics, or visuals to illustrate the environmental benefits. -->
     <!-- Emphasize the role your company plays in promoting sustainability. -->
 
+<<<<<<< Updated upstream
     <!-- Featured Projects or Case Studies: -->
     <!-- Showcase successful green energy projects your company has undertaken. -->
     <!-- Provide details on the impact and success of these projects. -->
     <!-- Encourage users to explore more about your company's achievements. -->
+=======
+    <!-- CARD PONENTES -->
+    <FeaturedProjects />
+>>>>>>> Stashed changes
 
+
+    <TimeLine client:visible/>
+    
+    <!-- OPCIONES CARDS FINALES  -->
     <GetInvolved />
-    <!-- Get Involved Section: -->
-    <!-- Invite users to actively participate or learn more about sustainability. -->
-    <!-- Provide information on community initiatives, events, or partnerships. -->
-    <!-- Include a call-to-action for users to join your community or subscribe to updates. -->
+    
   </main>
 </Layout>

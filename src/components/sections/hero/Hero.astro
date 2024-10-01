@@ -1,6 +1,6 @@
 ---
 import { Image, Picture } from "astro:assets";
-import heroImg from "./assets/wind3.jpg";
+import unamadImg from "./assets/vista-unamad.jpg";
 import CtaButton from "../../shared/CtaButton.astro";
 import GradiantText from "../../shared/GradiantText.astro";
 import SubTitle from "../../shared/SubTitle.astro";
@@ -8,14 +8,14 @@ import Title from "../../shared/Title.astro";
 import LazyImage from "../../shared/LazyImage.astro";
 
 const heroSection = {
-  headline1: "Powering",
-  headline2: "Tomorrow,",
-  headline3: "Sustainably",
-  headline4: "Today!",
-  subheading1: "Join us in the green energy revolution",
-  subheading2: "and be part of a sustainable future",
-  subheading3: "for generations to come.",
-  buttonText: "Get Powered Today!",
+  headline1: "Congreso",
+  headline2: "Tecnología,",
+  headline3: "Segura",
+  headline4: "Para el Mañana!",
+  subheading1: "participa en el 2do congreso",
+  subheading2: "en la Unamad donde todos",
+  subheading3: "podemos creer.",
+  buttonText: "inscribete!",
   backgroundImage: "hero-background-image.jpg",
 };
 
@@ -27,7 +27,7 @@ const { className = "" } = Astro.props;
 ---
 
 <section class=`relative  ${className} w-full h-[80vh]` id="hero">
-  <div class="w-full h-[80vh] pt-[100px]">
+  <div class="w-full pt-[100px]">
     <div
       class="w-full h-full grid grid-cols-1 md:grid-cols-2 justify-end bg-base-100 dark:bg-base-dark-900"
     >
@@ -52,7 +52,7 @@ const { className = "" } = Astro.props;
       </div>
       <div class="flex relative pt-10 md:p-0">
         <LazyImage
-          src={heroImg}
+          src={unamadImg}
           alt="A picture of a wind turbine."
           className="w-full h-full object-cover"
         />
