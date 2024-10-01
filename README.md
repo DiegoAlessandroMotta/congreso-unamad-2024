@@ -1,5 +1,3 @@
-# Astro - Template - Green Energy Company
+# Congreso UNAMAD 2024
 
-### 🚀 Check Out the Live Site
 
-https://vbartalis.github.io/energy-template/
