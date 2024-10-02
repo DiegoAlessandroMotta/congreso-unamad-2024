@@ -31,7 +31,7 @@ const { className } = Astro.props;
         testimonialsSection.testimonials.map((testimonial) => (
           <div class="w-50 h-32 shrink-0   rounded-full overflow-hidden" title={testimonial.name } >
             <img class="h-full object-cover" src={testimonial.visual.src} alt={testimonial.name} >
-            <div class="5 flex items-center gap-0">
+            <div class="5 flex items-center gap-0 z-10 ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
