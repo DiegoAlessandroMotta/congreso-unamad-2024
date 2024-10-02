@@ -10,32 +10,119 @@ export interface Props {
   className?: string;
 }
 const { className } = Astro.props;
+
+
 ---
 
 <section id="projects" class=`${className}`>
   <Container
     className="mx-auto flex flex-col items-center justify-center text-center"
   >
-    <Title2>{projectsSection.title}</Title2>
+    <Title2>Expositores</Title2>
     <SubTitle2>
-      {projectsSection.subheading1_1}
-      <GradiantText> {projectsSection.subheading1_2}</GradiantText>
+      Expositores
+      <GradiantText>  Nombrados </GradiantText>
     </SubTitle2>
   </Container>
   <Container>
-    <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+    <div id="contenedorPonentes" class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
       {
-        projectsSection.projects.map((project) => {
-          return (
-            <FeaturedProject
-              title={project.title}
-              description={project.description}
-              location={project.location}
-              visual={project.visual}
-            />
-          );
-        })
+        projectsSection.projects.map(project => (
+          
+          <FeaturedProject
+            title={project.title}
+            description={project.description}
+            location={project.location}
+            visual={project.visual}
+          />
+        
+        ))
       }
+      <div id="overlay" class="flex flex-col bg-primary-400 w-[200px] h-[200px] z-10 fixed top-0 left-0 bottom-0 right-0 m-auto">
+        <div id="titulo"></div>
+        <div id="description"></div>
+        <div id="location"></div>
+      </div>
     </div>
   </Container>
 </section>
+
+<script defer>
+  const data = [
+    {
+      title: "ROMARIO DIAZ HOLGADO",
+      description:
+      "Ingeniero \n Impacto de la Inteligencia artificial en el Desarrollo de Software",
+      location: "UNAMAD",
+      visual: './assets/romario.jpg',
+    },
+    {
+      title: "Álvaro Martín Aspilcueta Narváez.",
+      description:
+      "Proposal and Evaluation of a Software Architecture for a Smart Campus Digital Twin",
+      location: "UNI",
+      visual: './assets/amazonas2.jpg',
+    },
+    {
+      title: "Norma Catacora",
+      description:
+      "La inteligencia artificial en la mineria",
+      location: "UNAJMA",
+      visual: './assets/norma.jpg',
+    },
+    {
+      title: "Luis José Díaz López",
+      description:
+      "Teledetección Satelital y sus Aplicaciones",
+      location: "UNT",
+      visual: './assets/luis-jose.jpg',
+    },
+    {
+      title: "Pablo César Alí Aruhuanca",
+      description:
+      "Metodología Ágiles",
+      location: "UNAJMA",
+      visual: './assets/amazonas2.jpg',
+    },
+    {
+      title: "Luis Alberto Holgado Apaza",
+      description:
+      "Exploración de predictores de la satisfacción con la vida de docentes peruanos a través de un ensamble de métodos de selección de características y aprendizaje automático",
+      location: "UNAMAD",
+      visual: './assets/amazonas2.jpg',
+    },
+    {
+      title: "Jaffet Sillo Sosa",
+      description:
+      "Modelo de Inteligencia Artificial para la detección de Emociones",
+      location: "UNAMAD",
+      visual: './assets/amazonas2.jpg',
+    },
+    {
+      title: "Honorio Apaza Alanoca",
+      description:
+      "NEURAL MACHINE TRANSLATION FOR NATIVE PERUVIAN LANGUAGES",
+      location: "UNM",
+      visual: './assets/amazonas2.jpg',
+    }
+  ]
+
+
+  const contenedor = document.getElementById('contenedorPonentes');
+  let titulo = document.getElementById('titulo');
+  let description = document.getElementById('description');
+  let direccion = document.getElementById('location');
+
+  let idCliqueado;
+  let ponentes = contenedor?.children;
+  for (let i = 0; i < ponentes.length; i++) {
+    ponentes[i].addEventListener("click",()=>{
+      idCliqueado = i;
+      console.log(idCliqueado);
+      console.log(data[idCliqueado]);
+      titulo.innerText = data[idCliqueado].title;
+      description.innerText = data[idCliqueado].description;
+      direccion.innerText = data[idCliqueado].location;
+    });
+  }
+</script>

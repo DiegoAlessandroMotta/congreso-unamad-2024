@@ -3,9 +3,10 @@ export interface Props {
   className?: string;
   color: "primary" | "secondary" | "cta";
   variant: "solid" | "outline" | "gradient";
+  id?:""
 }
 
-const { className = "", color = "primary", variant = "solid" } = Astro.props;
+const { className = "", color = "primary", variant = "solid" ,id } = Astro.props;
 
 const getVariantStyle = (
   variant: "solid" | "outline" | "gradient" = "solid",
