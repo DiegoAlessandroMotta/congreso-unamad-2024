@@ -25,18 +25,14 @@ const { className } = Astro.props;
   </Container>
   <Container className="flex flex-col items-center">
     <div
-      class="mt-8 flex flex-col gap-8 midmd:flex-row text-heading-3 font-medium"
+      class="flex flex-row flex-wrap justify-center gap-5"
     >
       {
-        testimonialsSection.testimonials.map((testimonial) => {
-          return (
-            <Testimonial
-              name={testimonial.name}
-              visual={testimonial.visual}
-              direccion={testimonial.direccion}
-            />
-          );
-        })
+        testimonialsSection.testimonials.map((testimonial) => (
+          <div class="w-40 h-30">
+            <img class="h-full object-cover" src={testimonial.visual.src} alt={testimonial.name}>
+          </div>
+        ))
       }
     </div>
   </Container>
