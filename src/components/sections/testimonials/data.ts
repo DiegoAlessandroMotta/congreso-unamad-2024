@@ -1,6 +1,9 @@
 import img1 from "./assets/person1.png";
 import img2 from "./assets/person2.png";
 import img3 from "./assets/person3.png";
+import apolo from "./assets/apolo tech.jpeg"
+import odonto from "./assets/odonto esthetic.png"
+import toreto from "./assets/toreto gym.jpeg"
 
 export const testimonialsSection = {
   title: "PATROCINADORES",
@@ -8,18 +11,18 @@ export const testimonialsSection = {
   subheading1_2: " PATROCINADORES ",
   testimonials: [
     {
-      name: "Emily Johnson",
-      visual: img1,
+      name: "ODONTO ESTHETIC",
+      visual: odonto,
       direccion:""
     },
     {
-      name: "Carlos Rodriguez",
-      visual: img2,
+      name: "APOLO TECH",
+      visual: apolo,
       direccion:""
     },
     {
-      name: "Sophie Chen",
-      visual: img3,
+      name: "TORETO GYM",
+      visual: toreto,
       direccion:""
     },
   ],
