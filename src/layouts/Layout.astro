@@ -20,7 +20,7 @@ const { title } = Astro.props;
       name="description"
       content="Congreso Unamad 2024"
     />
-    <title>Energy template - {title}</title>
+    <title>CONGRESO UNAMAD 2024</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
@@ -31,7 +31,8 @@ const { title } = Astro.props;
   >
     <Navbar />
     <slot />
-    <Footer />
+    <div class="h-20"></div>
+    <!-- <Footer /> -->
   </body>
   <script>
     detectSystemTheme();
@@ -124,4 +125,9 @@ const { title } = Astro.props;
       });
     }
   </script>
+  <style>
+    html{
+      scroll-behavior: smooth;
+    }
+  </style>
 </html>
