@@ -61,14 +61,12 @@ const { className } = Astro.props;
         width="388"
         class="w-full h-full object-cover rounded-2xl"
       /> -->
-      <div class="flex flex-row justify-center items-center w-full">
-        <LazyImage
-          src={environmentalImpactSection.visual}
-          alt="environmental impact"
-          width="700"
-          class="w-full h-full object-cover rounded-2xl"
-        />
-      </div>
+      <LazyImage
+        src={environmentalImpactSection.visual}
+        alt="environmental impact"
+        width="700"
+        class="w-full h-full object-cover rounded-2xl"
+      />
     </div>
   </Container>
 </section>
