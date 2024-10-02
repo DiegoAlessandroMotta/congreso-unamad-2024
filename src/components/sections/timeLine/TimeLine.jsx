@@ -9,7 +9,7 @@ export function TimeLine(){
   const [numeroDia, setNumeroDia] = useState(0);
 
   return (
-    <section className="flex justify-center">
+    <section id="LineaDeTiempo" className="flex justify-center">
       <article className="flex flex-col gap-4 pr-5 pl-5 md:w-[650px] max-md:w-full">
         <h2 className="tracking-wide antialiased mb-5 text-lg md:text-4xl font-extrabold text-center">
           Cronograma

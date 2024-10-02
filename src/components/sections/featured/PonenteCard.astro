@@ -41,17 +41,18 @@ const { className } = Astro.props;
       }
       <div id="overlay" class="fixed inset-0 flex bg-gray-800 bg-opacity-75 max-h-[100vh] items-center justify-center z-50">
         <div class="flex relative flex-col bg-white rounded-lg max-w-[800px] max-h-[80vh] overflow-auto overscroll-contain">
-          <div class="absolute top-0 right-0 cursor-pointer text-xl text-white" onclick="closeModal()">
-            <div class=" flex justify-center items-center w-12 h-12 bg-primary-500 rounded-[0px_0px_0px_10px]"> 
-              <div>X</div>
+          <!-- Botón X de cierre -->
+            <div class="absolute top-0 right-0 cursor-pointer text-xl text-white" onclick="closeModal()">
+              <div class=" flex justify-center items-center w-12 h-12 bg-primary-500 rounded-[0px_0px_0px_10px]"> 
+                <div>X</div>
+              </div>
             </div>
-          </div>
-            <div class="grid grid-cols-[1fr_auto] gap-3 p-4">
+
+            <div class="grid grid-cols-[1fr_auto] gap-3 p-4 max-lg:grid-cols-1">
                 <div>
-                  <div class="sticky top-0">
+                  <div class="sticky top-0 max-lg:flex max-lg:flex-col max-lg:items-center">
                     <p id="gradoAcademico" class="text-center font-bold">gradoAcademico</p>
                     <div class="w-60  h-60 overflow-hidden rounded-md">
-                        <!-- <p>hola</p> -->
                         <img id="imagen" src="https://via.placeholder.com/150" alt="Imagen del expositor" class="w-full object-cover">
                     </div>
                     <p id="estudio" class="text-center ">estudio</p>
