@@ -1,3 +1,8 @@
 # Congreso UNAMAD 2024
 
 
+## COSAS PARA HACER
+
+-- MODIFICAR EL FAVICON
+-- 
+
