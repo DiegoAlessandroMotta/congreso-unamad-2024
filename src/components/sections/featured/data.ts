@@ -17,6 +17,7 @@ export const projectsSection = {
       "Ingeniero \n Impacto de la Inteligencia artificial en el Desarrollo de Software",
       location: "UNAMAD",
       visual: romario,
+      biografia:""
     },
     {
       title: "Álvaro Martín Aspilcueta Narváez.",
@@ -24,6 +25,7 @@ export const projectsSection = {
       "Proposal and Evaluation of a Software Architecture for a Smart Campus Digital Twin",
       location: "UNI",
       visual: alvaro,
+      biografia:""
     },
     {
       title: "Norma Catacora",
@@ -31,6 +33,7 @@ export const projectsSection = {
       "La inteligencia artificial en la mineria",
       location: "UNAJMA",
       visual: norma,
+      biografia:""
     },
     {
       title: "Luis José Díaz López",
@@ -38,6 +41,7 @@ export const projectsSection = {
       "Teledetección Satelital y sus Aplicaciones",
       location: "UNT",
       visual: luis,
+      biografia:""
     },
     {
       title: "Pablo César Alí Aruhuanca",
@@ -45,6 +49,7 @@ export const projectsSection = {
       "Metodología Ágiles",
       location: "UNAJMA",
       visual: img3,
+      biografia:""
     },
     {
       title: "Luis Alberto Holgado Apaza",
@@ -52,6 +57,7 @@ export const projectsSection = {
       "Exploración de predictores de la satisfacción con la vida de docentes peruanos a través de un ensamble de métodos de selección de características y aprendizaje automático",
       location: "UNAMAD",
       visual: holgado,
+      biografia:""
     },
     {
       title: "Jaffet Sillo Sosa",
@@ -59,6 +65,7 @@ export const projectsSection = {
       "Modelo de Inteligencia Artificial para la detección de Emociones",
       location: "UNAMAD",
       visual: sillo,
+      biografia:""
     },
     {
       title: "Honorio Apaza Alanoca",
@@ -66,6 +73,7 @@ export const projectsSection = {
       "NEURAL MACHINE TRANSLATION FOR NATIVE PERUVIAN LANGUAGES",
       location: "UNM",
       visual: honorario,
+      biografia:""
     }
   ],
 };

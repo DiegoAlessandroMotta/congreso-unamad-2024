@@ -10,10 +10,11 @@ export interface Props {
   title: string;
   description: string;
   location: string;
+  biografia:string;
   visual: ImageMetadata;
 }
 
-const { title, description, location, visual } = Astro.props;
+const { title, description, location,biografia, visual } = Astro.props;
 ---
 
 <div
@@ -59,6 +60,10 @@ const { title, description, location, visual } = Astro.props;
       </div>
     </div>
     <div class="self-end mt-4">
+      <p hidden class="reservado" > {title} </p>
+      <p hidden class="reservado" > {description} </p>
+      <p hidden class="reservado"> {visual} </p>
+      <p hidden class="reservado"> {biografia}</p>
       <Button variant="outline" color="primary"> VER BIOGRAFIA </Button>
     </div>
   </div>

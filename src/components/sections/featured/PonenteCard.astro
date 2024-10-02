@@ -34,95 +34,66 @@ const { className } = Astro.props;
             description={project.description}
             location={project.location}
             visual={project.visual}
+            biografia={project.biografia}
           />
         
         ))
       }
-      <div id="overlay" class="flex flex-col bg-primary-400 w-[200px] h-[200px] z-10 fixed top-0 left-0 bottom-0 right-0 m-auto">
-        <div id="titulo"></div>
-        <div id="description"></div>
-        <div id="location"></div>
-      </div>
+      <div id="overlay" class="fixed inset-0 hidden flex bg-gray-800 bg-opacity-75  items-center justify-center z-50">
+        <div class="bg-white rounded-lg overflow-hidden w-11/12 md:w-2/3 lg:w-1/2">
+            <div class="flex">
+                <div class="w-1/3">
+                    <img id="imagen" src="https://via.placeholder.com/150" alt="Imagen del expositor" class="w-full h-full object-cover">
+                </div>
+                <div class="w-2/3 p-6">
+                    <h2 id="titulo" class="text-2xl font-bold mb-4">Título del Expositor</h2>
+                    <p id="biografia" class="text-gray-700 mb-2">Descripción del expositor, aquí puedes escribir una breve introducción o información relevante sobre la persona.</p>
+                    <p id="location" class="text-gray-500">Carrera: Informática</p>
+                    <p id="description" class="text-gray-500">Carrera: Informática</p>
+                </div>
+            </div>
+            <!-- Botón de cierre -->
+            <div class="flex justify-end p-4">
+                <button class="bg-red-500 text-white px-4 py-2 rounded" onclick="closeModal()">Cerrar</button>
+            </div>
+        </div>
+    </div>
     </div>
   </Container>
 </section>
 
 <script defer>
-  const data = [
-    {
-      title: "ROMARIO DIAZ HOLGADO",
-      description:
-      "Ingeniero \n Impacto de la Inteligencia artificial en el Desarrollo de Software",
-      location: "UNAMAD",
-      visual: './assets/romario.jpg',
-    },
-    {
-      title: "Álvaro Martín Aspilcueta Narváez.",
-      description:
-      "Proposal and Evaluation of a Software Architecture for a Smart Campus Digital Twin",
-      location: "UNI",
-      visual: './assets/amazonas2.jpg',
-    },
-    {
-      title: "Norma Catacora",
-      description:
-      "La inteligencia artificial en la mineria",
-      location: "UNAJMA",
-      visual: './assets/norma.jpg',
-    },
-    {
-      title: "Luis José Díaz López",
-      description:
-      "Teledetección Satelital y sus Aplicaciones",
-      location: "UNT",
-      visual: './assets/luis-jose.jpg',
-    },
-    {
-      title: "Pablo César Alí Aruhuanca",
-      description:
-      "Metodología Ágiles",
-      location: "UNAJMA",
-      visual: './assets/amazonas2.jpg',
-    },
-    {
-      title: "Luis Alberto Holgado Apaza",
-      description:
-      "Exploración de predictores de la satisfacción con la vida de docentes peruanos a través de un ensamble de métodos de selección de características y aprendizaje automático",
-      location: "UNAMAD",
-      visual: './assets/amazonas2.jpg',
-    },
-    {
-      title: "Jaffet Sillo Sosa",
-      description:
-      "Modelo de Inteligencia Artificial para la detección de Emociones",
-      location: "UNAMAD",
-      visual: './assets/amazonas2.jpg',
-    },
-    {
-      title: "Honorio Apaza Alanoca",
-      description:
-      "NEURAL MACHINE TRANSLATION FOR NATIVE PERUVIAN LANGUAGES",
-      location: "UNM",
-      visual: './assets/amazonas2.jpg',
-    }
-  ]
-
 
   const contenedor = document.getElementById('contenedorPonentes');
+  let elementos_btn = document.getElementsByClassName("boton_z");
   let titulo = document.getElementById('titulo');
   let description = document.getElementById('description');
   let direccion = document.getElementById('location');
-
+  let biografia = document.getElementById("biografia");
   let idCliqueado;
   let ponentes = contenedor?.children;
-  for (let i = 0; i < ponentes.length; i++) {
-    ponentes[i].addEventListener("click",()=>{
+  // console.log(elementos_btn);
+  for (let i = 0; i < elementos_btn.length; i++) {
+    elementos_btn[i].addEventListener("click",(e)=>{
       idCliqueado = i;
-      console.log(idCliqueado);
-      console.log(data[idCliqueado]);
-      titulo.innerText = data[idCliqueado].title;
-      description.innerText = data[idCliqueado].description;
-      direccion.innerText = data[idCliqueado].location;
+      const parentDiv = e.target.closest('.self-end');
+      const textos = parentDiv.querySelectorAll('p.reservado');
+      titulo = textos[0].innerText.trim();
+
+      description = textos[2].innerText.trim();
+      biografia = textos[3].innerText.trim();
+      console.log(textos[0].innerText.trim());
+      
+      openModal();
     });
+  }
+  function openModal() {
+    document.getElementById('overlay').classList.remove('hidden');
+    // document.getElementById('overlat').classList.add('flex');
+  }
+
+  function closeModal() {
+    // document.getElementById('overlay').classList.remove('flex');
+    document.getElementById('overlay').classList.add('hidden');
   }
 </script>
