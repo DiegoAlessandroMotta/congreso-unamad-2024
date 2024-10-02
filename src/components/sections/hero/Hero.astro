@@ -26,7 +26,7 @@ export interface Props {
 const { className = "" } = Astro.props;
 ---
 
-<section class=`relative  ${className} w-full h-[80vh]` id="hero">
+<section class=`relative  ${className} w-full` id="hero">
   <div class="w-full pt-[100px]">
     <div
       class="w-full h-full grid grid-cols-1 md:grid-cols-2 justify-end bg-base-100 dark:bg-base-dark-900"
@@ -50,7 +50,7 @@ const { className = "" } = Astro.props;
           <CtaButton>{heroSection.buttonText}</CtaButton>
         </div>
       </div>
-      <div class="flex relative pt-10 md:p-0">
+      <div class="flex relative overflow-hidden pt-10 md:p-0">
         <LazyImage
           src={unamadImg}
           alt="A picture of a wind turbine."
