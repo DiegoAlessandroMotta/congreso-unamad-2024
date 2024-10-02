@@ -4,26 +4,26 @@ import svg3 from "./assets/green-3.svg?raw";
 import svg4 from "./assets/green-4.svg?raw";
 
 export const getInvolvedSection = {
-  title: "Get Involved",
-  subheading1_1: "Join Us ",
-  subheading1_2: "in Building a Sustainable Future",
+  title: "Involucrate",
+  subheading1_1: "Únete a nosotros",
+  subheading1_2: " para construir un futuro sostenible",
   initiatives: [
     {
-      title: "Community Outreach",
+      title: "Alcance comunitario",
       description:
-        "Discover our community initiatives aimed at promoting awareness and education on sustainable living. Join us in creating a positive impact together.",
+        "Descubra nuestras iniciativas comunitarias destinadas a promover la concienciación y la educación sobre la vida sostenible. Únase a nosotros para crear un impacto positivo juntos",
       visual: svg2,
     },
     {
-      title: "Green Events",
+      title: "Eventos verdes",
       description:
-        "Participate in our upcoming green events. From tree-planting drives to eco-friendly workshops, be a part of the movement towards a healthier planet.",
+        "Participe en nuestros próximos eventos ecológicos. Desde campañas de plantación de árboles hasta talleres ecológicos, forme parte del movimiento hacia un planeta más saludable.",
       visual: svg4,
     },
     {
-      title: "Partnerships for Sustainability",
+      title: "Alianzas para la sostenibilidad",
       description:
-        "Explore our partnerships with organizations dedicated to environmental conservation. Learn how you can contribute to sustainable practices through collaboration.",
+        "Explora nuestras alianzas con organizaciones dedicadas a la conservación del medio ambiente. Descubre cómo puedes contribuir a prácticas sostenibles mediante la colaboración.",
       visual: svg3,
     },
   ],
