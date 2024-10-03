@@ -39,7 +39,7 @@ const { className } = Astro.props;
       <div id="overlay" class="fixed inset-0 flex bg-gray-800 bg-opacity-75 max-h-[100vh] items-center justify-center z-50">
         <div class="flex relative flex-col bg-white rounded-lg max-w-[800px] max-h-[80vh] overflow-auto overscroll-contain">
           <!-- Botón X de cierre -->
-            <header class="absolute top-0 right-0 cursor-pointer text-xl text-white" onclick="closeModal()">
+            <header class="absolute top-0 right-0 cursor-pointer text-xl text-white z-10" onclick="closeModal()">
               <div class=" flex justify-center items-center w-12 h-12 bg-primary-500 rounded-[0px_0px_0px_10px]"> 
                 <div>X</div>
               </div>
