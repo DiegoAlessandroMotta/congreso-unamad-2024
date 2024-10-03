@@ -1,6 +1,7 @@
 import apolo from "./assets/apolo tech.jpeg"
 import odonto from "./assets/odonto esthetic.png"
 import toreto from "./assets/toreto gym.jpeg"
+import iveett from "./assets/iveet sac.jpg"
 
 export const testimonialsSection = {
   title: "Patrocinadores",
@@ -22,5 +23,10 @@ export const testimonialsSection = {
       visual: toreto,
       direccion:""
     },
+    {
+      name: "IVETT SAC",
+      visual: iveett,
+      direccion:""
+    }
   ]
 };
