@@ -49,8 +49,15 @@ const { className } = Astro.props;
                 <div>
                   <div class="sticky top-0 max-lg:flex max-lg:flex-col max-lg:items-center">
                     <p id="gradoAcademico" class="text-center text-xl text-black font-bold">gradoAcademico</p>
-                    <div class="w-60  h-60 overflow-hidden rounded-full shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]">
-                        <img id="imagen" src="" alt="Imagen del expositor" class="w-full object-cover">
+                    <div id="imagen" class="w-60  h-60 overflow-hidden rounded-full shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]">
+                        <img src="./assets/romario.jpg" alt="Imagen del expositor" class="w-full object-cover">
+                        <img src="./assets/alvaro.jpg" alt="Imagen del expositor" class="w-full object-cover">
+                        <img src="./assets/norma.jpg" alt="Imagen del expositor" class="w-full object-cover">
+                        <img src="./assets/luis jose.jpg" alt="Imagen del expositor" class="w-full object-cover">
+                        <img src="./assets/amazonas2.png" alt="Imagen del expositor" class="w-full object-cover">
+                        <img src="./assets/holgado.jpg" alt="Imagen del expositor" class="w-full object-cover">
+                        <img src="./assets/sillo sosa.jpg" alt="Imagen del expositor" class="w-full object-cover">
+                        <img src="./assets/honorio.jpg" alt="Imagen del expositor" class="w-full object-cover">
                     </div>
                     <p id="estudio" class="text-center text-black font-semibold">universidad de estudios</p>
                   </div>
@@ -155,14 +162,22 @@ const { className } = Astro.props;
   let biografia = document.getElementById("biografia");
   let gradoAcademico = document.getElementById('gradoAcademico');
   let estudio = document.getElementById('estudio');
-  let imagen = document.getElementById('imagen');
+  let listaImagenElements = document.getElementById('imagen').children;
   let idCliqueado;
+
+  function mostrarImg(indice){
+    for (let i = 0; i < listaImagenElements.length; i++) {
+      listaImagenElements[i].classList.add('hidden');
+    }
+    listaImagenElements[indice].classList.remove('hidden');
+  }
   // console.log(elementos_btn);
   for (let i = 0; i < elementos_btn.length; i++) {
     elementos_btn[i].addEventListener("click",(e)=>{
       idCliqueado = i;
       idCliqueado -=1;
 
+      mostrarImg(idCliqueado);
       const parentDiv = e.target.closest('.self-end');
       const textos = parentDiv.querySelectorAll('p.reservado');
 
@@ -173,8 +188,6 @@ const { className } = Astro.props;
       gradoAcademico.innerText = data[idCliqueado].gradoAcademico;
 
       estudio.innerText = data[idCliqueado].estudio;
-
-      imagen.src = data[idCliqueado].foto;
 
       console.log(idCliqueado);
 
