@@ -7,23 +7,27 @@ import Title3 from "../../../shared/Title3.astro";
 import LazyImage from "../../../shared/LazyImage.astro";
 
 export interface Props {
-  title: string;
-  description: string;
-  location: string;
-  biografia:string;
-  visual: ImageMetadata;
+  nombre: string,
+  titlePonencia: string,
+  estudio: string,
+  foto: ImageMetadata,
 }
 
-const { title, description, location,biografia, visual } = Astro.props;
+const { 
+  nombre,
+  titlePonencia,
+  estudio,
+  foto,
+} = Astro.props;
 ---
 
 <div
-  class="group overflow-hidden rounded-lg h-full flex flex-col dark:bg-base-dark-800 shadow-lg dark:shadow-dark ring-1 ring-black/5 pt-2"
+  class="group overflow-hidden rounded-lg h-full flex flex-col dark:bg-base-dark-800 shadow-lg dark:shadow-dark ring-1 ring-black/5 pt-1"
 >
   <div class="relative h-96">
     <div class="overflow-hidden">
       <LazyImage
-        src={visual}
+        src={foto}
         alt="Hero"
         height="384"
         width="398"
@@ -38,9 +42,9 @@ const { title, description, location,biografia, visual } = Astro.props;
       <path d="M0 0l400 0L400 75 0 25Z"></path>
     </svg>
     <p
-      class="absolute top-0 end-0 m-3 start-end text-xl text-primary-900/50 dark:text-primary/70 font-bold"
+      class="absolute top-0 end-0 m-3 text-end text-xl text-primary-900/50 dark:text-primary/70 font-bold"
     >
-      {location}
+      {estudio}
     </p>
     <svg
       class="absolute bottom-[-1px] start-0 fill-base dark:fill-base-dark-800"
@@ -52,18 +56,18 @@ const { title, description, location,biografia, visual } = Astro.props;
   </div>
   <div class="grid grid-cols-1 content-between w-full h-full p-6">
     <Title3 className="dark:opacity-70">
-      {title}
+      {nombre}
     </Title3>
     <div class="self-baseline">
       <div class="text-sm opacity-60">
-        {description}
+        {titlePonencia}
       </div>
     </div>
     <div class="self-end mt-4">
-      <p hidden class="reservado" > {title} </p>
-      <p hidden class="reservado" > {description} </p>
-      <p hidden class="reservado"> {visual} </p>
-      <p hidden class="reservado"> {biografia}</p>
+      <p hidden class="reservado"></p>
+      <p hidden class="reservado"></p>
+      <p hidden class="reservado"></p>
+      <p hidden class="reservado"></p>
       <Button variant="outline" color="primary"> VER BIOGRAFIA </Button>
     </div>
   </div>

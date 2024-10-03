@@ -1,5 +1,3 @@
-import img1 from "./assets/solar-person.png";
-import img2 from "./assets/wind-person.png";
 import img3 from "./assets/amazonas2.png";
 import alvaro from "./assets/alvaro.jpg";
 import holgado from "./assets/holgado.jpg";

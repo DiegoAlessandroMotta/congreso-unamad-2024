@@ -3,8 +3,8 @@ import Container from "../../shared/Container.astro";
 import GradiantText from "../../shared/GradiantText.astro";
 import SubTitle2 from "../../shared/SubTitle2.astro";
 import Title2 from "../../shared/Title2.astro";
+import { data } from "./data.ts";
 import FeaturedProject from "./components/FeaturedProject.astro";
-import { projectsSection } from "./data.ts";
 
 export interface Props {
   className?: string;
@@ -27,16 +27,13 @@ const { className } = Astro.props;
   <Container>
     <div id="contenedorPonentes" class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
       {
-        projectsSection.projects.map(project => (
-          
+        data.map(ponente => (
           <FeaturedProject
-            title={project.title}
-            description={project.description}
-            location={project.location}
-            visual={project.visual}
-            biografia={project.biografia}
+            nombre={ponente.nombre}
+            titlePonencia={ponente.titlePonencia}
+            estudio={ponente.estudioAbreviado}
+            foto={ponente.foto}
           />
-        
         ))
       }
       <div id="overlay" class="fixed inset-0 flex bg-gray-800 bg-opacity-75 max-h-[100vh] items-center justify-center z-50">
@@ -143,8 +140,6 @@ const { className } = Astro.props;
       modalidad: 'Presencial',
     }
   ]
-
-  closeModal()  
 
   const contenedor = document.getElementById('contenedorPonentes');
   let elementos_btn = document.getElementsByClassName("boton_z");
