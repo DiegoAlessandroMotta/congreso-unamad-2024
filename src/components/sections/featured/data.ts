@@ -17,7 +17,9 @@ export const data =
       estudio: "UNIVERSIDAD NACIONAL AMAZONÍCA DE MADRE DE DIÓS",
       estudioAbreviado: "UNAMAD",
       modalidad: '',
-      foto: romario
+      foto: romario,
+      id:1,
+      dir_foto:romario.src
     },
     {
       nombre: "Álvaro Martín Aspilcueta Narvárez.",
@@ -27,7 +29,9 @@ export const data =
       estudio: "UNIVERSIDAD NACIONAL DE INGENIERIA",
       estudioAbreviado: "UNI",
       modalidad: 'Virual',
-      foto: alvaro
+      foto: alvaro,
+      id:1,
+      dir_foto:romario.src
     },
     {
       nombre: "Norma Catacora",
@@ -37,7 +41,9 @@ export const data =
       estudio: "UNIVERSIDAD NACIONAL JOSÉ MARIA ARGUEDAS",
       estudioAbreviado: "UNAJMA",
       modalidad: 'Presencial',
-      foto: norma
+      foto: norma,
+      id:2,
+      dir_foto:norma.src
     },
     {
       nombre: "Luis José Díaz López",
@@ -47,7 +53,9 @@ export const data =
       estudio: "UNIVERSIDAD NACIONAL DE TRUJILLO",
       estudioAbreviado: "UNT",
       modalidad: 'Presencial',
-      foto: luis
+      foto: luis,
+      id:3,
+      dir_foto:luis.src
     },
     {
       nombre: "Pablo César Alí Aruhuanca",
@@ -57,7 +65,9 @@ export const data =
       estudio: "UNIVERSIDAD NACIONAL JOSÉ MARIA ARGUEDAS",
       estudioAbreviado: "UNAJMA",
       modalidad: 'Virtual',
-      foto: fotoDefaul
+      foto: fotoDefaul,
+      id:4,
+      dir_foto:fotoDefaul.src
     },
     {
       nombre: "Luis Alberto Holgado Apaza",
@@ -67,7 +77,9 @@ export const data =
       estudio: "UNIVERSIDAD NACIONAL AMAZONÍCA DE MADRE DE DIÓS",
       estudioAbreviado: "UNAMAD",
       modalidad: 'Presencial',
-      foto: holgado
+      foto: holgado,
+      id:5,
+      dir_foto:holgado.src
     },
     {
       nombre: "Jaffet Sillo Sosa",
@@ -77,7 +89,10 @@ export const data =
       estudio: "UNIVERSIDAD NACIONAL AMAZONÍCA DE MADRE DE DIÓS",
       estudioAbreviado: "UNAMAD",
       modalidad: 'Presencial',
-      foto: sillo
+      foto: sillo,
+      id:6,
+      dir_foto:sillo.src
+
     },
     {
       nombre: "Honorio Apaza Alanoca",
@@ -87,6 +102,8 @@ export const data =
       estudio: "UNIVERSIDAD NACIONAL DE MOQUEGUA",
       estudioAbreviado: "UNM",
       modalidad: 'Presencial',
-      foto: honorario
+      foto: honorario,
+      id:7,
+      dir_foto:honorario.src
     }
   ];
