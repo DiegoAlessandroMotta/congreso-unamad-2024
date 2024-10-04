@@ -6,9 +6,42 @@ import Hero from "../components/sections/hero/Hero.astro";
 import KeyServices from "../components/sections/services/KeyServices.astro";
 import { TimeLine } from "../components/sections/timeLine/TimeLine"
 import Layout from "../layouts/Layout.astro";
+
+
+const navItems = [
+  {
+    href: "#",
+    text: "Inicio",
+  },
+  {
+    href: "#services",
+    text: "Objetivo",
+  },
+  {
+    href: "#projects",
+    text: "Expositores",
+  },
+  {
+    href: "#LineaDeTiempo",
+    text: "Cronograma",
+  },
+  {
+    href: "#environment",
+    text: "Sobre Nosotros",
+  },
+  {
+    href: "#testimonials",
+    text: "Patrocinadores",
+  },
+  {
+    href: "/hotel",
+    text: "Hospedajes",
+  }
+];
+
 ---
 
-<Layout title="Welcome to the Agency template ">
+<Layout navItems={navItems} title="Congreso UNAMAD 2024">
   <main class="grid gap-20 md:gap-40">
 
     <Hero />

@@ -1,0 +1,46 @@
+---
+import Container from "../../shared/Container.astro";
+import GradiantText from "../../shared/GradiantText.astro";
+import SubTitle2 from "../../shared/SubTitle2.astro";
+import Title2 from "../../shared/Title2.astro";
+import CardHotel from "./components/CardHotel.astro";
+import { data } from "./data.ts";
+
+export interface Props {
+  className?: string;
+}
+const { className } = Astro.props;
+---
+
+<section id="cta" class=`${className}`>
+  <Container
+    className="mx-auto pt-24 flex flex-col items-center justify-center text-center"
+  >
+    <SubTitle2>
+      <GradiantText>{data.subheading1_1}</GradiantText>
+      {data.subheading1_2}
+      <GradiantText>{data.subheading1_3}</GradiantText>
+    </SubTitle2>
+  </Container>
+
+  <!-- SECCIÓN DE HOTELES -->
+  <Container className="space-y-10 md:sapce-y-12">
+    <div class="grid gap-6">
+      {
+        data.hoteles.map((hotel) => {
+          return (
+            <CardHotel
+              title={hotel.nombre}
+              fotos={hotel.fotos}
+              precios={hotel.precios}
+              direccion={hotel.direccion}
+              description={hotel.description}
+              enlaceDireccion={hotel.enlaceDireccion}
+              enlacePaginaWeb={hotel.enlacePaginaWeb}
+            />
+          );
+        })
+      }
+    </div>
+  </Container>
+</section>

@@ -1,0 +1,41 @@
+---
+import Layout from "../layouts/Layout.astro";
+import GetInvolved from "../components/sections/cta/GetInvolved.astro"
+
+const navItems = [
+  {
+    href: "/",
+    text: "Inicio",
+  },
+  {
+    href: "/#services",
+    text: "Objetivo",
+  },
+  {
+    href: "/#projects",
+    text: "Expositores",
+  },
+  {
+    href: "/#LineaDeTiempo",
+    text: "Cronograma",
+  },
+  {
+    href: "/#environment",
+    text: "Sobre Nosotros",
+  },
+  {
+    href: "/#testimonials",
+    text: "Patrocinadores",
+  },
+  {
+    href: "#",
+    text: "Hospedajes",
+  }
+];
+---
+
+<Layout navItems={navItems} title="Hospedajes">
+	<main class="grid gap-20 md:gap-40">
+		<GetInvolved/>
+	</main>
+</Layout>
