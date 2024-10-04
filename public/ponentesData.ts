@@ -1,4 +1,3 @@
-import img3 from "./assets/amazonas2.png";
 import alvaro from "./assets/alvaro.jpg";
 import fotoDefaul from "./assets/amazonas2.png";
 import holgado from "./assets/holgado.jpg";
@@ -33,7 +32,7 @@ export const projectsSection = {
           modalidad: 'Virual',
           foto: alvaro,
           id:1,
-          dir_foto:romario.src
+          dir_foto:alvaro.src
         },
         {
           nombre: "Norma Catacora",
