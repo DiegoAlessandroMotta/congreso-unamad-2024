@@ -43,95 +43,97 @@ const { title, navItems } = Astro.props;
     <Footer />
   </body>
   <script>
-    detectSystemTheme();
+    document.addEventListener('astro:page-load', () => {
 
-    const switchTheme = document.querySelector(
-      "[data-switch-theme]"
-    ) as HTMLButtonElement;
-    switchTheme.addEventListener("click", (e) => {
-      e.preventDefault();
-      changeThemeManually();
-    });
+      detectSystemTheme();
 
-    function changeThemeManually() {
-      const localAppTheme = localStorage.getItem("theme");
-      // Whenever the user explicitly chooses dark mode, previously it was light mode
-      if (localAppTheme === "light") {
-        changeThemeToDark();
-      }
-      // Whenever the user explicitly chooses light mode, previously it was dark mode
-      if (localAppTheme === "dark") {
-        changeThemeToLight();
-      }
-      if (!localAppTheme) {
-        console.log("previously it was not set");
-        // Whenever the user explicitly chooses to respect the OS preference
-        detectSystemTheme(true);
-      }
-    }
-
-    function detectSystemTheme(manual = false) {
-      if (
-        localStorage.getItem("theme") === "dark" ||
-        (!("theme" in localStorage) &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches)
-      ) {
-        document.documentElement.classList.add("dark");
-        if (manual) localStorage.setItem("theme", "dark");
-      } else {
-        document.documentElement.classList.remove("dark");
-        if (manual) localStorage.setItem("theme", "light");
-      }
-    }
-
-    function changeThemeToDark() {
-      localStorage.setItem("theme", "dark");
-      document.documentElement.classList.add("dark");
-    }
-
-    function changeThemeToLight() {
-      localStorage.setItem("theme", "light");
-      document.documentElement.classList.remove("dark");
-    }
-  </script>
-  <script>
-    const toggleMenu = document.querySelector(
-      "[data-toggle-nav]"
-    ) as HTMLButtonElement;
-    const navbar = document.querySelector("[data-navbar]") as HTMLDivElement;
-    const overlayNav = document.querySelector(
-      "[data-nav-overlay]"
-    ) as HTMLDivElement;
-    if (toggleMenu) {
-      toggleMenu.addEventListener("click", (e) => {
+      const switchTheme = document.querySelector(
+        "[data-switch-theme]"
+      ) as HTMLButtonElement;
+      switchTheme.addEventListener("click", (e) => {
         e.preventDefault();
-        if (toggleMenu.getAttribute("data-open-nav") === "false") {
-          toggleMenu.setAttribute("data-open-nav", "true");
-          overlayNav.setAttribute("data-is-visible", "true");
-          document.body.classList.add("!overflow-y-hidden");
-          navbar.style.height = `${navbar.scrollHeight}px`;
+        changeThemeManually();
+      });
+
+      function changeThemeManually() {
+        const localAppTheme = localStorage.getItem("theme");
+        // Whenever the user explicitly chooses dark mode, previously it was light mode
+        if (localAppTheme === "light") {
+          changeThemeToDark();
+        }
+        // Whenever the user explicitly chooses light mode, previously it was dark mode
+        if (localAppTheme === "dark") {
+          changeThemeToLight();
+        }
+        if (!localAppTheme) {
+          console.log("previously it was not set");
+          // Whenever the user explicitly chooses to respect the OS preference
+          detectSystemTheme(true);
+        }
+      }
+
+      function detectSystemTheme(manual = false) {
+        if (
+          localStorage.getItem("theme") === "dark" ||
+          (!("theme" in localStorage) &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+          document.documentElement.classList.add("dark");
+          if (manual) localStorage.setItem("theme", "dark");
         } else {
+          document.documentElement.classList.remove("dark");
+          if (manual) localStorage.setItem("theme", "light");
+        }
+      }
+
+      function changeThemeToDark() {
+        localStorage.setItem("theme", "dark");
+        document.documentElement.classList.add("dark");
+      }
+
+      function changeThemeToLight() {
+        localStorage.setItem("theme", "light");
+        document.documentElement.classList.remove("dark");
+      }
+
+      const toggleMenu = document.querySelector(
+        "[data-toggle-nav]"
+      ) as HTMLButtonElement;
+      const navbar = document.querySelector("[data-navbar]") as HTMLDivElement;
+      const overlayNav = document.querySelector(
+        "[data-nav-overlay]"
+      ) as HTMLDivElement;
+      if (toggleMenu) {
+        toggleMenu.addEventListener("click", (e) => {
+          e.preventDefault();
+          if (toggleMenu.getAttribute("data-open-nav") === "false") {
+            toggleMenu.setAttribute("data-open-nav", "true");
+            overlayNav.setAttribute("data-is-visible", "true");
+            document.body.classList.add("!overflow-y-hidden");
+            navbar.style.height = `${navbar.scrollHeight}px`;
+          } else {
+            toggleMenu.setAttribute("data-open-nav", "false");
+            overlayNav.setAttribute("data-is-visible", "false");
+            document.body.classList.remove("!overflow-y-hidden");
+            navbar.style.height = "0px";
+          }
+        });
+
+        navbar.addEventListener("click", () => {
           toggleMenu.setAttribute("data-open-nav", "false");
           overlayNav.setAttribute("data-is-visible", "false");
           document.body.classList.remove("!overflow-y-hidden");
           navbar.style.height = "0px";
-        }
-      });
+        });
 
-      navbar.addEventListener("click", () => {
-        toggleMenu.setAttribute("data-open-nav", "false");
-        overlayNav.setAttribute("data-is-visible", "false");
-        document.body.classList.remove("!overflow-y-hidden");
-        navbar.style.height = "0px";
-      });
-
-      overlayNav.addEventListener("click", () => {
-        toggleMenu.setAttribute("data-open-nav", "false");
-        overlayNav.setAttribute("data-is-visible", "false");
-        document.body.classList.remove("!overflow-y-hidden");
-        navbar.style.height = "0px";
-      });
-    }
+        overlayNav.addEventListener("click", () => {
+          toggleMenu.setAttribute("data-open-nav", "false");
+          overlayNav.setAttribute("data-is-visible", "false");
+          document.body.classList.remove("!overflow-y-hidden");
+          navbar.style.height = "0px";
+        });
+      }
+    });
   </script>
   <style>
     html{

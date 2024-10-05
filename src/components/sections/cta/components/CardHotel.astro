@@ -1,5 +1,4 @@
 ---
-import type { map } from "astro/zod";
 import Title3 from "../../../shared/Title3.astro";
 import Button from "../../../shared/Button.astro";
 
@@ -23,7 +22,7 @@ const { title, fotos, precios, direccion, description, enlaceDireccion, enlacePa
     <div class="overflow-hidden rounded-md">
       {
         fotos.map((foto) => (
-          <img class=" rounded-md object-cover h-full"src={foto} alt=""/>
+          <img class=" rounded-md object-cover h-full" src={foto} alt=""/>
         ))
       }
     </div>
