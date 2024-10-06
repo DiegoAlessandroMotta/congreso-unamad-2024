@@ -74,56 +74,51 @@ const { className } = Astro.props;
 </section>
 
 <script defer>
-  document.addEventListener('astro:page-load', () => {
+  let elementos_btn = document.getElementsByClassName("boton_z");
+  let titulo = document.getElementById('titulo');
+  let biografia = document.getElementById("biografia");
+  let gradoAcademico = document.getElementById('gradoAcademico');
+  let estudio = document.getElementById('estudio');
+  let idCliqueado;
+
+  // console.log(elementos_btn);
+  for (let i = 0; i < elementos_btn.length; i++) {
+    elementos_btn[i].addEventListener("click",async (e)=>{
+      try {
+          idCliqueado = i;
+          idCliqueado -=1;
+          const preguntas = await fetch(`/APIS/usuarios/${idCliqueado}`);
+          const data = await preguntas.json();
+          console.log("datos : ");
+          console.log(data);
+          const parentDiv = e.target.closest('.self-end');
+          const textos = parentDiv.querySelectorAll('p.reservado');
+          
+          // mostrarImg(idCliqueado);
+          document.getElementById("imagen_centro").src = data.dir_foto;
+          titulo.innerText = data.nombre ;
+          
+          // biografia.innerText = data[idCliqueado].biografia;
+          biografia.innerText = data.biografia;
+          gradoAcademico.innerText = data.gradoAcademico;
+          estudio.innerText = data.estudio;
+          console.log(idCliqueado);
     
-    let elementos_btn = document.getElementsByClassName("boton_z");
-    let titulo = document.getElementById('titulo');
-    let biografia = document.getElementById("biografia");
-    let gradoAcademico = document.getElementById('gradoAcademico');
-    let estudio = document.getElementById('estudio');
-    let idCliqueado;
+          openModal();
+      } catch (error) {
+                console.log(error);
+      }
 
-    // console.log(elementos_btn);
-    for (let i = 0; i < elementos_btn.length; i++) {
-      elementos_btn[i].addEventListener("click",async (e)=>{
-        try {
-            idCliqueado = i;
-            idCliqueado -=1;
-            const preguntas = await fetch(`/APIS/usuarios/${idCliqueado}`);
-            const data = await preguntas.json();
-            console.log("datos : ");
-            console.log(data);
-            const parentDiv = e.target.closest('.self-end');
-            const textos = parentDiv.querySelectorAll('p.reservado');
-            
-            // mostrarImg(idCliqueado);
-            document.getElementById("imagen_centro").src = data.dir_foto;
-            titulo.innerText = data.nombre ;
-            
-            // biografia.innerText = data[idCliqueado].biografia;
-            biografia.innerText = data.biografia;
-            gradoAcademico.innerText = data.gradoAcademico;
-            estudio.innerText = data.estudio;
-            console.log(idCliqueado);
-      
-            openModal();
-        } catch (error) {
-                  console.log(error);
-        }
-
-      });
-    }
-    function openModal() {
-      document.getElementById('overlay').classList.remove('hidden');
-      // document.getElementById('overlat').classList.add('flex');
-    }
-  });
-    setTimeout(()=>{
-      function closeModal() {
-      // document.getElementById('overlay').classList.remove('flex');
-      document.getElementById('overlay').classList.add('hidden');
-    }
-      document.getElementById('btn_cerrar_modal').addEventListener('click', ()=>{closeModal()});
-      document.getElementById('btnx_cerra_modal').addEventListener('click', ()=>{closeModal()});
-    }, 2000);
+    });
+  }
+  function openModal() {
+    document.getElementById('overlay').classList.remove('hidden');
+    // document.getElementById('overlat').classList.add('flex');
+  }
+  function closeModal() {
+    // document.getElementById('overlay').classList.remove('flex');
+    document.getElementById('overlay').classList.add('hidden');
+  }
+  document.getElementById('btn_cerrar_modal').addEventListener('click', ()=>{closeModal()});
+  document.getElementById('btnx_cerra_modal').addEventListener('click', ()=>{closeModal()});
 </script>
