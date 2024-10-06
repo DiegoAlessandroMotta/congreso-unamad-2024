@@ -11,6 +11,9 @@ export interface Props {
   titlePonencia: string,
   estudio: string,
   foto: ImageMetadata,
+  biografia: string,
+  dir_foto: string,
+  id:string
 }
 
 const { 
@@ -18,7 +21,11 @@ const {
   titlePonencia,
   estudio,
   foto,
+  biografia,
+  dir_foto,
+  id
 } = Astro.props;
+
 ---
 
 <div
@@ -55,20 +62,21 @@ const {
     </svg>
   </div>
   <div class="grid grid-cols-1 content-between w-full h-full p-6">
-    <Title3 className="dark:opacity-70">
+    <Title3 className="dark:opacity-70  nombre_date">
       {nombre}
     </Title3>
     <div class="self-baseline">
-      <div class="text-sm opacity-60">
+      <div class="text-sm opacity-60  ponencia_date">
         {titlePonencia}
       </div>
     </div>
     <div class="self-end mt-4">
-      <p hidden class="reservado"></p>
-      <p hidden class="reservado"></p>
-      <p hidden class="reservado"></p>
-      <p hidden class="reservado"></p>
-      <Button variant="outline" color="primary"> VER BIOGRAFIA </Button>
+      <p hidden class={id}>{dir_foto}</p>
+      <p hidden class={id}>{nombre}</p>
+      <p hidden class={id}>{titlePonencia}</p>
+      <p hidden class={id}>{estudio}</p>
+      <p hidden class={id}>{biografia}</p>
+      <Button variant="outline" color="primary" valor={id} > VER BIOGRAFIA </Button>
     </div>
   </div>
 </div>

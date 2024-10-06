@@ -1,6 +1,8 @@
 import type { APIRoute } from "astro";
 import { projectsSection } from "@public/ponentesData";
 
+
+
 export const GET:APIRoute = async({params})=>{
 
     const valores = projectsSection.projects.find(b => b.id === Number(params.id));

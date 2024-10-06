@@ -3,7 +3,7 @@ import Container from "../../shared/Container.astro";
 import GradiantText from "../../shared/GradiantText.astro";
 import SubTitle2 from "../../shared/SubTitle2.astro";
 import Title2 from "../../shared/Title2.astro";
-import { projectsSection } from "@public/ponentesData"; 
+import { projectsSection } from "@img/ponentesData"; 
 import FeaturedProject from "./components/FeaturedProject.astro";
 
 export interface Props {
@@ -24,15 +24,18 @@ const { className } = Astro.props;
       <GradiantText>  Nombrados </GradiantText>
     </SubTitle2>
   </Container>
-  <Container>
+  <Container client:idle >
     <div id="contenedorPonentes" class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
       {
-        projectsSection.projects.map(ponente => (
+        projectsSection.projects.map(ponente => ( 
           <FeaturedProject
             nombre={ponente.nombre}
             titlePonencia={ponente.titlePonencia}
             estudio={ponente.estudioAbreviado}
             foto={ponente.foto}
+            biografia={ponente.biografia}
+            dir_foto={ponente.dir_foto}
+            id={`ponente_${ponente.id }`}
           />
         ))
       }
@@ -80,45 +83,37 @@ const { className } = Astro.props;
   let gradoAcademico = document.getElementById('gradoAcademico');
   let estudio = document.getElementById('estudio');
   let idCliqueado;
-
-  // console.log(elementos_btn);
   for (let i = 0; i < elementos_btn.length; i++) {
-    elementos_btn[i].addEventListener("click",async (e)=>{
-      try {
-          idCliqueado = i;
+        elementos_btn[i].addEventListener("click",(e)=>{
+          idCliqueado = i ;
           idCliqueado -=1;
-          const preguntas = await fetch(`/APIS/usuarios/${idCliqueado}`);
-          const data = await preguntas.json();
+          
           console.log("datos : ");
-          console.log(data);
           const parentDiv = e.target.closest('.self-end');
           const textos = parentDiv.querySelectorAll('p.reservado');
-          
+          console.log(e.target);
+          let posicion_ponente = e.target.name;
+          let valores = document.getElementsByClassName(posicion_ponente);
+          // console.log(valores);
           // mostrarImg(idCliqueado);
-          document.getElementById("imagen_centro").src = data.dir_foto;
-          titulo.innerText = data.nombre ;
-          
-          // biografia.innerText = data[idCliqueado].biografia;
-          biografia.innerText = data.biografia;
-          gradoAcademico.innerText = data.gradoAcademico;
-          estudio.innerText = data.estudio;
-          console.log(idCliqueado);
-    
-          openModal();
-      } catch (error) {
-                console.log(error);
-      }
+          document.getElementById("imagen_centro").src = valores[0].innerHTML;
+          titulo.innerText = valores[1].innerHTML ;
+          estudio.innerText = valores[2].innerHTML ;
+          gradoAcademico.innerText = valores[3].innerHTML;
+          biografia.innerText = valores[4].innerHTML ;
+          // console.log(idCliqueado);
 
-    });
-  }
+          openModal();
+        });
+      }
   function openModal() {
     document.getElementById('overlay').classList.remove('hidden');
-    // document.getElementById('overlat').classList.add('flex');
   }
   function closeModal() {
-    // document.getElementById('overlay').classList.remove('flex');
     document.getElementById('overlay').classList.add('hidden');
   }
   document.getElementById('btn_cerrar_modal').addEventListener('click', ()=>{closeModal()});
   document.getElementById('btnx_cerra_modal').addEventListener('click', ()=>{closeModal()});
+  
+
 </script>
