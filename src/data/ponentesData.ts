@@ -1,10 +1,15 @@
 import alvaro from "./assets/alvaro.jpg";
-import holgado from "./assets/holgado.jpg";
+import holgado from "./assets/luis alberto.jpg";
 import honorario from "./assets/honorio.jpg";
 import luis from "./assets/luis jose.jpg";
-import norma from "./assets/norma.jpg";
-import romario from "./assets/romario.jpg";
+import norma from "./assets/norma lorena.jpg";
+import romario from "./assets/romario diaz.png";
 import sillo from "./assets/sillo sosa.jpg";
+import yalmar from "./assets/yalmar temistoqles.jpg"
+import anselmo from "./assets/anselmo rodriguez.jpg"
+import baldo from "./assets/baldo luque.jpeg"
+import dany from "./assets/dany doriam.jpg"
+import jaime from "./assets/jaime cesar prieto.jpg"
 
 export const projectsSection = {
     projects: 
@@ -28,7 +33,7 @@ export const projectsSection = {
           titlePonencia: "Proposal and Evaluation of a Software Architecture for a Smart Campus Digital Twin",
           estudio: "UNIVERSIDAD NACIONAL DE INGENIERIA",
           estudioAbreviado: "UNI",
-          modalidad: 'Virual',
+          modalidad: 'Virtual',
           foto: alvaro,
           id:1,
           dir_foto:alvaro.src
@@ -58,16 +63,16 @@ export const projectsSection = {
           dir_foto:luis.src
         },
         {
-          nombre: "Pablo César Alí Aruhuanca",
+          nombre: "PONCE ATENCIO YALMAR TEMISTOCLES",
           gradoAcademico: "Ingeniero",
-          biografia:'Pablo César Alí Aruhuanca es un reconocido especialista en el campo de las Metodologías Ágiles, con una vasta trayectoria profesional que abarca más de una década en el ámbito académico y empresarial. Como ingeniero, ha dedicado su carrera a la enseñanza y a la implementación de prácticas ágiles en diversas organizaciones, ayudando a equipos a optimizar sus procesos y mejorar la colaboración. Pablo cuenta con una sólida formación académica y ha ocupado roles clave como coordinador académico y formador en instituciones de educación superior. Su experiencia se extiende a múltiples sectores, donde ha liderado proyectos que integran metodologías ágiles para fomentar la innovación y la adaptabilidad en entornos de trabajo dinámicos. A lo largo de su carrera, ha sido un defensor de la mejora continua y la efectividad en la gestión de proyectos. Pablo ha participado en diversas conferencias y talleres, compartiendo su conocimiento sobre frameworks como Scrum y Kanban, y cómo estos pueden ser utilizados para aumentar la productividad y la satisfacción del equipo. En su ponencia titulada "Metodologías Ágiles", Pablo explorará los principios fundamentales de estas prácticas y cómo pueden transformar la manera en que los equipos abordan el desarrollo de proyectos. Su enfoque práctico y su visión estratégica ofrecerán a los asistentes valiosas herramientas para adoptar una mentalidad ágil en sus propias organizaciones. Pablo César Alí Aruhuanca es un referente en el ámbito de las Metodologías Ágiles y su trabajo continúa inspirando a profesionales y equipos a adoptar enfoques más flexibles y colaborativos en la gestión de proyectos.',
+          biografia:'Ponce Atencio Yalmar Temístocles es un destacado ingeniero de sistemas peruano, formado en la Universidad Nacional del Altiplano, donde completó su licenciatura en Ingeniería de Sistemas entre 1996 y 2000. Posteriormente, continuó su educación en Brasil, obteniendo una maestría (2003-2005) y un doctorado (2005-2011) en Ingeniería de Sistemas y Computación en la prestigiosa Universidad Federal de Rio de Janeiro.Su trabajo se centra principalmente en la construcción de ambientes interactivos, animación y simulación basada en física, abarcando desde la simulación de cuerpos sólidos, deformables y elásticos hasta fluidos y la interacción entre objetos. Asimismo, ha hecho importantes aportes en la generación de mallas 2D y 3D, optimizando la calidad de los elementos generados.Ponce Atencio ha trabajado también en áreas relacionadas con la computación de propósito general, especialmente en el procesamiento y programación paralela utilizando multicore y GPUs. Su experiencia incluye el desarrollo de TICs, tecnologías web, aplicaciones móviles y software multiplataforma, con un enfoque particular en proyectos orientados a la educación en entornos colaborativos. Además, ha explorado el campo de la procesamiento de imágenes, visión computacional, geomática y fotogrametría, integrando estas tecnologías en diversas aplicaciones.Reconocido por su trayectoria académica y profesional, Yalmar Temístocles es revisor de artículos para revistas científicas y conferencias, y ha participado como ponente en múltiples eventos científicos tanto a nivel nacional como internacional. Su trabajo abarca una amplia gama de áreas en la ingeniería de sistemas, siendo un referente en el uso de tecnologías avanzadas para la simulación y el desarrollo de aplicaciones educativas.',
           titlePonencia: "Metodología Ágiles",
-          estudio: "UNIVERSIDAD NACIONAL JOSÉ MARIA ARGUEDAS",
-          estudioAbreviado: "UNAJMA",
+          estudio: "Universidad Nacional del Altiplano ",
+          estudioAbreviado: "UNA",
           modalidad: 'Virtual',
-          foto: alvaro,
+          foto: yalmar,
           id:4,
-          dir_foto:alvaro.src
+          dir_foto:yalmar.src
         },
         {
           nombre: "Luis Alberto Holgado Apaza",
@@ -105,6 +110,42 @@ export const projectsSection = {
           foto: honorario,
           id:7,
           dir_foto:honorario.src
+        },
+        {
+          nombre: " Diodomiro Baldomero Luque Carcasi",
+          gradoAcademico: "Ingeniero",
+          biografia:"Doctor Diodomiro Baldomero Luque Carcasi** es un especialista en diversas áreas de la ingeniería y la tecnología, tales como **Ciudades Inteligentes, Internet de las Cosas (IoT), Vehículos Eléctricos, Electrónica de Potencia, Energías Renovables e Inteligencia Artificial**. Ha contribuido significativamente al ámbito científico, siendo autor de numerosos trabajos publicados en revistas y conferencias de renombre. Además, se desempeña como revisor en áreas relacionadas con Máquinas Eléctricas Rotativas, Electrónica de Potencia y Energías Renovables.El Dr. Luque Carcasi ha participado activamente en proyectos de desarrollo tecnológico  en colaboración con la **Universidad de Pádua (UNIPID)** en Italia, lo que ha fortalecido su experiencia internacional en innovación y tecnología avanzada. Realizó un **Post-Doctorado en la Universidade Federal do ABC** en Brasil, donde sus investigaciones estuvieron centradas en las **redes inteligentes (Smart Grids)**. Además, fue **asesor principal** de la **Comisión de Ciencia, Innovación y Tecnología del Congreso de la República del Perú** en 2021, contribuyendo a la formulación de políticas y proyectos tecnológicos.En la actualidad, es el coordinador del Proyecto Prioritario PPI4.0 PUR171 en colaboración con **SUFRAMA** y **profesor asociado nivel 3 en la Universidade Federal do Acre (UFAC). También es miembro titular del **Programa de Posgrado en Ciencias de la Computación (PGCC), miembro docente del Programa de Doctorado BioNorte en Biotecnología y miembro titular del Programa de Posgrado en Ingeniería Eléctrica de la misma universidad. Su amplia trayectoria y experiencia lo posicionan como una figura clave en el desarrollo de tecnologías emergentes y su integración en la sociedad.",
+          titlePonencia: "Neural Machine Translation For Native Peruvian Languagues",
+          estudio: "UNIVERSIDAD NACIONAL DE PADUA",
+          estudioAbreviado: "UNIPID",
+          modalidad: 'Presencial',
+          foto: baldo,
+          id:9,
+          dir_foto:baldo.src
+        },
+        {
+          nombre: " DANY DORIAN ISUIZA PÉREZ ",
+          gradoAcademico: "Ingeniero",
+          biografia:"Dany Dorian Isuiza Pérez es Doctor en Administración e Ingeniero de Sistemas con más de 14 años de experiencia en el desarrollo, implementación y mantenimiento de soluciones tecnológicas. A lo largo de su carrera, ha demostrado un amplio dominio en programación, análisis de sistemas y gestión de proyectos, lo que le ha permitido destacarse en diversas áreas del sector tecnológico.Posee una sólida trayectoria en la gestión y dirección de proyectos, y ha desempeñado roles importantes como docente universitario en diversas instituciones de prestigio. Ha sido parte del cuerpo docente en la Universidad Andina del Cusco, la Universidad Tecnológica de Lima Sur y la Universidad Nacional de Cañete. Actualmente, ejerce como docente ordinario en la Universidad Amazónica de Madre de Dios (UNAMAD).Dany Isuiza se caracteriza por su enfoque en la optimización de procesos y la mejora continua, aplicando sus habilidades en la resolución de problemas y el trabajo en equipo. Su compromiso con el aprendizaje continuo y la adaptación a nuevas tecnologías le permite mantenerse actualizado en un campo en constante evolución, contribuyendo de manera significativa tanto en el ámbito académico como en el desarrollo tecnológico.",
+          titlePonencia: "Neural Machine Translation For Native Peruvian Languagues",
+          estudio: "UNIVERSIDAD CÉSAR VALLEJO",
+          estudioAbreviado: "UCV",
+          modalidad: 'Presencial',
+          foto: dany ,
+          id:10,
+          dir_foto:dany.src
+        },
+        {
+          nombre: " Jaime César Prieto Luna ",
+          gradoAcademico: "Ingeniero",
+          biografia:"Jaime César Prieto Luna es un Ingeniero Electrónico graduado de la Universidad Nacional Mayor de San Marcos, donde también realizó una maestría en Economía e Informática. A lo largo de su carrera, ha desarrollado una sólida trayectoria en el ámbito académico y de investigación. Ha sido docente en la Universidad Andina del Cusco y actualmente se desempeña como docente nombrado en la Universidad Amazónica de Madre de Dios.Prieto Luna está clasificado como investigador RENACYT y forma parte de equipos de investigación en áreas emergentes como Internet de las Cosas (IoT) y inteligencia artificial, con un enfoque particular en la biodiversidad a través del proyecto Amazon data, Artificial intelligence and biodiversitech en la Universidad Nacional Amazónica de Madre de Dios.Entre sus contribuciones científicas más destacadas se encuentran las publicaciones: “Sistema basado en IoT para monitoreo de oxígeno disuelto y temperatura en larvicultura de peces” (2023), publicada en la Revista Brasileira de Ciencias Agrarias, y “Monitoreo y análisis de monóxido de carbono y metano en la Amazonía Sur Oriental Peruana mediante Sensores y RPAS” en la revista EAI Endorsed Transactions on Energy Web (2023).Además, actúa como asesor de tesis de pregrado en la línea de investigación sobre “Aplicaciones TIC, electrónicas robóticas, y de telecomunicaciones para la competitividad, salud, educación, seguridad y biodiversidad”, y también ofrece su asesoramiento a nivel de posgrado. Su labor educativa y de investigación se centra en el uso de tecnologías innovadoras para abordar problemas contemporáneos y contribuir al desarrollo sostenible en la región amazónica.",
+          titlePonencia: "Neural Machine Translation For Native Peruvian Languagues",
+          estudio: "Universidad Nacional Mayor de San Marcos.",
+          estudioAbreviado: "UNMSM",
+          modalidad: 'Presencial',
+          foto: jaime ,
+          id:11,
+          dir_foto:jaime.src
         }
       ]
     
