@@ -1,5 +1,4 @@
 import alvaro from "./assets/alvaro.jpg";
-import fotoDefaul from "./assets/amazonas2.png";
 import holgado from "./assets/holgado.jpg";
 import honorario from "./assets/honorio.jpg";
 import luis from "./assets/luis jose.jpg";
@@ -66,9 +65,9 @@ export const projectsSection = {
           estudio: "UNIVERSIDAD NACIONAL JOSÉ MARIA ARGUEDAS",
           estudioAbreviado: "UNAJMA",
           modalidad: 'Virtual',
-          foto: fotoDefaul,
+          foto: alvaro,
           id:4,
-          dir_foto:fotoDefaul.src
+          dir_foto:alvaro.src
         },
         {
           nombre: "Luis Alberto Holgado Apaza",
