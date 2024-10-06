@@ -1,0 +1,20 @@
+---
+interface Props {
+  nombre: string,
+	logo: string,
+	direccion: string,
+	styleRedondear: string,
+};
+const {nombre,logo,direccion,styleRedondear} = Astro.props;
+---
+
+<a
+	href={direccion}
+	class={`w-fit h-32 shrink-0 overflow-hidden ${styleRedondear}`}
+>
+	<img
+		class="h-full object-cover"
+		src={logo}
+		alt={"logo de "+nombre}
+	/>
+</a>

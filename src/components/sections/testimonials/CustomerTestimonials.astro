@@ -3,6 +3,7 @@ import Container from "../../shared/Container.astro";
 import GradiantText from "../../shared/GradiantText.astro";
 import SubTitle2 from "../../shared/SubTitle2.astro";
 import Title2 from "../../shared/Title2.astro";
+import LogoPatrocinador from "./components/logoPatrocinador.astro";
 import { testimonialsSection } from "./data.ts";
 
 export interface Props {
@@ -26,17 +27,8 @@ const { className } = Astro.props;
     <div class="flex flex-row flex-wrap justify-center gap-5">
       {
         testimonialsSection.testimonials.map((testimonial) => (
-          <div
-            class="w-32 h-32 shrink-0  rounded-full overflow-hidden"
-            title={testimonial.name}
-          >
-            <img
-              class="h-full object-cover"
-              src={testimonial.visual.src}
-              alt={testimonial.name}
-            />
-          </div>
-        ))
+          <LogoPatrocinador direccion={testimonial.direccion} logo={testimonial.logo.src} nombre={testimonial.name} styleRedondear={testimonial.styleRedondear}/>
+        )) 
       }
     </div>
   </Container>
