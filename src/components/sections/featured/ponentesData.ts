@@ -1,15 +1,15 @@
-import alvaro from "./assets/alvaro.jpg";
-import holgado from "./assets/luis alberto.jpg";
-import honorario from "./assets/honorio.jpg";
-import luis from "./assets/luis jose.jpg";
-import norma from "./assets/norma lorena.jpg";
-import romario from "./assets/romario diaz.png";
-import sillo from "./assets/sillo sosa.jpg";
-import yalmar from "./assets/yalmar temistoqles.jpg"
-import anselmo from "./assets/anselmo rodriguez.jpg"
-import baldo from "./assets/baldo luque.jpeg"
-import dany from "./assets/dany doriam.jpg"
-import jaime from "./assets/jaime cesar prieto.jpg"
+import alvaro from "./assets/alvaro.webp";
+import holgado from "./assets/luis alberto.webp";
+import honorario from "./assets/honorio.webp";
+import luis from "./assets/luis jose.webp";
+import norma from "./assets/norma lorena.webp";
+import romario from "./assets/romario diaz.webp";
+import sillo from "./assets/sillo sosa.webp";
+import yalmar from "./assets/yalmar temistoqles.webp"
+import anselmo from "./assets/anselmo rodriguez.webp"
+import baldo from "./assets/baldo luque.webp"
+import dany from "./assets/dany doriam.webp"
+import jaime from "./assets/jaime cesar prieto.webp"
 
 export const data = [
   {
