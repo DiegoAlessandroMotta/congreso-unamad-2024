@@ -41,7 +41,8 @@ export function CardsPonentes({estilos=""}: Props){
 				<div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
 					{
 						data.map((ponente, key) => ( 
-							<FeaturedProyetTest
+							<FeaturedProyetTest 
+							  key={key}
 								nombre={ponente.nombre}
 								titlePonencia={ponente.titlePonencia}
 								estudio={ponente.estudioAbreviado}
@@ -57,7 +58,7 @@ export function CardsPonentes({estilos=""}: Props){
 						cerrarModal={()=>{setModalAbierto(false)}}
 						modalAbierto={modalAbierto}
 						gradoAcademico={data[idPonente].gradoAcademico} 
-						foto={data[idPonente].dir_foto} 
+						foto={data[idPonente].foto.src} 
 						universidad={data[idPonente].estudio} 
 						nombre={data[idPonente].nombre} 
 						biografia={data[idPonente].biografia} 
