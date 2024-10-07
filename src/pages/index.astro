@@ -1,12 +1,11 @@
 ---
 import CustomerTestimonials from "../components/sections/testimonials/CustomerTestimonials.astro";
 import EnvironmentalImpact from "../components/sections/environment/EnvironmentalImpact.astro";
-import FeaturedProjects from "../components/sections/featured/PonenteCard.astro";
 import Hero from "../components/sections/hero/Hero.astro";
 import KeyServices from "../components/sections/services/KeyServices.astro";
 import { TimeLine } from "../components/sections/timeLine/TimeLine"
 import Layout from "../layouts/Layout.astro";
-
+import { CardsPonentes } from "../components/sections/featured/CardsPonentes";
 
 const navItems = [
   {
@@ -48,7 +47,8 @@ const navItems = [
     <EnvironmentalImpact />
     <KeyServices />
     
-    <FeaturedProjects />
+    <CardsPonentes client:visible/>
+
     <TimeLine client:visible/>
     <CustomerTestimonials />
     
