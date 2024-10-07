@@ -7,6 +7,7 @@ interface Props{
 	estilos?: string;
 }
 
+
 export function CardsPonentes({estilos=""}: Props){
 	const [idPonente, setIdPonente] = useState<number>(0);
 	const [modalAbierto, setModalAbierto] = useState<boolean>(false);

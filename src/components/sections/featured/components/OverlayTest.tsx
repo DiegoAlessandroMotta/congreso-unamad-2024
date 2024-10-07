@@ -53,7 +53,7 @@ export function OverlayTest({gradoAcademico,foto,universidad,nombre,biografia, m
 									<img
 										src={foto}
 										alt="foto del ponente"
-										className="h-full object-cover hidden"
+										className="h-full object-cover"
 									/>
 								</div>
 								<p id="estudioPonente" className="text-center text-black font-semibold">
