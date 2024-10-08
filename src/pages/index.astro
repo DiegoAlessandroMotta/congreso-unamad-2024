@@ -6,6 +6,7 @@ import KeyServices from "../components/sections/services/KeyServices.astro";
 import { TimeLine } from "../components/sections/timeLine/TimeLine"
 import Layout from "../layouts/Layout.astro";
 import { CardsPonentes } from "../components/sections/featured/CardsPonentes";
+import { Presentacion } from "../components/sections/presentacion/Presentacion"
 
 const navItems = [
   {
@@ -41,11 +42,17 @@ const navItems = [
 ---
 
 <Layout navItems={navItems} title="Congreso UNAMAD 2024">
-  <main class="grid gap-20 md:gap-40">
+  <main class="grid gap-0">
 
-    <Hero />
-    <EnvironmentalImpact />
-    <KeyServices />
+    <!-- <Hero /> -->
+    <Presentacion />
+
+    <!-- PRESENTACIÓN -->
+    <!-- <EnvironmentalImpact /> -->
+
+
+    <!-- OBJETIVOS -->
+    <!-- <KeyServices /> -->
     
     <CardsPonentes client:visible/>
 
