@@ -5,7 +5,7 @@ import leopardo from "./assets/leopard.png";
 
 export function Presentacion() {
   return (
-    <article className="relative mt-[100px] h-[400px]">
+    <article className="relative mt-[200px] h-[400px]">
       <div className="flex flex-row justify-center">
         <img src={logoCoati.src} alt="" className="h-[100px]" />
       </div>
