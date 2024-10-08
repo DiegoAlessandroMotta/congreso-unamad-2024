@@ -18,14 +18,14 @@ const { className } = Astro.props;
   <Container>
     <Title2>{environmentalImpactSection.title}</Title2>
   </Container>
-  <Container className="flex flex-col midmd:flex-row gap-10 lg:gap-12 ">
+  <Container className="flex flex-col midmd:flex-row midmd:gap-10 lg:gap-12 gap-4">
     <!-- <div
       class="max-w-md mx-auto flex midmd:w-7/12 lg:w-3/4 flex-col align-self-start text-start"
     > -->
     <div
-      class="max-w-md mr-auto w-11/12 flex-1 flex midmd:w-7/12 lg:w-1/2 flex-col"
+      class=" flex-1 flex flex-col w-full text-center"
     >
-      <SubTitle2>
+      <SubTitle2 className="text-center w-full">
         {environmentalImpactSection.subheading1_1}
         <GradiantText>{environmentalImpactSection.subheading1_2}</GradiantText>
       </SubTitle2>
@@ -33,19 +33,22 @@ const { className } = Astro.props;
         {environmentalImpactSection.description}
       </Paragraph>
     </div>
-    { // midmd:max-w-none flex w-11/12 midmd:w-5/12 lg:w-1/2 midmd:h-auto }
+    <!--  "midmd:max-w-none flex w-11/12 midmd:w-5/12 lg:w-1/2 midmd:h-auto" -->
     <div
       class=" 
-        w-full 
-        grid grid-cols-2 lg:grid-cols1
+        midmd:max-w-none flex justify-center w-full items-center midmd:w-5/12 lg:w-1/2 midmd:h-auto
       "
     >
-      <LazyImage
+      <img 
+        src={environmentalImpactSection.visual.src} 
+        alt="img de los ingenieros"
+        class="w-full object-cover rounded-2xl"
+      >
+      {/* <LazyImage
         src={environmentalImpactSection.visual}
         alt="environmental impact"
-        width="700"
-        class="w-full h-full object-cover rounded-2xl"
-      />
+        class="w-full object-cover rounded-2xl"
+      /> */}
     </div>
   </Container>
 </section>
