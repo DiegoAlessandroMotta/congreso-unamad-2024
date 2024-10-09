@@ -1,4 +1,3 @@
-import fotoAmazonas from "./assets/amazonia.webp";
 import logoCoati from "./assets/logoCoati.webp";
 import guacamayo from "./assets/guacamayo.png";
 import leopardo from "./assets/leopard.png";
