@@ -1,7 +1,6 @@
 ---
 import CustomerTestimonials from "../components/sections/testimonials/CustomerTestimonials.astro";
 import EnvironmentalImpact from "../components/sections/environment/EnvironmentalImpact.astro";
-import Hero from "../components/sections/hero/Hero.astro";
 import KeyServices from "../components/sections/services/KeyServices.astro";
 import { TimeLine } from "../components/sections/timeLine/TimeLine"
 import Layout from "../layouts/Layout.astro";
@@ -49,9 +48,9 @@ const navItems = [
 <Layout navItems={navItems} title="Congreso UNAMAD 2024">
   <main class="grid gap-0">
 
-    <!-- <Hero /> -->
     <Presentacion client:load />
     <!-- PRESENTACIÓN -->
+    
     <!-- <EnvironmentalImpact /> -->
     
     <!-- OBJETIVOS -->
