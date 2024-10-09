@@ -13,7 +13,7 @@ export function CardsPonentes({estilos=""}: Props){
 	const [modalAbierto, setModalAbierto] = useState<boolean>(false);
 
   return (
-		<section id="projects" className={`${estilos} bg-white dark:bg-[#2e2e2ead] pt-10 pb-10`}>
+		<section id="projects" className={`${estilos} bg-white dark:bg-[#000000b0] pt-10 pb-10`}>
 			<header
 				className="px-5 sm:px-8 md:px-14 lg:px-5 justify-center mx-auto flex flex-col items-center text-center max-w-7xl w-full"
 			>
