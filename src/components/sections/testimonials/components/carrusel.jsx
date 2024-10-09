@@ -32,8 +32,8 @@ const Carrusel = () => {
     };
 
     return (
-        <div className="main-section">
-            <div className="carousel_content">
+        <div className="main-section ">
+            <div className="carousel_content ">
                 <div className="cards_content">
                     <main
                         id="carousel"
@@ -51,15 +51,15 @@ const Carrusel = () => {
                                         : index === (currentIndex - 1 + items.length) % items.length
                                         ? "prev"
                                         : "inactive"
-                                }`}
+                                } dark:bg-[#000000b0]`}
                             >
-                                <div className="body_card">
+                                <div className="body_card ">
                                     <a
                                         href={item.direccion}
-                                        class={`w-fit h-32 shrink-0 overflow-hidden ${item.styleRedondear}`}
+                                        className={`w-fit h-32 shrink-0 overflow-hidden ${item.styleRedondear}`}
                                     >
                                         <img
-                                            class="h-full object-cover"
+                                            className="h-full object-cover"
                                             src={item.logo.src}
                                             alt={"logo de "+item.name}
                                         />
