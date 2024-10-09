@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Page from "../components/sections/404/404_lado"
+import Container from "../components/shared/Container.astro";
+const navItems = [
+  {
+    href: "/",
+    text: "Inicio",
+  },
+  {
+    href: "/#testimonials",
+    text: "Patrocinadores",
+  },
+  {
+    href: "#",
+    text: "Hospedajes",
+  },
+  {
+    href: "/taller",
+    text: "Talleres",
+  }
+];
+---
+
+<Layout navItems={navItems} title="404 PAGE">
+    <main class="grid gap-0 posi ">
+        <Container className="relative  top-14">
+            <Page/>
+        </Container>
+    </main>
+	<!-- <main class="grid gap-20 md:gap-40">
+	</main> -->
+</Layout>

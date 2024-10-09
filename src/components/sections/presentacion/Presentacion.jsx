@@ -5,7 +5,7 @@ import { Contador } from "../contador/Contador";
 
 export function Presentacion() {
   return (
-    <article className="relative mt-[200px] h-[70vh]">
+    <article className="relative mt-[150px] h-[70vh]">
       <div className="flex flex-row justify-center">
         <img src={logoCoati.src} alt="" className="h-[100px] max-sm:w-full max-sm:h-auto" />
       </div>

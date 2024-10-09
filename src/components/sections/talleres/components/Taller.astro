@@ -14,22 +14,35 @@ export interface Props {
     colorPonente: string
 }
 
+// const descargarPDF1 = () => {
+//     const link = document.createElement('a');
+//     link.href = '../pdf/TECNOLOGÍAS DE DRONES Y SATÉLITES APLICADAS AL SECTOR TURISMO.pdf';  // Cambia esto por la ruta correcta de tu PDF
+//     link.download = 'TECNOLOGÍAS DE DRONES Y SATÉLITES APLICADAS AL SECTOR TURISMO.pdf';        // Cambia esto por el nombre que deseas para el archivo
+//     link.click();
+// };
+
+// const descargarPDF2 = () => {
+//     const link = document.createElement('a');
+//     link.href = '../pdf/TALLER DE IA PARA LA EDUCACION.pdf';  // Cambia esto por la ruta correcta de tu PDF
+//     link.download = 'TALLER DE IA PARA LA EDUCACION.pdf';        // Cambia esto por el nombre que deseas para el archivo
+//     link.click();
+// };
 
 const {nombreTaller, nombrePonente, fotoPonente, linkMasInformacion, fotoBaner, className, orden, colorInicio, colorFin, colorBtn, colorPonente} = Astro.props;
 ---
 
 <section class={` items-center bg-gradient-to-r ${colorInicio} ${colorFin} grid 
-        ${orden? "grid-cols-[auto_1fr]" : "grid-cols-[1fr_auto]"}
-        text-white py-10`}>
-    <div class={`h-[300px] ${orden? "order-1" : "order-2"} `}>
+        ${orden? "grid-cols-[auto_1fr]" : "grid-cols-[1fr_auto]"} max-lg:grid-cols-[1fr]
+        text-white py-10 max-lg:items-center max-lg:justify-center max-lg:px-4`}>
+    <div class={`h-[300px] ${orden? "order-1" : "order-2"} flex flex-row justify-center`}>
         <img src={fotoBaner} class="h-full object-cover" alt="foto del ponente a cardo del taller">
     </div>
 
-    <section class={`flex flex-col ${orden? "order-2 items-start" : "order-1 items-end"} gap-4`}>
-        <h1 class={` ${orden?"text-start":"text-end"} text-5xl font-bold`}>{ nombreTaller }</h1>
+    <section class={`flex flex-col max-lg:items-center ${orden? "order-2 items-start" : "order-1 items-end"} gap-4`}>
+        <h1 class={` ${orden?"text-start":"text-end"} max-lg:text-center text-5xl font-bold max-lg:text-2xl`}>{ nombreTaller }</h1>
         <!-- seccion del ponente acargo -->
-        <div class={`flex flex-row gap-4 ${colorPonente} p-3 rounded-md`}>
-            <div class="h-[100px] overflow-hidden rounded-md">
+        <div class={`flex flex-row max-lg:flex-col gap-4 ${colorPonente} p-3 rounded-md`}>
+            <div class="h-[100px] overflow-hidden rounded-md max-lg:flex max-lg:flex-row max-lg:justify-center">
                 <img class="h-full object-cover" src={ fotoPonente} alt="">
             </div>
             <div class="flex flex-col justify-between">
@@ -38,8 +51,10 @@ const {nombreTaller, nombrePonente, fotoPonente, linkMasInformacion, fotoBaner, 
             </div>
         </div>
         <!-- fin de la seccion del ponente acargo -->
-        <a href={linkMasInformacion} class=` ${colorBtn} px-4 py-2 rounded-sm`>
-            Mas información
-        </a>
+        <div class="flex flex-row gap-4 flex-wrap">
+            <a href={linkMasInformacion} class=`${colorBtn} px-4 py-2 rounded-sm`>
+                Más información
+            </a>
+        </div>
     </section>
 </section>

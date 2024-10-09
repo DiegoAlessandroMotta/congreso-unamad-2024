@@ -13,16 +13,11 @@ export interface Props {
 const { className } = Astro.props;
 ---
 
-<section id="environment" class=`${className}`>
-  <Container>
-    <Title2>{environmentalImpactSection.title}</Title2>
-  </Container>
-  <Container className="flex flex-col midmd:flex-row midmd:gap-10 lg:gap-12 gap-4">
-    <!-- <div
-      class="max-w-md mx-auto flex midmd:w-7/12 lg:w-3/4 flex-col align-self-start text-start"
-    > -->
+<section id="environment" class=`${className} flex flex-row justify-center bg-white bg-white dark:bg-[#000000b0]`>
+
+  <Container className="flex flex-col justify-center items-center midmd:flex-row midmd:gap-10 lg:gap-12 gap-4">
     <div
-      class=" flex-1 flex flex-col w-full text-center"
+      class=" flex-1 flex flex-col justify-center items-center w-full text-center"
     >
       <SubTitle2 className="text-center w-full">
         {environmentalImpactSection.subheading1_1}
@@ -32,7 +27,6 @@ const { className } = Astro.props;
         {environmentalImpactSection.description}
       </Paragraph>
     </div>
-    <!--  "midmd:max-w-none flex w-11/12 midmd:w-5/12 lg:w-1/2 midmd:h-auto" -->
     <div
       class=" 
         midmd:max-w-none flex justify-center w-full items-center midmd:w-5/12 lg:w-1/2 midmd:h-auto
