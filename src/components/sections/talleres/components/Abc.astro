@@ -1,0 +1,12 @@
+---
+export interface Props {
+    text: string,
+    index: string
+}
+
+const {text, index} = Astro.props;
+---
+
+<div class="flex flex-row flex-nowrap items-center pl-20">
+    <p>{index+") "} { text }</p>
+</div>

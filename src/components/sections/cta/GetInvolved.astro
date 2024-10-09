@@ -4,7 +4,7 @@ import GradiantText from "../../shared/GradiantText.astro";
 import SubTitle2 from "../../shared/SubTitle2.astro";
 import Title2 from "../../shared/Title2.astro";
 import CardHotel from "./components/CardHotel.astro";
-import { data } from "./data.ts";
+import { data } from "./data";
 
 export interface Props {
   className?: string;
@@ -16,7 +16,7 @@ const { className } = Astro.props;
   <Container
     className="mx-auto pt-24 flex flex-col items-center justify-center text-center"
   >
-    <SubTitle2>
+    <SubTitle2 className="text-white">
       <GradiantText>{data.subheading1_1}</GradiantText>
       {data.subheading1_2}
       <GradiantText>{data.subheading1_3}</GradiantText>

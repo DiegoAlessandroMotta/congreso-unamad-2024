@@ -1,6 +1,6 @@
 ---
-import { Image, Picture } from "astro:assets";
 import unamadImg from "./assets/vista-unamad.webp";
+import amazonia from "./assets/amazonia.webp"
 import CtaButton from "../../shared/CtaButton.astro";
 import GradiantText from "../../shared/GradiantText.astro";
 import SubTitle from "../../shared/SubTitle.astro";
@@ -31,19 +31,16 @@ const { className = "" } = Astro.props;
     <div
       class="w-full h-full grid grid-cols-1 md:grid-cols-2 justify-end bg-base-100 dark:bg-base-dark-900"
     >
-      <div class="justify-center flex flex-col text-center md:ml-auto">
+      <div class="justify-center flex flex-col text-center md:ml-auto overflow-visible ">
         <Title className="">
           <GradiantText>
-            3er
+            III
           </GradiantText>
-          Congreso Internacional
+            Congreso Internacional Amazónico de
           <GradiantText>
-            Amazónico
+            Tecnología e Informática
           </GradiantText>
-          de la 
-          <GradiantText>
-            tecnología e informática
-          </GradiantText>
+          COATI 2024
         </Title>
         <SubTitle className=" mt-10 leading-9 italic">
           Puede participar estudiantes, profesores

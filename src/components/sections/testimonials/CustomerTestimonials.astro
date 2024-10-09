@@ -3,8 +3,11 @@ import Container from "../../shared/Container.astro";
 import GradiantText from "../../shared/GradiantText.astro";
 import SubTitle2 from "../../shared/SubTitle2.astro";
 import Title2 from "../../shared/Title2.astro";
-import { testimonialsSection } from "./data.ts";
+// import LogoPatrocinador from "./components/logoPatrocinador.astro";
+import { testimonialsSection } from "./data";
 
+import Carrusel from "./components/carrusel"
+import "./components/carrusel.css"
 export interface Props {
   className?: string;
 }
@@ -12,7 +15,7 @@ export interface Props {
 const { className } = Astro.props;
 ---
 
-<section id="testimonials" class=`${className}`>
+<section id="testimonials" class=`${className} `>
   <Container
     className="mx-auto flex flex-col items-center justify-center text-center"
   >
@@ -22,22 +25,14 @@ const { className } = Astro.props;
       {testimonialsSection.subheading1_2}
     </SubTitle2>
   </Container>
-  <Container className="flex flex-col items-center">
-    <div class="flex flex-row flex-wrap justify-center gap-5">
-      {
-        testimonialsSection.testimonials.map((testimonial) => (
-          <div
-            class="w-32 h-32 shrink-0  rounded-full overflow-hidden"
-            title={testimonial.name}
-          >
-            <img
-              class="h-full object-cover"
-              src={testimonial.visual.src}
-              alt={testimonial.name}
-            />
-          </div>
-        ))
-      }
-    </div>
+  <Container className="flex flex-col items-center ">
+    <Carrusel client:visible />
+    <!-- {
+      testimonialsSection.testimonials.map((testimonial) => (
+        <LogoPatrocinador direccion={testimonial.direccion} logo={testimonial.logo.src} nombre={testimonial.name} styleRedondear={testimonial.styleRedondear}/>
+      )) 
+    } -->
+    <!-- <div class="flex flex-row flex-wrap justify-center gap-5">
+    </div> -->
   </Container>
 </section>

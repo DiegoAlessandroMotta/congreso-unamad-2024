@@ -1,0 +1,12 @@
+---
+
+export interface Props {
+    text: string
+}
+
+const {text} = Astro.props;
+---
+
+<div class="px-2 py-1 rounded-full text-lg font-bold w-fit bg-[#0369a1a8] text-white">
+    {text}
+</div>

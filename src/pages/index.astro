@@ -1,11 +1,12 @@
 ---
 import CustomerTestimonials from "../components/sections/testimonials/CustomerTestimonials.astro";
 import EnvironmentalImpact from "../components/sections/environment/EnvironmentalImpact.astro";
-import FeaturedProjects from "../components/sections/featured/PonenteCard.astro";
 import Hero from "../components/sections/hero/Hero.astro";
 import KeyServices from "../components/sections/services/KeyServices.astro";
 import { TimeLine } from "../components/sections/timeLine/TimeLine"
 import Layout from "../layouts/Layout.astro";
+import { CardsPonentes } from "../components/sections/featured/CardsPonentes";
+import { Presentacion } from "../components/sections/presentacion/Presentacion";
 
 
 const navItems = [
@@ -13,10 +14,10 @@ const navItems = [
     href: "#",
     text: "Inicio",
   },
-  {
-    href: "#services",
-    text: "Objetivo",
-  },
+  // {
+  //   href: "#services",
+  //   text: "Objetivo",
+  // },
   {
     href: "#projects",
     text: "Expositores",
@@ -25,10 +26,10 @@ const navItems = [
     href: "#LineaDeTiempo",
     text: "Cronograma",
   },
-  {
-    href: "#environment",
-    text: "Sobre Nosotros",
-  },
+  // {
+  //   href: "#environment",
+  //   text: "Sobre Nosotros",
+  // },
   {
     href: "#testimonials",
     text: "Patrocinadores",
@@ -36,19 +37,28 @@ const navItems = [
   {
     href: "/hotel",
     text: "Hospedajes",
+  },
+  {
+    href: "/taller",
+    text: "Talleres",
   }
 ];
 
 ---
 
 <Layout navItems={navItems} title="Congreso UNAMAD 2024">
-  <main class="grid gap-20 md:gap-40">
+  <main class="grid gap-0">
 
-    <Hero />
-    <EnvironmentalImpact />
-    <KeyServices />
+    <!-- <Hero /> -->
+    <Presentacion client:load />
+    <!-- PRESENTACIÓN -->
+    <!-- <EnvironmentalImpact /> -->
     
-    <FeaturedProjects />
+    <!-- OBJETIVOS -->
+    <!-- <KeyServices /> -->
+    
+    <CardsPonentes client:visible/>
+
     <TimeLine client:visible/>
     <CustomerTestimonials />
     

@@ -1,0 +1,45 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Talleres from "../components/sections/talleres/Talleres.astro";
+const navItems = [
+  {
+    href: "/",
+    text: "Inicio",
+  },
+  {
+    href: "/#services",
+    text: "Objetivo",
+  },
+  {
+    href: "/#projects",
+    text: "Expositores",
+  },
+  {
+    href: "/#LineaDeTiempo",
+    text: "Cronograma",
+  },
+  {
+    href: "/#environment",
+    text: "Sobre Nosotros",
+  },
+  {
+    href: "/#testimonials",
+    text: "Patrocinadores",
+  },
+  {
+    href: "/hotel",
+    text: "Hospedajes",
+  },
+  {
+    href: "#",
+    text: "Talleres",
+  }
+];
+
+---
+
+<Layout title="talleres del congreso" navItems={navItems}>
+	<main>
+		<Talleres />
+	</main>
+</Layout>
