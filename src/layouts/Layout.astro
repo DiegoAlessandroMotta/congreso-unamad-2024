@@ -33,10 +33,10 @@ const { title, navItems } = Astro.props;
     />
   </head>
   <body
-    class="relative overflow-hidden overflow-y-auto bg-base dark:bg-base-dark text-accent dark:text-accent-light min-h-screen"
+    class="relative overflow-visible bg-base-dark-400 dark:bg-base-dark text-accent dark:text-accent-light min-h-screen"
   >
     <Navbar navItems={navItems} />
-    <img src={fotoAmazonia.src} alt="fondo estatico de la amazonia peruana" class=" object-cover fixed top-0 h-screen brightness-100 dark:brightness-50 z-[-1]">
+    <img src={fotoAmazonia.src} style={{maskImage: 'linear-gradient(black 80%, transparent);'}}  alt="fondo estatico de la amazonia peruana" class=" object-cover fixed top-0 bottom-0 h-screen brightness-100 dark:brightness-50 z-[-1]">
     <slot />
     <div class="h-20"></div>
     <Footer />

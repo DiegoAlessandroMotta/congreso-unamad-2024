@@ -19,10 +19,10 @@ export function CardsPonentes({estilos=""}: Props){
 			>
 				<p
 					className={`tracking-wide antialiased
-					mb-8 text-lg md:text-4xl font-extrabold text-black`}
+					mb-8 md:text-4xl font-extrabold text-black`}
 				>
 					<span
-						className="text-transparent bg-clip-text bg-gradient-to-br from-primary-500 from-20% via-primary via-50% to-primary-500"
+						className="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-primary-500 from-20% via-primary via-50% to-primary-500"
 					>
 						Expositores
 					</span>
