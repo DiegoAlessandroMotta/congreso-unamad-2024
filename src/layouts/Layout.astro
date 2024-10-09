@@ -36,7 +36,7 @@ const { title, navItems } = Astro.props;
     class="relative overflow-hidden overflow-y-auto bg-base dark:bg-base-dark text-accent dark:text-accent-light min-h-screen"
   >
     <Navbar navItems={navItems} />
-    <img src={fotoAmazonia.src} alt="fondo estatico de la amazonia peruana" class=" object-cover fixed top-0 h-screen brightness-50 z-[-1]">
+    <img src={fotoAmazonia.src} alt="fondo estatico de la amazonia peruana" class=" object-cover fixed top-0 h-screen brightness-100 dark:brightness-50 z-[-1]">
     <slot />
     <div class="h-20"></div>
     <Footer />
@@ -53,6 +53,8 @@ const { title, navItems } = Astro.props;
     });
 
     function changeThemeManually() {
+      // AGREGAR UN MODO POR DEFECTO
+
       const localAppTheme = localStorage.getItem("theme");
       // Whenever the user explicitly chooses dark mode, previously it was light mode
       if (localAppTheme === "light") {
