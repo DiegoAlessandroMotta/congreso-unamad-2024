@@ -1,16 +1,10 @@
 import elHuerto from './assets/hotel-el-huerto.png';
 import laTorreInn from './assets/hote-la-torre-inn.png';
 // imagenes del hotel "el huerto"
-import elHuertoBano from './assets/el-huerto-bano.jpeg';
 import elHuertoCuarto from './assets/el-huerto-cuarto.jpeg';
-import elHuertoMuebles from './assets/el-huerto-muebles.jpeg';
-import elHuertoUbicacion from './assets/el-huerto-ubicacion.jpg';
 
 // imagenes del hotel "la torre inn"
-import laTorreInnBano from './assets/la-torre-inn-bano.jpg'
 import laTorreInnCuarto from './assets/la-torre-inn-cuarto.jpg'
-import laTorreInnMuebles from './assets/la-torre-inn-muebles.jpg'
-import laTorreInnUbicacion from './assets/la-torre-inn-ubicacion.jpg'
 
 export const data = {
   subheading1_1: "Hoteles ",
@@ -33,10 +27,7 @@ export const data = {
       logo: laTorreInn,
       description: "Su ubicación céntrica permite a los huéspedes acceder fácilmente a los principales atractivos turísticos de la zona, como la Reserva Nacional Tambopata y el Lago Sandoval.",
       fotos:[
-        // laTorreInnUbicacion.src,
         laTorreInnCuarto.src,
-        // laTorreInnMuebles.src,
-        // laTorreInnBano.src
       ]
     },
     {
@@ -56,10 +47,7 @@ export const data = {
       logo: elHuerto,
       description:"conocido por sus tranquilos jardines y su ambiente relajado. Sus espacios verdes crean un entorno sereno, ideal para quienes buscan una estadía en contacto con la naturaleza.",
       fotos:[
-        // elHuertoUbicacion.src,
         elHuertoCuarto.src,
-        // elHuertoMuebles.src,
-        // elHuertoBano.src
       ]
     }
   ]
