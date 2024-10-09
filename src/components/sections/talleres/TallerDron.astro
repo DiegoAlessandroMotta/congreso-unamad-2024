@@ -1,0 +1,140 @@
+---
+import Etiquetas from "./components/Etiquetas.astro"
+import SubTemasT from "./components/SubTemasT.astro"
+import Tema from "./components/Tema.astro"
+import Sub2TemasT from "./components/Sub2TemasT.astro"
+import Abc from "./components/abc.astro"
+---
+
+<section class="pt-24 flex justify-center">
+<article class="max-w-6xl bg-white dark:bg-gray-800 dark:text-gray-400 py-4 rounded-xl text-black">
+
+    <section class="mb-9">
+        <h1 class="text-4xl font-bold text-center dark:text-white text-gray-600">TALLER DE TECNOLOGÍAS DE DRONES Y SATÉLITES APLICADAS AL SECTOR TURISMO, FORESTAL Y AGRICULTURA</h1>
+    </section>
+
+    <section class="flex flex-col px-40 max-sm:px-6 gap-8 ">
+        <div>
+            <Etiquetas text="Sesión 1, 2, 3"/>
+            <Tema text="INTRODUCCIÓN A LOS DRONES Y SENSORAMIENTO REMOTO"/>
+            <SubTemasT text="TEORIA FUNDAMENTAL" />
+            <Sub2TemasT text="Vehículo Aéreo No Tripulado (UAV)." />
+            <Sub2TemasT text="Usos y Aplicaciones de los UAV." />
+            <Sub2TemasT text="Funcionamiento de los componentes del drone." />
+            <Sub2TemasT text="Tipos de controladores de vuelo." />
+            <Sub2TemasT text="Descripción del sistema GNSS (Global Navigation Satellite System)." />
+            <Sub2TemasT text="Transmitter and Receiver Binding" />
+            <Sub2TemasT text="Teledetección y sensores remotos" />
+
+            <SubTemasT text="DRONES MULTIRROTOR" />
+            <Sub2TemasT text="Partes típicas de un multirrotor." />
+            <Sub2TemasT text="Aspectos relativos sobre costes, operación y mantenimiento." />
+            <Sub2TemasT text="Ejemplos de trabajos realizados con multirrotor." />
+            <Sub2TemasT text="Características de multirrotores existentes en el mercado." />
+            <Sub2TemasT text="Drones RTK/PPK." />
+
+            <SubTemasT text="DRONES DE ALA FIJA." />
+            <Sub2TemasT text="Partes típicas de un dron ala fija." />
+            <Sub2TemasT text="Aspectos relativos a costes, operación y mantenimiento." />
+            <Sub2TemasT text="Ejemplos de trabajos realizados con drones de ala fija." />
+            <Sub2TemasT text="Comparativas entre los drones de ala fija existentes en el mercado." />
+            <Sub2TemasT text="Comparativa entre misiones con drones multirrotor y ala fija." />
+
+            <SubTemasT text="DRONES HIBRIDOS" />
+            
+            <SubTemasT text="TIPOS DE CÁMARAS PARA DRONES" />
+            <Sub2TemasT text="RGB (red, green, blue), multiespectral, hiperespectral, radar, térmica." />
+
+            <SubTemasT text="PRINCIPIOS DE VUELO" />
+            <Sub2TemasT text="Uso del software para tarjeta de control de vuelo." />
+            <Sub2TemasT text="Descripción de los modos de vuelo." />
+            <Sub2TemasT text="Consideraciones de seguridad." />
+
+            <SubTemasT text="MARCO REGULATORIO Y NORMATIVA EN EL PERÚ" />
+            <Sub2TemasT text="Requisitos legales para pilotos emitido por la Dirección General de Aeronáutica Civil (DGAC) del Ministerio de Transportes y Comunicaciones." />
+        </div>
+    
+        <div>
+            <Etiquetas text="Sesión 4"/>
+            <Tema text="DISEÑO DE VUELO Y PREPARACION DE MISIONES"/>
+
+            <SubTemasT text="DISEÑO DE VUELO Y PREPARACION DE MISIONES" />
+            <Sub2TemasT text="Reconocimiento de componentes del Drone multirrotor DJI Mavic Air 2." />
+            <Sub2TemasT text="Check List pre y post vuelo (apps recomendadas)." />
+            <Sub2TemasT text="Calibraciones (brújula, IMU, control remoto y gimbal)." />
+            <Sub2TemasT text="Calibración de cámara ." />
+            <Sub2TemasT text="Vuelo estacionario, dinámico, configuración de misiones de vuelo y cámara." />
+            <Sub2TemasT text="Software de planificación de misiones - Dronelink: preparación de misión fotogramétrica RGB (topografía) y multiespectral." />
+            <Sub2TemasT text="Modos de adquisición de imágenes: fotografía, filmación, timelapse, quickshots." />
+            <Sub2TemasT text="Ejercicio 1: Vuelo de demostración paso a paso en la Universidad Amazónica de Madre de Dios." />
+
+            <SubTemasT text="INTRODUCCIÓN A LA FOTOGRAMETRÍA" />
+            <Sub2TemasT text="Definición y tipos de fotogrametría." />
+            <Sub2TemasT text="Componentes y aplicaciones de la fotogrametría." />
+            <Sub2TemasT text="Traslape longitudinal y transversal." />
+            <Sub2TemasT text="Ground Sample Distance (GSD)." />
+            <Sub2TemasT text="Fotogrametría analítica." />
+            <Sub2TemasT text="Fotogrametría con objetos cercanos." />
+
+            <SubTemasT text="PREPARACIÓN PARA SALIDA AL CAMPO" />
+            <Sub2TemasT text="Estudio de la zona de proyecto." />
+            <Sub2TemasT text="Principios básicos para la correcta planificación de vuelo para fotogrametría:" />
+            <Abc index="a" text="Configuración del plan de vuelo en la plataforma Dronelink " />
+            <Abc index="b" text="Ejecución del plan de vuelo usando Dronelink en dispositivo móvil " />
+
+            <SubTemasT text="PROCESAMIENTO DE LA INFORMACIÓN" />
+            <Sub2TemasT text="Procesamiento fotogramétrico con software para generación de ortomosaicos y modelos 3D." />
+            <Sub2TemasT text="Evaluación de la precisión obtenida en la toma de datos de puntos de apoyo y control." />
+            <Sub2TemasT text="Clasificación automática y manual de nube de puntos densa." />
+            <Sub2TemasT text="Procesado de agregados, mediciones lineales, superficie y cálculo volumétrico." />
+            <Sub2TemasT text="Exportar el proyecto procesado." />
+        </div>
+
+        <div>
+            <Etiquetas text="Sesión 5"/>
+            <Tema text="PRACTICA - APLICACIONES FOTOGRAMÉTRICAS"/>
+
+            <SubTemasT text="GENERACIÓN DE ORTOMOSAICOS Y MODELOS 3D" />   
+            <Sub2TemasT text="Ejercicio 2: Elaboración de ortomosaico de plano de la UNAMAD." />
+            <Sub2TemasT text="Ejercicio 3: Elaboración de modelo 3D de la UNAMAD." />
+            <Sub2TemasT text="Ejercicio 4: Elaboración de ortomosaico de una zona aledaña a ribera de río Tambopata." />
+            <Sub2TemasT text="Ejercicio 5: Elaboración de modelo digital DMS / curvas de nivel para análisis de avance de deterioro y erosión de suelos." />
+
+            <SubTemasT text="FUNDAMENTOS DE LA TELEDETECCIÒN" />   
+            <Sub2TemasT text="La radiación electromagnética." />
+            <Sub2TemasT text="El espectro electromagnético." />
+            <Sub2TemasT text="Índices multiespectrales." />
+            <Sub2TemasT text="Índices multiespectrales para la vegetación." />
+            <Sub2TemasT text="Fuentes de energía." />
+            <Sub2TemasT text="Interacción de la radiación con la atmósfera." />
+            <Sub2TemasT text="Interacción de la radiación con la superficie." />
+            <Sub2TemasT text="Firma o huella multiespectral." />
+
+            <SubTemasT text="IMÁGENES SATELITALES" />  
+            <Sub2TemasT text="Fuentes gratuitas de imágenes satelitales multiespectrales del mundo, búsqueda, descarga y procesamiento." />
+            <Sub2TemasT text="Introducción a características y formas de obtener imágenes del satélite peruano: Perú-SAT." />
+        </div>
+
+        <div>
+            <Etiquetas text="Sesión 6"/>
+            <Tema text="PRACTICA – ANALISIS MULTIESPECTRAL"/>
+
+            <SubTemasT text="PRE-PROCESAMIENTO DE IMAGENES MULTIESPECTRALES " /> 
+            <Sub2TemasT text="Ejercicio 6: generación de ortomosaicos y curvas de nivel a partir de imágenes RGB y multiespectral." />
+            <Sub2TemasT text="Ejercicio 7: zonificación (clustering) de índices multiespectrales." />
+
+            <SubTemasT text="PROCESAMIENTO DE IMAGENES MULTIESPECTRALES CON QGIS" /> 
+            <Sub2TemasT text="Introducción a QGIS." />
+            <Sub2TemasT text="Ejercicio 8: visualización de datos ráster y vectoriales." />
+            <Sub2TemasT text="Ejercicio 9: visualización de imágenes satelitales y multiespectral." />
+            <Sub2TemasT text="Proceso digital de imágenes: adquisición de imágenes, tratamiento digital, corrección de imágenes, cálculos de correlaciones biométricas y análisis estadístico ." />
+            <Sub2TemasT text="Operaciones entre bandas y cálculo de índices." />
+            <Sub2TemasT text="Ejercicio 10: Delimitación de humedales mediante análisis visual (fotointerpretación)." />
+            <Sub2TemasT text="Ejercicio 11: Delimitación de humedales mediante análisis espectral." />
+            <Sub2TemasT text="Ejercicio 12: Automatización de procesos mediante modelos con lenguaje GIS y Python." />
+        </div>
+    </section>
+
+
+</article>
+</section>

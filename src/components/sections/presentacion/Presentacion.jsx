@@ -10,6 +10,7 @@ export function Presentacion() {
       <div className="flex flex-row justify-center">
         <img src={logoCoati.src} alt="" className="h-[100px] max-sm:w-full max-sm:h-auto" />
       </div>
+
       <p className="text-center text-white text-2xl font-bold">
         III congreso Internacional <br /> Amazónico de tecnología e informática
         <br /> 2024
@@ -17,10 +18,20 @@ export function Presentacion() {
 
 			<Contador/>
 
-      <div className="absolute flex flex-row justify-between w-full px-5 bottom-0">
-        <img style={{maskImage: 'linear-gradient(black 80%, transparent);'}} src={leopardo.src} alt="" className="h-[60vh] object-cover max-lg:hidden" />
-        <img style={{maskImage: 'linear-gradient(black 80%, transparent);'}} src={guacamayo.src} alt="" className="h-[60vh] object-cover max-lg:hidden" />
+      <div className="absolute flex flex-row justify-between w-full px-5 bottom-0 z-[-1]">
+        <img style={{maskImage: 'linear-gradient(black 80%, transparent)'}} src={leopardo.src} alt="" className="h-[60vh] object-cover max-lg:hidden" />
+        <img style={{maskImage: 'linear-gradient(black 80%, transparent)'}} src={guacamayo.src} alt="" className="h-[60vh] object-cover max-lg:hidden" />
       </div>
+
+
+			<a href="https://docs.google.com/forms/d/e/1FAIpQLScI6ed6wAelZQdTrL3-JxyF6L1sge7n1s-kOp6ZTLPHQVgaOQ/viewform" 
+				target="__black"
+				className="flex flex-row justify-center"
+				>
+				<p className="bg-gradient-to-r from-primary-500 to-primary-800 font-bold text-white px-5 py-2 rounded-lg shadow-2xl">
+					¡Registrate!				
+				</p>
+			</a>
 
 	  <div className="absolute bottom-0 w-full text-primary-800 dark:text-transparent" >
         <svg xmlns="http://www.w3.org/2000/svg" className="w-full" viewBox="0 0 1440 300" height="50px" preserveAspectRatio="none">

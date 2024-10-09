@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import GetInvolved from "../components/sections/cta/GetInvolved.astro"
-
+import Talleres from "../components/sections/talleres/Talleres.astro";
 const navItems = [
   {
     href: "/",
@@ -28,18 +27,19 @@ const navItems = [
     text: "Patrocinadores",
   },
   {
-    href: "#",
+    href: "/hotel",
     text: "Hospedajes",
   },
   {
-    href: "/taller",
+    href: "#",
     text: "Talleres",
   }
 ];
+
 ---
 
-<Layout navItems={navItems} title="Hospedajes">
-	<main class="grid gap-20 md:gap-40">
-		<GetInvolved/>
+<Layout title="talleres del congreso" navItems={navItems}>
+	<main>
+		<Talleres />
 	</main>
 </Layout>

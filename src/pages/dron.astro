@@ -1,0 +1,21 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TallerDron from "../components/sections/talleres/TallerDron.astro";
+
+const navItems = [
+  {
+    href: "/taller",
+    text: "Talleres",
+  },
+  {
+    href: "/inteligencia",
+    text: "Taller de inteligencia artificial",
+  }
+];
+---
+
+<Layout title="información del taller de inteligencia artificial" navItems={navItems}>
+    <main>
+        <TallerDron/>
+    </main> 
+</Layout>

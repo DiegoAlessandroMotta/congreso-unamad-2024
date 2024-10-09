@@ -1,0 +1,25 @@
+---
+import Taller from "./components/Taller.astro";
+import { data } from "./data";
+---
+
+<section class="flex flex-col pt-24">
+    <section class="">
+    {
+        data.map((item) => (
+        <Taller
+            nombreTaller={item.nombreTaller}
+            nombrePonente={item.nombrePonente}
+            fotoPonente={item.fotoPonente.src}
+            linkMasInformacion={item.linkMasInformacion}
+            fotoBaner={item.fotoBaner.src}
+            orden={item.orden}
+            colorInicio={item.colorInicio}
+            colorFin={item.colorFin}
+            colorBtn={item.colorBtn} 
+            colorPonente={item.colorPonente}
+        />
+        ))
+    }
+    </section>
+</section>

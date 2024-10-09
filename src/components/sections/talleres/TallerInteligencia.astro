@@ -1,0 +1,52 @@
+---
+import Etiquetas from "./components/Etiquetas.astro"
+import SubTemasT from "./components/SubTemasT.astro"
+import Tema from "./components/Tema.astro"
+---
+
+<section class="pt-24 flex justify-center">
+<article class="max-w-6xl bg-white dark:bg-gray-800 dark:text-gray-400 py-4 rounded-xl text-black">
+
+    <section class="mb-9">
+        <h1 class="text-4xl font-bold text-center dark:text-white text-gray-600">TALLER DE INTELIGENCIA ARTIFICIAL PARA LA EDUCACIÓN Y EL TRABAJO</h1>
+    </section>
+
+    <section class="flex flex-col px-40 max-sm:px-6 gap-8 ">
+        <div>
+            <Etiquetas text="Módulo 1"/>
+            <Tema text="Introducción a la Inteligencia Artificial"/>
+            <SubTemasT text="Principales tecnologías y conceptos de IA." />
+            <SubTemasT text="Aplicaciones y herramientas. " />
+        </div>
+    
+        <div>
+            <Etiquetas text="Módulo 2"/>
+            <Tema text="Inteligencia Artificial en la Educación"/>
+            <SubTemasT text="Personalización del aprendizaje utilizando IAs." />
+            <SubTemasT text="Herramientas de IA para la evaluación y retroalimentación." />
+            <SubTemasT text="Casos de estudio: Uso de IA en instituciones educativas." />
+            <SubTemasT text="Consideraciones éticas en el uso de IA en educación." />
+        </div>
+    
+        <div>
+            <Etiquetas text="Módulo 3"/>
+            <Tema text="Inteligencia Artificial en el Trabajo"/>
+            <SubTemasT text="Automatización de procesos mediante IA." />
+            <SubTemasT text="IA para la toma de decisiones." />
+            <SubTemasT text="Ejemplos de IA en diferentes sectores laborales." />
+            <SubTemasT text="Implicaciones éticas y sociales de la IA en el empleo." />
+        </div>
+    
+
+        <div>
+            <Etiquetas text="Módulo 4"/>
+            <Tema text="Desarrollo e Implementación de Herramientas de IA"/>
+            <SubTemasT text="Metodologías para el desarrollo de soluciones de IA." />
+            <SubTemasT text="Pruebas y evaluación de herramientas de IA." />
+            <SubTemasT text="Integración de IA con sistemas existentes en educación y trabajo." />
+        </div>
+    </section>
+
+
+</article>
+</section>
