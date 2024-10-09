@@ -10,8 +10,21 @@ import anselmo from "./assets/anselmo rodriguez.webp"
 import baldo from "./assets/baldo luque.webp"
 import dany from "./assets/dany doriam.webp"
 import jaime from "./assets/jaime cesar prieto.webp"
+import cesar from "./assets/cesar.jpeg"
 
 export const data = [
+  {
+    nombre: "Cesar Armando Beltrán Castañon",
+    gradoAcademico: "Ingeniero",
+    biografia:"Profesor Principal e Investigador Senior en Pontificia Universidad Católica del Perú, Dpto. de Ingeniería, Sección Ing. Informática. Doctor en Bioinformática y Magister en Ciencia de la Computación por la USP Sao Paulo, Brasil. Estancia Post-Doctoral en Texas A&M University (2016). Es Presidente de la IEEE Computer Society Perú (2019-2020). Lider científico del Grupo de Inteligencia Artificial de la PUCP (IA-PUCP). Lider Científico del Centro de Innovación Científica y Desarrollo Tecnológico en Ciencias de la Computación de la PUCP. Ha dictado cátedra en diferentes universidades del país a nivel de graduación y postgrado. Sus líneas de investigación son: Machine Learning, Data Analytics, Deep Learning, Visión computacional, procesamiento de imágenes, algoritmos de recuperación de imágenes por contenido, Bioinformática, computación de alto desempeño.",
+    titlePonencia: "Modelos generativos multimodales",
+    estudio: "UNIVERSIDAD CATÓLICA DE SANTA MARÍA",
+    estudioAbreviado: "UCSM",
+    modalidad: '',
+    foto: cesar,
+    id:0,
+    dir_foto:'../assets/cesar.jpeg'
+  },
   {
     nombre: "Romario Diaz Holgado",
     gradoAcademico: "Ingeniero",
@@ -23,18 +36,6 @@ export const data = [
     foto: romario,
     id:0,
     dir_foto:'../assets/romario diaz.png'
-  },
-  {
-    nombre: "Álvaro Martín Aspilcueta Narvárez.",
-    gradoAcademico: "Ingeniero",
-    biografia:"Álvaro Martín Aspilcueta Narvárez es un ingeniero de sistemas e informática con una sólida trayectoria en ingeniería y tecnologías emergentes. Su formación académica en Ingeniería Mecánica y Eléctrica, junto con diversas especializaciones, le ha permitido aplicar sus conocimientos en el diseño de sistemas eléctricos y el mantenimiento industrial. Ha trabajado en proyectos innovadores para optimizar procesos y mejorar la eficiencia operativa. Su enfoque en el aprendizaje continuo lo ha llevado a especializarse en áreas como machine learning y la nube. Destacado por su adaptabilidad y habilidades de trabajo en equipo, Álvaro también domina el inglés, lo que le permite colaborar en proyectos internacionales y mantenerse actualizado en tendencias tecnológicas.",
-    titlePonencia: "Proposal and Evaluation of a Software Architecture for a Smart Campus Digital Twin",
-    estudio: "UNIVERSIDAD NACIONAL DE INGENIERIA",
-    estudioAbreviado: "UNI",
-    modalidad: 'Virtual',
-    foto: alvaro,
-    id:1,
-    dir_foto:alvaro.src
   },
   {
     nombre: "Norma Catacora",
