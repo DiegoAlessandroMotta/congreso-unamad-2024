@@ -23,8 +23,8 @@ const { className } = Astro.props;
   </Container>
 
   <!-- SECCIÓN DE HOTELES -->
-  <Container className="space-y-10 md:sapce-y-12">
-    <div class="grid gap-6">
+  <section class="space-y-10 md:sapce-y-12">
+    <div class="grid gap-6 mx-10 max-sm:mx-2">
       {
         data.hoteles.map((hotel) => {
           return (
@@ -41,5 +41,5 @@ const { className } = Astro.props;
         })
       }
     </div>
-  </Container>
+  </section>
 </section>
