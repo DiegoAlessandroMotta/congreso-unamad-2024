@@ -14,6 +14,19 @@ export interface Props {
     colorPonente: string
 }
 
+// const descargarPDF1 = () => {
+//     const link = document.createElement('a');
+//     link.href = '../pdf/TECNOLOGÍAS DE DRONES Y SATÉLITES APLICADAS AL SECTOR TURISMO.pdf';  // Cambia esto por la ruta correcta de tu PDF
+//     link.download = 'TECNOLOGÍAS DE DRONES Y SATÉLITES APLICADAS AL SECTOR TURISMO.pdf';        // Cambia esto por el nombre que deseas para el archivo
+//     link.click();
+// };
+
+// const descargarPDF2 = () => {
+//     const link = document.createElement('a');
+//     link.href = '../pdf/TALLER DE IA PARA LA EDUCACION.pdf';  // Cambia esto por la ruta correcta de tu PDF
+//     link.download = 'TALLER DE IA PARA LA EDUCACION.pdf';        // Cambia esto por el nombre que deseas para el archivo
+//     link.click();
+// };
 
 const {nombreTaller, nombrePonente, fotoPonente, linkMasInformacion, fotoBaner, className, orden, colorInicio, colorFin, colorBtn, colorPonente} = Astro.props;
 ---
@@ -38,8 +51,10 @@ const {nombreTaller, nombrePonente, fotoPonente, linkMasInformacion, fotoBaner, 
             </div>
         </div>
         <!-- fin de la seccion del ponente acargo -->
-        <a href={linkMasInformacion} class=` ${colorBtn} px-4 py-2 rounded-sm`>
-            Mas información
-        </a>
+        <div class="flex flex-row gap-4 flex-wrap">
+            <a href={linkMasInformacion} class=`${colorBtn} px-4 py-2 rounded-sm`>
+                Más información
+            </a>
+        </div>
     </section>
 </section>
