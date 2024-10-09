@@ -12,12 +12,11 @@ export function OverlayTest({gradoAcademico,foto,universidad,nombre,biografia, m
   return (
 		<div
 			className={`
-				${modalAbierto? "" : "hidden"} 
-				fixed inset-0 bg-gray-800 bg-opacity-75 z-50 h-[100vh]`}
+				${modalAbierto? "" : "hidden"} fixed inset-0 bg-gray-800 bg-opacity-75 z-50 text-white`}
 		>
-			<div className="flex mt-14 justify-center max-h-[100vh]">
+			<div className="flex mt-14 justify-center h-screen">
 				<div
-					className="flex relative flex-col bg-white rounded-lg max-w-[800px] max-h-[80vh] overflow-auto overscroll-contain"
+					className="flex relative flex-col dark:bg-[#202020de] bg-white rounded-lg max-w-[800px] max-h-[80vh] overflow-auto overscroll-contain"
 				>
 					{/*  Botón X de cierre  */}
 					<header
@@ -34,7 +33,7 @@ export function OverlayTest({gradoAcademico,foto,universidad,nombre,biografia, m
 
 					{/*  contenido del modal */}
 					<section
-						className="grid grid-cols-[1fr_auto] gap-3 p-4 max-lg:grid-cols-1 dark:bg-gray-100"
+						className="grid grid-cols-[1fr_auto] gap-3 p-4 max-lg:grid-cols-1 dark:bg-[#292929de] dark:text-white"
 					>
 						<div>
 							<div
@@ -42,7 +41,7 @@ export function OverlayTest({gradoAcademico,foto,universidad,nombre,biografia, m
 							>
 								<p
 									id="gradoAcademicoPonente"
-									className="text-center text-xl text-black font-bold"
+									className="text-center text-xl text-black dark:text-white font-bold"
 								>
 									{ gradoAcademico }
 								</p>
@@ -56,16 +55,16 @@ export function OverlayTest({gradoAcademico,foto,universidad,nombre,biografia, m
 										className="h-full object-cover"
 									/>
 								</div>
-								<p id="estudioPonente" className="text-center text-black font-semibold">
+								<p id="estudioPonente" className="text-center text-black dark:text-white font-semibold">
 									{universidad}
 								</p>
 							</div>
 						</div>
 						<div>
-							<h2 id="nombrePonente" className="text-2xl font-bold text-black mb-4">
+							<h2 id="nombrePonente" className="text-2xl text-black font-bold dark:text-white mb-4">
 								{nombre}
 							</h2>
-							<p id="biografiaPonente" className="text-gray-700 mb-2">
+							<p id="biografiaPonente" className="dark:text-gray-300 text-black mb-2">
 								{biografia}
 							</p>
 						</div>

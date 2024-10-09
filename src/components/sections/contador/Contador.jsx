@@ -30,22 +30,22 @@ return (
     <div className="text-white p-6 text-center">
         <h1 className="text-3xl font-bold">Inicia en:</h1>
         <div className="flex justify-center items-center text-4xl space-x-4">
-            <div className='bg-gray-800 p-2 rounded-lg shadow-md'>
+            <div className='bg-[#2e2e2ead] p-2 rounded-lg shadow-md'>
                 <p className="font-mono">{days}</p>
                 <p className="text-sm">Días</p>
             </div>
             <p className="font-mono">:</p>
-            <div className='bg-gray-800 p-2 rounded-lg shadow-md'>
+            <div className='bg-[#2e2e2ead] p-2 rounded-lg shadow-md'>
                 <p className="font-mono">{hours}</p>
                 <p className="text-sm">Horas</p>
             </div>
             <p className="font-mono">:</p>
-            <div className='bg-gray-800 p-2 rounded-lg shadow-md'>
+            <div className='bg-[#2e2e2ead] p-2 rounded-lg shadow-md'>
                 <p className="font-mono">{minutes}</p>
                 <p className="text-sm">Minutos</p>
             </div>
             <p className="font-mono">:</p>
-            <div className='bg-gray-800 p-2 rounded-lg shadow-md'>
+            <div className='bg-[#2e2e2ead] p-2 rounded-lg shadow-md'>
                 
                 <p className="font-mono">{seconds}</p>
                 <p className="text-sm">Segundos</p>
