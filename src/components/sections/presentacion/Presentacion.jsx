@@ -2,6 +2,7 @@ import fotoAmazonas from "./assets/amazonia.webp";
 import logoCoati from "./assets/logoCoati.webp";
 import guacamayo from "./assets/guacamayo.png";
 import leopardo from "./assets/leopard.png";
+import { Contador } from '../contador/Contador'; // Asegúrate de tener la ruta correcta
 
 export function Presentacion() {
   return (
@@ -13,7 +14,7 @@ export function Presentacion() {
         III congreso Internacional <br /> Amazónico de tecnología e informática
         <br /> coati 2024
       </p>
-
+      <Contador client:load />
       <div className="absolute flex flex-row justify-between w-full top-[-4px] px-10">
         <img src={leopardo.src} alt="" className="h-[380px] object-cover" />
         <img src={guacamayo.src} alt="" className="w-[380px] object-cover" />

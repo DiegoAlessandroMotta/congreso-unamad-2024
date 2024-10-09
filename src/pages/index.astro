@@ -6,7 +6,8 @@ import KeyServices from "../components/sections/services/KeyServices.astro";
 import { TimeLine } from "../components/sections/timeLine/TimeLine"
 import Layout from "../layouts/Layout.astro";
 import { CardsPonentes } from "../components/sections/featured/CardsPonentes";
-import { Presentacion } from "../components/sections/presentacion/Presentacion"
+import { Presentacion } from "../components/sections/presentacion/Presentacion";
+
 
 const navItems = [
   {
@@ -45,8 +46,7 @@ const navItems = [
   <main class="grid gap-0">
 
     <!-- <Hero /> -->
-    <Presentacion />
-
+    <Presentacion client:load />
     <!-- PRESENTACIÓN -->
     <!-- <EnvironmentalImpact /> -->
     
