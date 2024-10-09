@@ -9,7 +9,7 @@ export function TimeLine(){
   const [numeroDia, setNumeroDia] = useState(0);
 
   return (
-    <section id="LineaDeTiempo" className="flex justify-center bg-white dark:bg-[#2e2e2ead] pt-10 pb-10">
+    <section id="LineaDeTiempo" className="flex justify-center bg-white dark:bg-[#000000b0] pt-10 pb-10">
       <article className="flex flex-col gap-4 pr-5 pl-5 md:w-[650px] max-md:w-full">
         <h2 className="tracking-wide antialiased mb-5 text-lg md:text-4xl font-extrabold text-center">
           <p
