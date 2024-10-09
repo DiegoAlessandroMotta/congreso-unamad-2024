@@ -98,9 +98,13 @@ const { navItems } = Astro.props;
           }
           
           if (ubicacionPrincipal <= 10) {
-            nav_bar.classList.remove("bg-[#000000b0]");
+            nav_bar.classList.remove("bg-[#2e2e2ead]"); 
+            nav_bar.classList.remove("rounded-xl");
+            nav_bar.classList.remove("text-white");
           } else {
-            nav_bar.classList.add("bg-[#000000b0]");
+            nav_bar.classList.add("bg-[#2e2e2ead]");
+            nav_bar.classList.add("rounded-full");
+            nav_bar.classList.remove("text-white");
           }
           ubicacionPrincipal = desplazamiento;
       };

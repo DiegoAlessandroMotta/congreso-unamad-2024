@@ -11,13 +11,9 @@ export interface Props {
 const { className } = Astro.props;
 ---
 
-<section id="services" class=`${className}`>
-  
-  <!-- <Container size="wide">
-    <Title2>{servicesSectionData.title}</Title2>
-  </Container> -->
+<section id="services" class=`${className} w-full mb-10 flex flex-row justify-center`>
   <Container size="wide">
-    <div class="flex flex-col text-center  items-center justify-center ">
+    <div class="flex flex-col text-center  items-center justify-center mt-16 bg-white rounded-lg overflow-hidden dark:bg-[#000000b0]">
       <ServiceCopyTextCard
         className="md:col-span-2 flex flex-col"
         subheading={servicesSectionData.subheading}
