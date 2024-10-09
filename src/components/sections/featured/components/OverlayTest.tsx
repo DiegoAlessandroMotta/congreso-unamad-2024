@@ -33,43 +33,42 @@ export function OverlayTest({gradoAcademico,foto,universidad,nombre,biografia, m
 					{/*  fin Botón X de cierre  */}
 
 					{/*  contenido del modal */}
-					<section
-						className="grid grid-cols-[1fr_auto] gap-3 p-4 max-lg:grid-cols-1 dark:bg-gray-100"
-					>
-						<div>
-							<div
-								className="sticky top-0 max-lg:flex max-lg:flex-col max-lg:items-center"
-							>
-								<p
-									id="gradoAcademicoPonente"
-									className="text-center text-xl text-black font-bold"
-								>
-									{ gradoAcademico }
-								</p>
-								<div
-									id="imagenes"
-									className="flex justify-center items-center w-60 h-60 overflow-hidden rounded-full shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]"
-								>
-									<img
-										src={foto}
-										alt="foto del ponente"
-										className="h-full object-cover"
-									/>
-								</div>
-								<p id="estudioPonente" className="text-center text-black font-semibold">
-									{universidad}
-								</p>
-							</div>
-						</div>
-						<div>
-							<h2 id="nombrePonente" className="text-2xl font-bold text-black mb-4">
-								{nombre}
-							</h2>
-							<p id="biografiaPonente" className="text-gray-700 mb-2">
-								{biografia}
-							</p>
-						</div>
-					</section>
+					<section className="p-4 dark:bg-gray-100">
+  <div className="flex items-start gap-4">
+    <div
+      id="imagenes"
+      className="flex-shrink-0 w-60 h-60 overflow-hidden rounded shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]"
+    >
+      <img
+        src={foto}
+        alt="foto del ponente"
+        className="h-full w-full object-cover"
+      />
+    </div>
+    <div className="flex-grow">
+      <p
+        id="gradoAcademicoPonente"
+        className="text-center text-xl text-black font-bold mb-2"
+      >
+        {gradoAcademico}
+      </p>
+      <h2 id="nombrePonente" className="text-2xl font-bold text-black mb-4">
+        {nombre}
+      </h2>
+	  <p id="estudioPonente" className="text-center text-black font-semibold">
+        {universidad}
+      </p>
+      <p
+        id="biografiaPonente"
+        className="text-gray-700 mb-2 text-justify"
+      >
+        {biografia}
+      </p>
+      
+    </div>
+  </div>
+</section>
+
 					{/*  fin contenido del modal */}
 
 					{/* Botón de cierre */}
