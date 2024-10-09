@@ -20,19 +20,12 @@ const { className } = Astro.props;
     className="mx-auto flex flex-col items-center justify-center text-center"
   >
     <!-- <Title2>{testimonialsSection.title}</Title2> -->
-    <SubTitle2>
+    <SubTitle2 className="text-white">
       <GradiantText> {testimonialsSection.subheading1_1}</GradiantText><br />
       {testimonialsSection.subheading1_2}
     </SubTitle2>
   </Container>
-  <Container className="flex flex-col items-center ">
+  <section>
     <Carrusel client:visible />
-    <!-- {
-      testimonialsSection.testimonials.map((testimonial) => (
-        <LogoPatrocinador direccion={testimonial.direccion} logo={testimonial.logo.src} nombre={testimonial.name} styleRedondear={testimonial.styleRedondear}/>
-      )) 
-    } -->
-    <!-- <div class="flex flex-row flex-wrap justify-center gap-5">
-    </div> -->
-  </Container>
+  </section>
 </section>

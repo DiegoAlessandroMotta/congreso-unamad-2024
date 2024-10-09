@@ -32,47 +32,43 @@ const Carrusel = () => {
     };
 
     return (
-        <div className="main-section ">
-            <div className="carousel_content ">
-                <div className="cards_content">
-                    <main
-                        id="carousel"
-                        onMouseEnter={() => setIsHovered(true)}
-                        onMouseLeave={() => setIsHovered(false)}
+        <div className="cards_content w-full flex-col items-center">
+            <main
+                id="carousel"
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+            >
+                {items.map((item, index) => (
+                    <div
+                        key={index}
+                        className={`item pos${index + 1} ${
+                            index === currentIndex
+                                ? "active"
+                                : index === (currentIndex + 1) % items.length
+                                ? "next"
+                                : index === (currentIndex - 1 + items.length) % items.length
+                                ? "prev"
+                                : "inactive"
+                        } dark:bg-[#000000b0]`}
                     >
-                        {items.map((item, index) => (
-                            <div
-                                key={index}
-                                className={`item pos${index + 1} ${
-                                    index === currentIndex
-                                        ? "active"
-                                        : index === (currentIndex + 1) % items.length
-                                        ? "next"
-                                        : index === (currentIndex - 1 + items.length) % items.length
-                                        ? "prev"
-                                        : "inactive"
-                                } dark:bg-[#000000b0]`}
+                        <div className="body_card ">
+                            <a
+                                href={item.direccion}
+                                className={`w-fit h-32 shrink-0 overflow-hidden ${item.styleRedondear}`}
                             >
-                                <div className="body_card ">
-                                    <a
-                                        href={item.direccion}
-                                        className={`w-fit h-32 shrink-0 overflow-hidden ${item.styleRedondear}`}
-                                    >
-                                        <img
-                                            className="h-full object-cover"
-                                            src={item.logo.src}
-                                            alt={"logo de "+item.name}
-                                        />
-                                    </a>
-                                </div>
-                                <div className="footer_card">{item.name}</div>
-                            </div>
-                        ))}
-                    </main>
-                    <div className="buttons_groups">
-                        <Buttons />
+                                <img
+                                    className="h-full object-cover"
+                                    src={item.logo.src}
+                                    alt={"logo de "+item.name}
+                                />
+                            </a>
+                        </div>
+                        <div className="footer_card">{item.name}</div>
                     </div>
-                </div>
+                ))}
+            </main>
+            <div className="buttons_groups">
+                <Buttons />
             </div>
         </div>
     );
