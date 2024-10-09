@@ -22,25 +22,13 @@ export function FeaturedProyetTest({nombre,titlePonencia,estudio,foto,idPonente,
 						className="w-full h-96 object-cover group-hover:scale-105 duration-300 ease-in-out"
 					/>
 				</div>
-				<svg
-					className="absolute top-[-1px] start-0 fill-base dark:fill-base-dark-800"
-					xmlns="http://www.w3.org/2000/svg"
-					viewBox="0 0 400 75"
-				>
-					<path d="M0 0l400 0L400 75 0 25Z"></path>
-				</svg>
+				
 				<p
-					className="absolute top-0 end-0 m-3 text-end text-xl text-primary-900/50 dark:text-primary/70 font-bold"
+					className="absolute top-0 end-0 pr-2 pl-1 rounded-[0px_0px_0px_10px] text-end text-xl text-primary-900/50 dark:text-primary/70 font-bold bg-white dark:bg-base-dark-700"
 				>
 					{estudio}
 				</p>
-				<svg
-					className="absolute bottom-[-1px] start-0 fill-base dark:fill-base-dark-800"
-					xmlns="http://www.w3.org/2000/svg"
-					viewBox="0 -50 400 50"
-				>
-					<path d="M0 0l400 0L0-50Z"></path>
-				</svg>
+				
 			</div>
 			<div className="grid grid-cols-1 content-between w-full h-full p-6">
 				<h3 className={`text-2xl font-bold leading-tight mb-4 dark:opacity-70  nombre_date`}>
