@@ -45,21 +45,21 @@ const navItems = [
 
 ---
 
-<Layout navItems={navItems} title="Congreso UNAMAD 2024">
+<Layout navItems={navItems} title="Congreso UNAMAD 2024" client:visible >
   <main class="grid gap-0">
 
     <Presentacion client:load />
     <!-- PRESENTACIÓN -->
     
-    <!-- <EnvironmentalImpact /> -->
+    <EnvironmentalImpact />
     
     <!-- OBJETIVOS -->
-    <!-- <KeyServices /> -->
     
     <CardsPonentes client:visible/>
-
+    
     <TimeLine client:visible/>
     <CustomerTestimonials />
+    <KeyServices />
     
   </main>
 </Layout>
