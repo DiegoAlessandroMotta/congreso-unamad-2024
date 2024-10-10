@@ -43,6 +43,7 @@ export function CardsPonentes({estilos=""}: Props){
 								idPonente={key}
 								setIdPonente={setIdPonente}
 								abrirModal={()=>{setModalAbierto(true)}}
+								bandera={ponente.bandera.src}
 							/>
 						))
 					}

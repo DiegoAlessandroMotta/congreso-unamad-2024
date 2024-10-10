@@ -12,6 +12,10 @@ import dany from "./assets/dany doriam.webp"
 import jaime from "./assets/jaime cesar prieto.webp"
 import cesar from "./assets/cesar.jpeg"
 
+import bolivia from "./banderas/bolivia.jpg"
+import peru from "./banderas/peru.jpg"
+import brasil from "./banderas/brasil.jpg"
+
 export const data = [
   {
     nombre: "Cesar Armando Beltrán Castañon",
@@ -23,7 +27,8 @@ export const data = [
     modalidad: '',
     foto: cesar,
     id:0,
-    dir_foto:'../assets/cesar.jpeg'
+    dir_foto:'../assets/cesar.jpeg',
+    bandera: peru
   },
   {
     nombre: "Romario Diaz Holgado",
@@ -35,7 +40,8 @@ export const data = [
     modalidad: '',
     foto: romario,
     id:0,
-    dir_foto:'../assets/romario diaz.png'
+    dir_foto:'../assets/romario diaz.png',
+    bandera: peru
   },
   {
     nombre: "Norma Catacora",
@@ -47,7 +53,8 @@ export const data = [
     modalidad: 'Presencial',
     foto: norma,
     id:2,
-    dir_foto:norma.src
+    dir_foto:norma.src,
+    bandera: peru
   },
   {
     nombre: "Luis José Díaz López",
@@ -59,7 +66,8 @@ export const data = [
     modalidad: 'Presencial',
     foto: luis,
     id:3,
-    dir_foto:luis.src
+    dir_foto:luis.src,
+    bandera: peru
   },
   {
     nombre: "PONCE ATENCIO YALMAR TEMISTOCLES",
@@ -71,7 +79,8 @@ export const data = [
     modalidad: 'Virtual',
     foto: yalmar,
     id:4,
-    dir_foto:yalmar.src
+    dir_foto:yalmar.src,
+    bandera: peru
   },
   {
     nombre: "Luis Alberto Holgado Apaza",
@@ -83,7 +92,8 @@ export const data = [
     modalidad: 'Presencial',
     foto: holgado,
     id:5,
-    dir_foto:holgado.src
+    dir_foto:holgado.src,
+    bandera: peru
   },
   {
     nombre: "Jaffet Sillo Sosa",
@@ -95,7 +105,8 @@ export const data = [
     modalidad: 'Presencial',
     foto: sillo,
     id:6,
-    dir_foto:sillo.src
+    dir_foto:sillo.src,
+    bandera: peru
 
   },
   {
@@ -108,7 +119,8 @@ export const data = [
     modalidad: 'Presencial',
     foto: honorario,
     id:7,
-    dir_foto:honorario.src
+    dir_foto:honorario.src,
+    bandera: peru
   },
   {
     nombre: " Diodomiro Baldomero Luque Carcasi",
@@ -120,7 +132,8 @@ export const data = [
     modalidad: 'Presencial',
     foto: baldo,
     id:9,
-    dir_foto:baldo.src
+    dir_foto:baldo.src,
+    bandera: peru
   },
   {
     nombre: " DANY DORIAN ISUIZA PÉREZ ",
@@ -132,7 +145,8 @@ export const data = [
     modalidad: 'Presencial',
     foto: dany ,
     id:10,
-    dir_foto:dany.src
+    dir_foto:dany.src,
+    bandera: peru
   },
   {
     nombre: " Jaime César Prieto Luna ",
@@ -144,6 +158,7 @@ export const data = [
     modalidad: 'Presencial',
     foto: jaime ,
     id:11,
-    dir_foto:jaime.src
+    dir_foto:jaime.src,
+    bandera: peru
   }
 ];

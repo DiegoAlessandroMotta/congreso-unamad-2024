@@ -3,12 +3,13 @@ interface Props {
   titlePonencia: string,
   estudio: string,
   foto: ImageMetadata,
+  bandera: string,
 	idPonente: number,
 	setIdPonente: (id: number)=>void,
 	abrirModal: ()=>void
 }
 
-export function FeaturedProyetTest({nombre,titlePonencia,estudio,foto,idPonente,setIdPonente, abrirModal}: Props){
+export function FeaturedProyetTest({nombre,titlePonencia,estudio,foto,idPonente,setIdPonente, abrirModal, bandera}: Props){
 	return (
 		<div
 			id = {idPonente+""}
@@ -23,6 +24,11 @@ export function FeaturedProyetTest({nombre,titlePonencia,estudio,foto,idPonente,
 					/>
 				</div>
 				
+				{/* bandera */}
+				<div className="absolute top-2 left-2 h-[40px] w-fit overflow-hidden">
+					<img src={bandera} className="object-cover h-full"  alt="bandera del ponente" />
+				</div>
+
 				<p
 					className="absolute top-0 end-0 pr-2 pl-1 rounded-[0px_0px_0px_10px] text-end text-xl text-primary-900/50 dark:text-primary/70 font-bold bg-white dark:bg-base-dark-700"
 				>
