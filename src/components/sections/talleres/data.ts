@@ -1,13 +1,13 @@
 import dron from './assets/dron.png'
-import inteligencia from './assets/inteligencia-artificial.png'
-import ponente1 from './assets/baldo luque.webp'
-import ponente2 from './assets/anselmo rodriguez.webp'
+import inteligencia from './assets/inteligencia-artificial.png';
+import luisJose from "./assets/luis jose.webp";
+import ponceAtencio from "./assets/yalmar temistoqles.webp";
 
 export const data = [
     {
         nombreTaller: "TALLER DE TECNOLOGÍAS DE DRONES Y SATÉLITES APLICADAS AL SECTOR TURISMO, FORESTAL Y AGRICULTURA",
-        nombrePonente: "Agusto Soto Motencho Raquita",
-        fotoPonente: ponente1,
+        nombrePonente: "Luis José Díaz López",
+        fotoPonente: luisJose,
         linkMasInformacion: "/dron",
         fotoBaner: dron,
         orden: true,
@@ -19,8 +19,8 @@ export const data = [
     },
     {
         nombreTaller: "TALLER DE INTELIGENCIA ARTIFICIAL PARA LA EDUCACIÓN Y EL TRABAJO",
-        nombrePonente: "Dany Dorian Isuiza Pérez",
-        fotoPonente: ponente2,
+        nombrePonente: "Ponce Atencio Yalmar Temistocles",
+        fotoPonente: ponceAtencio,
         linkMasInformacion: "/inteligencia",
         fotoBaner: inteligencia,
         orden: false,

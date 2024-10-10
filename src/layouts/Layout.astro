@@ -2,6 +2,8 @@
 import Navbar from "./Navbar.astro";
 import Footer from "./Footer.astro";
 import fotoAmazonia from "./assets/amazonia.webp"
+import favicon from "./assets/favicon.png"
+
 interface item{
   href: string,
   text: string
@@ -19,7 +21,7 @@ const { title, navItems } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="https://portal.unamad.edu.pe/img/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href={favicon.src} />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <meta
