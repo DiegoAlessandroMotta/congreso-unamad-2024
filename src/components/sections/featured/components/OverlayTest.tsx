@@ -41,7 +41,7 @@ export function OverlayTest({
 				<div className="flex max-lg:flex-col gap-4">
 					<div
 						id="imagenes"
-						className="flex-shrink-0 sticky top-4 max-lg:flex max-lg:flex-row max-lg:w-full max-lg:justify-center  w-60 h-60 overflow-hidden rounded shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]"
+						className="flex-shrink-0 xl:sticky top-4 max-lg:flex max-lg:flex-row max-lg:w-full max-lg:justify-center  w-60 h-60 overflow-hidden rounded shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]"
 					>
 						<img
 						src={foto}
