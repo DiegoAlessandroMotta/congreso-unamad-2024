@@ -32,22 +32,24 @@ import { data } from "./data";
             idBtn={data[1].idBtn}
         />
         <script>
-            document.getElementById("dron")?.addEventListener( "click", () => {
-                console.log("buenas tardes, el id del botón es: " + "dron");
-
-                const link = document.createElement('a');
-                link.href = './pdf/dron.pdf'; 
-                link.download = 'TECNOLOGÍAS DE DRONES Y SATÉLITES APLICADAS AL SECTOR TURISMO, FORESTAL Y AGRICULTURA.pdf';        // Cambia esto por el nombre que deseas para el archivo
-                link.click();
-            });
-            document.getElementById("inteligencia")?.addEventListener( "click", () => {
-                console.log("buenas tardes, el id del botón es: " + "inteligencia");
-
-                const link = document.createElement('a');
-                link.href = './pdf/inteligencia.pdf';  
-                link.download = 'INTELIGENCIA ARTIFICIAL PARA LA EDUCACIÓN Y EL TRABAJO.pdf'; 
-                link.click();
-            });
+            document.addEventListener('astro:page-load', () => {
+                document.getElementById("dron")?.addEventListener( "click", () => {
+                    console.log("buenas tardes, el id del botón es: " + "dron");
+    
+                    const link = document.createElement('a');
+                    link.href = './pdf/dron.pdf'; 
+                    link.download = 'TECNOLOGÍAS DE DRONES Y SATÉLITES APLICADAS AL SECTOR TURISMO, FORESTAL Y AGRICULTURA.pdf';        // Cambia esto por el nombre que deseas para el archivo
+                    link.click();
+                });
+                document.getElementById("inteligencia")?.addEventListener( "click", () => {
+                    console.log("buenas tardes, el id del botón es: " + "inteligencia");
+    
+                    const link = document.createElement('a');
+                    link.href = './pdf/inteligencia.pdf';  
+                    link.download = 'INTELIGENCIA ARTIFICIAL PARA LA EDUCACIÓN Y EL TRABAJO.pdf'; 
+                    link.click();
+                });
+            })
         </script>
     </section>
 </section>
