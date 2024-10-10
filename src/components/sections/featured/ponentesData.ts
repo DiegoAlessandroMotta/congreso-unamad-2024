@@ -11,25 +11,114 @@ import baldo from "./assets/baldo luque.webp"
 import dany from "./assets/dany doriam.webp"
 import jaime from "./assets/jaime cesar prieto.webp"
 import cesar from "./assets/cesar.jpeg"
+import ana from "./assets/ana beatriz alvares mamani.png"
+import biodimio from "./assets/biodomio baldomero luque.png"
+import marco_antonio from "./assets/marco antonio poma choquehuanca.png"
+import rene_emigdio from "./assets/rene emigdio yana choque.png"
+import juan_Carlos from "./assets/juan carlos huanca guanca.png"
 
 import bolivia from "./banderas/bolivia.jpg"
 import peru from "./banderas/peru.jpg"
 import brasil from "./banderas/brasil.jpg"
 
 export const data = [
+  
   {
     nombre: "Cesar Armando Beltrán Castañon",
-    gradoAcademico: "Ingeniero",
+    gradoAcademico: "Doctor",
     biografia:"Profesor Principal e Investigador Senior en Pontificia Universidad Católica del Perú, Dpto. de Ingeniería, Sección Ing. Informática. Doctor en Bioinformática y Magister en Ciencia de la Computación por la USP Sao Paulo, Brasil. Estancia Post-Doctoral en Texas A&M University (2016). Es Presidente de la IEEE Computer Society Perú (2019-2020). Lider científico del Grupo de Inteligencia Artificial de la PUCP (IA-PUCP). Lider Científico del Centro de Innovación Científica y Desarrollo Tecnológico en Ciencias de la Computación de la PUCP. Ha dictado cátedra en diferentes universidades del país a nivel de graduación y postgrado. Sus líneas de investigación son: Machine Learning, Data Analytics, Deep Learning, Visión computacional, procesamiento de imágenes, algoritmos de recuperación de imágenes por contenido, Bioinformática, computación de alto desempeño.",
     titlePonencia: "Modelos generativos multimodales",
-    estudio: "UNIVERSIDAD CATÓLICA DE SANTA MARÍA",
-    estudioAbreviado: "UCSM",
-    modalidad: '',
+    estudio: "Pontificia Universidad Católica del Perú",
+    estudioAbreviado: "PUCP",
+    modalidad: 'presencial',
     foto: cesar,
     id:0,
-    dir_foto:'../assets/cesar.jpeg',
     bandera: peru
   },
+  {
+    nombre: "Ana Beatriz Alvarez Mamani",
+    gradoAcademico: "Doctora",
+    biografia:"Ana Beatriz Álvarez Mamani es una destacada ingeniera electrónica y académica peruana. Nació en Perú y se graduó en Ingeniería Electrónica en el año 2000 por la Universidad Nacional del Altiplano (UNAP). Más tarde, en 2013, obtuvo el título de Ingeniera Electricista de la Universidad Federal de Minas Gerais (UFMG) en Brasil.Su formación académica continuó con un Mestrado en Ingeniería Eléctrica en 2004 y un Doutorado en Ingeniería Eléctrica en 2011, ambos obtenidos en la Universidad Estatal de Campinas (UNICAMP), Brasil. Durante su doctorado, realizó una estancia de investigación en la Universidad de Alcalá de Henares (UAH) en España, entre 2008 y 2009, como parte del proyecto EINTA, que se centró en el desarrollo de espacios inteligentes en tecnología asistiva.Después de completar su doctorado, Ana Beatriz llevó a cabo un postdoctorado en UNICAMP de 2011 a 2013, trabajando en el proyecto DesTINe, que se enfocaba en el desarrollo de tecnologías de la información aplicadas a la neurología. Más recientemente, entre 2018 y 2019, realizó una estancia postdoctoral en la Universidad Nacional San Antonio Abad del Cusco (UNSAAC), Perú, donde investigó la utilización de vehículos aéreos no tripulados (UAVs) en la agricultura de precisión, contribuyendo al desarrollo de estructuras adaptativas para el sensado remoto de la cobertura forestal.Actualmente, es profesora efectiva en el Centro de Ciencias Exactas y Tecnológicas de la Universidad Federal del Acre (Ufac) en Brasil. Además, coordina el Proyecto PD de Investigaciones Aplicadas en Visión e Inteligencia Computacional (PAVIC-Lab), en colaboración con Motorola, Flextronics y FUNDAPE.",
+    titlePonencia: "INTELIGENCIA ARTIFICIAL GENERATIVA PARA CREACIÓN DE CONTENIDO VISUAL EN VISIÓN COMPUTACIONAL",
+    estudio: "Universidade Federal do Acre",
+    estudioAbreviado: "UFA",
+    modalidad: 'Presencial',
+    foto: ana,
+    id:1,
+    bandera: brasil
+  },{
+    nombre: "Diodomio Baldomero Luque Carcasi",
+    gradoAcademico: "Doctor",
+    biografia:"El Doctor Diodomiro Baldomero Luque Carcasi, es especialista en las áreas de proyecto electromagnético de Generadores Síncronos, Electrónica de Potencia, Energías Renovables e Inteligencia Artificial. Es autor de inúmeros trabajos científicos publicados en revistas y conferencias; es revisor de trabajos científicos en las áreas de Máquinas Eléctricas Rotativas, Electrónica de Potencia y Energías Renovables. Ha actuado en diversos proyectos de desarrollo tecnológico «R&D» junto a la Universidad de Padua, UNIPID, Italia. Realizó un Post-Doctorado en la «Universidad Federal do ABC» donde desarrolló actividades científicas orientadas a las redes inteligentes «Smart Grids», fue asesor principal de la Comisión de Ciencia, Innovación y Tecnología del Congreso de la República del Perú. Actualmente es profesor adjunto de la «Universidad Federal del Acre, UFAC», es miembro titular del programa de posgrado en Ciencias de la Computación, PGCC.",
+    titlePonencia: "IOT EN EL CONTEXTO DE LAS CIUDADES INTELIGENTES Y EL DESARROLLO REGIONAL",
+    estudio: "Universidade Federal do Acre",
+    estudioAbreviado: "UFA",
+    modalidad: 'Presencial',
+    foto: biodimio,
+    id:2,
+    bandera: brasil
+  },
+  {
+    nombre: "Anselmo Fortunato Ruiz Rodriguez",
+    gradoAcademico: "Doctor",
+    biografia:"Anselmo Fortunato Ruiz Rodríguez nació el 21 de abril de 1960 en Capellanía, una región del norte del Perú, famosa por sus impresionantes paisajes naturales y su rica cultura. Es hijo único de Francisco Ruiz Megarejo y Enriqueta Carmen Rodríguez Vega, ambos de nacionalidad peruana. Actualmente, Anselmo es padre de cuatro hijos: Suely Angélica Ruiz Málaga, Feliz Albert Ruiz Damasceno, Ana Carolina Ruiz Damasceno y Carmen Júlia Nascimento Ruiz.Anselmo es Profesor Asociado IV y se graduó como Bacharel en Física en la Universidad Nacional Mayor de San Marcos (UNMSM) de Lima, Perú, entre 1980 y 1988. Su trayectoria académica incluye un Mestrado en Física Experimental, obtenido en 1997 en la Universidad de Brasilia (UnB), y un Doutorado en la misma especialidad, que completó en 2003 en la UnB. Posteriormente, realizó un postdoctorado en Nanociencia y Nanobiotecnología en 2007 en la misma universidad.En su labor académica, Anselmo es miembro titular del Colegiado y Vicecoordinador del Curso de Doutorado en Biodiversidad y Biotecnología de la Red Bionorte. También es miembro del Colegiado del Curso de Pós-Graduação en Ciências, Inovação e Tecnologia da Amazônia (CITA) y en Ciencias de la Salud en la Amazonía Occidental. Además, coordina el Laboratorio de Nanobiotecnología, donde impulsa investigaciones en el ámbito de la física y sus aplicaciones en biotecnología.Con una sólida formación y una vasta experiencia en el campo de la física, Anselmo Fortunato Ruiz Rodríguez se ha consolidado como un referente en la investigación y educación, contribuyendo al avance del conocimiento en su área y al desarrollo de proyectos innovadores en la región amazónica.",
+    titlePonencia: "LOS DESAFÍOS DE LA ENSEÑANZA, INVESTIGACIÓN Y EXTENSIÓN DE LA INFORMÁTICA EN LA AMAZONIA",
+    estudio: "Universidade Federal do Acre",
+    estudioAbreviado: "UFA",
+    modalidad: 'Presencial',
+    foto: anselmo,
+    id:3,
+    bandera: brasil
+  },
+  {
+    nombre: "Marco Antonio Poma Choquehuanca",
+    gradoAcademico: "Ingeniero",
+    biografia:"",
+    titlePonencia: "LOS DESAFÍOS DE LA ENSEÑANZA, INVESTIGACIÓN Y EXTENSIÓN DE LA INFORMÁTICA EN LA AMAZONIA",
+    estudio: "Universidad Amazónica de Pando",
+    estudioAbreviado: "UAP",
+    modalidad: 'Presencial',
+    foto: marco_antonio,
+    id:4,
+    bandera: bolivia
+  },
+  {
+    nombre: "Rene Emigdio Yana Choque",
+    gradoAcademico: "Ingeniero",
+    biografia:"",
+    titlePonencia: "LOS DESAFÍOS DE LA ENSEÑANZA, INVESTIGACIÓN Y EXTENSIÓN DE LA INFORMÁTICA EN LA AMAZONIA",
+    estudio: "Universidad Amazónica de Pando",
+    estudioAbreviado: "UAP",
+    modalidad: 'Presencial',
+    foto:rene_emigdio,
+    id:5,
+    bandera: bolivia
+  },
+  {
+    nombre: "Juan Carlos Huanca Guanca",
+    gradoAcademico: "Magister",
+    biografia:"Juan Carlos Huanca Guanca nació en La Paz, Bolivia. Es un académico y profesional destacado en el ámbito de la informática y la educación, con una sólida formación académica. Se graduó como Licenciado en Informática en la Universidad Mayor de San Andrés (UMSA) y cuenta con un Magíster en Educación Superior. Además, obtuvo un Máster en Dirección Estratégica en Tecnologías de la Información de la Universidad Europea Miguel de Cervantes y un Doctorado en Proyectos de la Universidad Internacional Iberoamericana (UNINI) en México. Actualmente, está cursando un Doctorado en Ciencias de la Educación Superior.Desde 2004, Juan Carlos es docente titular en la Universidad Amazónica de Pando, en Cobija, donde imparte clases tanto a nivel de pregrado como de posgrado. A lo largo de su carrera en esta institución, ha desempeñado diversos roles administrativos, incluyendo Director de la Dirección de Postgrado (2019), Director de Información Académica (2016-2018), y Responsable de la Unidad de Tecnologías de Información y Comunicación de Investigación (2014-2015).Su experiencia también incluye ser Responsable de Tecnologías de Información y Gestión Documental en la Secretaría General (2012), así como Coordinador del Departamento Docente de Tecnologías de Información y Comunicación (2006-2009). A lo largo de su trayectoria, ha trabajado en la mejora de procesos académicos y tecnológicos dentro de la universidad, contribuyendo al desarrollo de sistemas y auditorías informáticas.",
+    titlePonencia: "ANÁLISIS BIG DATA EN LOS PROCESOS ACADÉMICOS DE LA UNIVERSIDAD AMAZÓNICA DE PANDO ",
+    estudio: "Universidad Amazónica de Pando",
+    estudioAbreviado: "UAP",
+    modalidad: 'Presencial',
+    foto:juan_Carlos,
+    id:6,
+    bandera: bolivia
+  },
+  {
+    nombre: "Luis José Díaz López",
+    gradoAcademico: "Ingeniero",
+    biografia:"Luis José Díaz López, Licenciado en Ingeniería Mecatrónica con más de seis años de experiencia en el apasionante campo de la Teledetección Satelital. Luis ha trabajado de manera extensiva con drones y satélites, utilizando imágenes multiespectrales aplicadas a sectores clave como la agricultura de precisión, la oceanografía, la silvicultura y la minería. Su trayectoria profesional incluye un sólido dominio en el uso y programación de microcontroladores, así como la integración de diversos sensores. Esto le ha permitido desarrollar soluciones innovadoras para la recopilación y análisis de datos ambientales, optimizando el uso de recursos naturales y contribuyendo a la gestión sostenible del medio ambiente. Luis también ha participado en proyectos de investigación que utilizan datos satelitales para evaluar la salud de ecosistemas y detectar cambios en la cobertura terrestre, lo que es crucial para la planificación sostenible y la conservación de nuestros recursos naturales.",
+    titlePonencia: "TELEDETECCIÓN SATELITAL Y SUS APLICACIONES",
+    estudio: "UNIVERSIDAD NACIONAL DE TRUJILLO",
+    estudioAbreviado: "UNT",
+    modalidad: 'Presencial',
+    foto: luis,
+    id:7,
+    bandera: peru
+  },
+  // aqui me eh quedado
   {
     nombre: "Romario Diaz Holgado",
     gradoAcademico: "Ingeniero",
@@ -54,19 +143,6 @@ export const data = [
     foto: norma,
     id:2,
     dir_foto:norma.src,
-    bandera: peru
-  },
-  {
-    nombre: "Luis José Díaz López",
-    gradoAcademico: "Ingeniero",
-    biografia:"Luis José Díaz López, Licenciado en Ingeniería Mecatrónica con más de seis años de experiencia en el apasionante campo de la Teledetección Satelital. Luis ha trabajado de manera extensiva con drones y satélites, utilizando imágenes multiespectrales aplicadas a sectores clave como la agricultura de precisión, la oceanografía, la silvicultura y la minería. Su trayectoria profesional incluye un sólido dominio en el uso y programación de microcontroladores, así como la integración de diversos sensores. Esto le ha permitido desarrollar soluciones innovadoras para la recopilación y análisis de datos ambientales, optimizando el uso de recursos naturales y contribuyendo a la gestión sostenible del medio ambiente. Luis también ha participado en proyectos de investigación que utilizan datos satelitales para evaluar la salud de ecosistemas y detectar cambios en la cobertura terrestre, lo que es crucial para la planificación sostenible y la conservación de nuestros recursos naturales.",
-    titlePonencia: "Teledetección Satelital y sus Aplicaciones",
-    estudio: "UNIVERSIDAD NACIONAL DE TRUJILLO",
-    estudioAbreviado: "UNT",
-    modalidad: 'Presencial',
-    foto: luis,
-    id:3,
-    dir_foto:luis.src,
     bandera: peru
   },
   {
