@@ -15,6 +15,7 @@ import rene_emigdio from "./assets/rene emigdio yana choque.png"
 import juan_Carlos from "./assets/juan carlos huanca guanca.png"
 import edi_larico from "./assets/edi larico mamani.png"
 import jose_carlos from "./assets/jose carlos.jpg"
+import eduardo_zubieta from "./assets/Eduardo-Zubieta.png"
 
 import bolivia from "./banderas/bolivia.jpg"
 import peru from "./banderas/peru.jpg"
@@ -225,6 +226,18 @@ export const data = [
     foto: jose_carlos,
     id:16,
     bandera: peru
+  },
+  {
+    nombre: "Eduardo Alberto Zubieta Copeticon",
+    gradoAcademico: "MsC.",
+    biografia:"Licenciado en informática por la Universidad Mayor de San Andrés de Bolivia, Director del Área de Ciencia y Tecnología de la Universidad Amazónica de Pando. Experto en la aplicación de nuevas tecnologías en la Educación",
+    titlePonencia: "(vacio)",
+    estudio: "Universidad Amazónica de Pando",
+    estudioAbreviado: "UAP",
+    modalidad: 'Presencial',
+    foto: eduardo_zubieta,
+    id:17,
+    bandera: bolivia
   }
   // aqui me eh quedado
   

@@ -15,6 +15,7 @@ import ana from "./assets/ana.png"
 import norma from "./assets/norma lorena.webp";
 import luis from "./assets/luis jose.jpg";
 import cesar from "./assets/cesar.jpeg"
+import eduardo_zubieta from "./assets/Eduardo-Zubieta.png"
 // LOS DATOS YA ESTÁN ACTUALIZADOS excepto la foto de cada ponente
 
 export const data = [
@@ -95,7 +96,7 @@ export const data = [
       tituloPonencia: "( vacío )",
       nombrePonente: "Eduardo Zubieta Copeticon",
       horario: "15:00 - 16:00",
-      foto: rene,
+      foto: eduardo_zubieta,
       descripFoto: "Foto del ponente Eduardo Zubieta Copeticon"
     },
     {
