@@ -7,6 +7,25 @@ import { useState } from "react";
 export function TimeLine(){
 
   const [numeroDia, setNumeroDia] = useState(0);
+  const [opc1, setopc1] = useState(true);
+  const [opc2, setopc2] = useState(false);
+  const [opc3, setopc3] = useState(false);
+
+  function a1(){
+    setopc1(true);
+    setopc2(false);
+    setopc3(false);
+  }
+  function a2(){
+    setopc1(false);
+    setopc2(true);
+    setopc3(false);
+  }
+  function a3(){
+    setopc1(false);
+    setopc2(false);
+    setopc3(true);
+  }
 
   return (
     <section id="LineaDeTiempo" className="flex justify-center bg-white dark:bg-[#000000b0] pt-10 pb-10">
@@ -25,9 +44,9 @@ export function TimeLine(){
         </h2>
 
         <section className="grid sm:grid-cols-3 max-sm:grid-cols-2 w-full bg-primary-100 dark:bg-primary-700">
-          <Day titleDay="Día 1" diaMes="< Miércoles 16, oct >" onClick={() => setNumeroDia(0)}/>
-          <Day titleDay="Día 2" diaMes="< Jueves 17, oct >" onClick={() => setNumeroDia(1)}/>
-          <Day titleDay="Día 3" diaMes="< Viernes 18, oct >" onClick={() => setNumeroDia(2)} styleResponsive={"max-sm:col-start-1 max-sm:col-end-3"}/>
+          <Day activo={opc1} titleDay="Día 1" diaMes="< Miércoles 16, oct >" onClick={() => {setNumeroDia(0); a1();}}/>
+          <Day activo={opc2} titleDay="Día 2" diaMes="< Jueves 17, oct >" onClick={() => {setNumeroDia(1); a2();}}/>
+          <Day activo={opc3} titleDay="Día 3" diaMes="< Viernes 18, oct >" onClick={() => {setNumeroDia(2); a3();}} styleResponsive={"max-sm:col-start-1 max-sm:col-end-3"}/>
         </section>
 
         <ol className="relative border-s border-primary-200 dark:border-primary-700 dark:bg-[#2e2e2ead]">
