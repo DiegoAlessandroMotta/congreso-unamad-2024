@@ -48,13 +48,6 @@ export const data = [
       horario: "17:00 - 18:00",
       foto: rickRoberts,
       descripFoto: "foto del ponente JAFFET SILLO SOSA"
-    },
-    {
-      tituloPonencia: "( vacío )",
-      nombrePonente: "( vacío )",
-      horario: "18:00 - 19:00",
-      foto: rickRoberts,
-      descripFoto: "( vacío )"
     }
   ],
   [
@@ -106,13 +99,6 @@ export const data = [
       horario: "17:00 - 18:00",
       foto: rickRoberts,
       descripFoto: "Foto del ponente ROMARIO DIAZ HOLGADO"
-    },
-    {
-      tituloPonencia: "( vacío )",
-      nombrePonente: "( vacío )",
-      horario: "( vacío )",
-      foto: rickRoberts,
-      descripFoto: "( vacío )"
     }
   ],
   [
