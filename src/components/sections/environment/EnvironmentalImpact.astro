@@ -29,14 +29,20 @@ const { className } = Astro.props;
     </div>
     <div
       class=" 
-        midmd:max-w-none flex justify-center w-full items-center midmd:w-5/12 lg:w-1/2 midmd:h-auto
+        bg-gradient-to-r from-primary-500 to-primary-800 overflow-hidden
+        midmd:max-w-none flex flex-col justify-center w-full items-center midmd:w-5/12 lg:w-1/2 midmd:h-auto
+        rounded-[30px_30px_20px_20px] shadow-2xl mb-14
       "
     >
       <img 
         src={environmentalImpactSection.visual.src} 
         alt="img de los ingenieros"
-        class="w-full object-cover rounded-2xl"
+        class="w-full object-cover"
       >
+      <div class="text-white text-center font-bold text-xl">
+        <p>M.Sc. Yban Vilchez Navarro</p>
+        <p>Presidente del III COATI 2024</p>
+      </div>
     </div>
   </Container>
 </section>

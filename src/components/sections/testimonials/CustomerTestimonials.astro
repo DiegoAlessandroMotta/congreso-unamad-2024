@@ -6,8 +6,6 @@ import Title2 from "../../shared/Title2.astro";
 // import LogoPatrocinador from "./components/logoPatrocinador.astro";
 import { testimonialsSection } from "./data";
 
-// import Carrusel from "./components/carrusel"
-import "./components/carrusel.css"
 export interface Props {
   className?: string;
 }
@@ -25,27 +23,39 @@ const { className } = Astro.props;
       {testimonialsSection.subheading1_2}
     </SubTitle2>
   </Container>
-  <section>
     <!-- <Carrusel client:visible /> -->
-    <div class="slider">
-      <div class="slide-track flex flex-row gap-6">
-        { 
-          testimonialsSection.testimonials.map((item)=>(
-            
-            <img src={item.logo.src} class="h-[120px] object-cover rounded-2xl" alt="">
-            
-          ))
-        }
+    <section class="flex flex-row justify-center overflow-hidden">
+      <div class="slider">
+        <div class="slide-track flex flex-row gap-6 max-sm:h-full">
+          { 
+            testimonialsSection.testimonials.map((item)=>(
+              
+              <img src={item.logo.src} class="h-[120px] object-cover rounded-2xl" alt="">
+              
+            ))
+          }
+          { 
+            testimonialsSection.testimonials.map((item)=>(
+              
+              <img src={item.logo.src} class="h-[120px] object-cover rounded-2xl" alt="">
+              
+            ))
+          }
+          { 
+            testimonialsSection.testimonials.map((item)=>(
+              
+              <img src={item.logo.src} class="h-[120px] object-cover rounded-2xl" alt="">
+              
+            ))
+          }
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 </section>
 
 <style>
 .slider {
-    width: 75vw;
-    height: auto;
-    margin: auto;
+    width: 90vw;
     overflow: hidden;
 }
 
