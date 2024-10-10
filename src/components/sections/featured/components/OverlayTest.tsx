@@ -37,11 +37,11 @@ export function OverlayTest({
           {/*  fin Botón X de cierre  */}
 
           {/*  contenido del modal */}
-          	<section className="p-4 bg-gray-100 dark:bg-[#1b1b1bad]">
+      <section className="p-4 bg-gray-100 dark:bg-[#1b1b1bad]">
 				<div className="flex max-lg:flex-col gap-4">
 					<div
 						id="imagenes"
-						className="flex-shrink-0 max-lg:flex max-lg:flex-row max-lg:w-full max-lg:justify-center  w-60 h-60 overflow-hidden rounded shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]"
+						className="flex-shrink-0 sticky top-4 max-lg:flex max-lg:flex-row max-lg:w-full max-lg:justify-center  w-60 h-60 overflow-hidden rounded shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]"
 					>
 						<img
 						src={foto}
@@ -76,7 +76,7 @@ export function OverlayTest({
 						</p>
 					</div>
 				</div>
-          	</section>
+      </section>
           {/*  fin contenido del modal */}
 
           {/* Botón de cierre */}
