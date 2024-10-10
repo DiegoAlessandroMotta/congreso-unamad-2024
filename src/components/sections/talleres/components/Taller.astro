@@ -11,15 +11,9 @@ export interface Props {
     colorInicio: string,
     colorFin: string,
     colorBtn: string,
-    colorPonente: string
+    colorPonente: string,
+    idBtn: string
 }
-
-// const descargarPDF1 = () => {
-//     const link = document.createElement('a');
-//     link.href = '../pdf/TECNOLOGÍAS DE DRONES Y SATÉLITES APLICADAS AL SECTOR TURISMO.pdf';  // Cambia esto por la ruta correcta de tu PDF
-//     link.download = 'TECNOLOGÍAS DE DRONES Y SATÉLITES APLICADAS AL SECTOR TURISMO.pdf';        // Cambia esto por el nombre que deseas para el archivo
-//     link.click();
-// };
 
 // const descargarPDF2 = () => {
 //     const link = document.createElement('a');
@@ -28,7 +22,7 @@ export interface Props {
 //     link.click();
 // };
 
-const {nombreTaller, nombrePonente, fotoPonente, linkMasInformacion, fotoBaner, className, orden, colorInicio, colorFin, colorBtn, colorPonente} = Astro.props;
+const {nombreTaller, nombrePonente, fotoPonente, linkMasInformacion, fotoBaner, className, orden, colorInicio, colorFin, colorBtn, colorPonente, idBtn} = Astro.props;
 ---
 
 <section class={` items-center bg-gradient-to-r ${colorInicio} ${colorFin} grid 
@@ -55,6 +49,12 @@ const {nombreTaller, nombrePonente, fotoPonente, linkMasInformacion, fotoBaner, 
             <a href={linkMasInformacion} class=`${colorBtn} px-4 py-2 rounded-sm`>
                 Más información
             </a>
+        </div>
+
+        <div class="flex flex-row gap-4 flex-wrap" >
+            <button id={idBtn} class=`${colorBtn} px-4 py-2 rounded-sm`> 
+                Decargar Temario
+            </button>
         </div>
     </section>
 </section>

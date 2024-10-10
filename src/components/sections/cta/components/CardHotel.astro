@@ -13,6 +13,15 @@ export interface Props {
 }
 
 const { title, fotos, precios, direccion, description, enlaceDireccion, enlacePaginaWeb } = Astro.props;
+
+const descargarPDF = () => {
+    // const link = document.createElement('a');
+    // link.href = '/ruta/del/archivo.pdf';  // Cambia esto por la ruta correcta de tu PDF
+    // link.download = 'archivo.pdf';        // Cambia esto por el nombre que deseas para el archivo
+    // link.click();
+    console.log("descargando pdf");
+};
+
 ---
 
 <div

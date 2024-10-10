@@ -5,21 +5,49 @@ import { data } from "./data";
 
 <section class="flex flex-col pt-24">
     <section class="">
-    {
-        data.map((item) => (
         <Taller
-            nombreTaller={item.nombreTaller}
-            nombrePonente={item.nombrePonente}
-            fotoPonente={item.fotoPonente.src}
-            linkMasInformacion={item.linkMasInformacion}
-            fotoBaner={item.fotoBaner.src}
-            orden={item.orden}
-            colorInicio={item.colorInicio}
-            colorFin={item.colorFin}
-            colorBtn={item.colorBtn} 
-            colorPonente={item.colorPonente}
+            nombreTaller={data[0].nombreTaller}
+            nombrePonente={data[0].nombrePonente}
+            fotoPonente={data[0].fotoPonente.src}
+            linkMasInformacion={data[0].linkMasInformacion}
+            fotoBaner={data[0].fotoBaner.src}
+            orden={data[0].orden}
+            colorInicio={data[0].colorInicio}
+            colorFin={data[0].colorFin}
+            colorBtn={data[0].colorBtn} 
+            colorPonente={data[0].colorPonente}
+            idBtn={data[0].idBtn}
         />
-        ))
-    }
+        <Taller
+            nombreTaller={data[1].nombreTaller}
+            nombrePonente={data[1].nombrePonente}
+            fotoPonente={data[1].fotoPonente.src}
+            linkMasInformacion={data[1].linkMasInformacion}
+            fotoBaner={data[1].fotoBaner.src}
+            orden={data[1].orden}
+            colorInicio={data[1].colorInicio}
+            colorFin={data[1].colorFin}
+            colorBtn={data[1].colorBtn} 
+            colorPonente={data[1].colorPonente}
+            idBtn={data[1].idBtn}
+        />
+        <script>
+            document.getElementById("dron")?.addEventListener( "click", () => {
+                console.log("buenas tardes, el id del botón es: " + "dron");
+
+                const link = document.createElement('a');
+                link.href = './pdf/dron.pdf'; 
+                link.download = 'TECNOLOGÍAS DE DRONES Y SATÉLITES APLICADAS AL SECTOR TURISMO, FORESTAL Y AGRICULTURA.pdf';        // Cambia esto por el nombre que deseas para el archivo
+                link.click();
+            });
+            document.getElementById("inteligencia")?.addEventListener( "click", () => {
+                console.log("buenas tardes, el id del botón es: " + "inteligencia");
+
+                const link = document.createElement('a');
+                link.href = './pdf/inteligencia.pdf';  
+                link.download = 'INTELIGENCIA ARTIFICIAL PARA LA EDUCACIÓN Y EL TRABAJO.pdf'; 
+                link.click();
+            });
+        </script>
     </section>
 </section>
