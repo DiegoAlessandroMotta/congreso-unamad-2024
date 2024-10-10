@@ -8,43 +8,43 @@ import rickRoberts from "./assets/rick-roberts.jpg"
 export const data = [
   [
     {
-      tituloPonencia: "IOT EN EL CONTEXTO DE LAS CIUDADES INTELIGENTES Y EL DESARROLLO REGIONAL",
-      nombrePonente: "DIODOMIRO BALDOMERO LUQUE CARCASI",
+      tituloPonencia: "Iot En El Contexto De Las Ciudades Inteligentes Y El Desarrollo Regional",
+      nombrePonente: "Diodomiro Baldomero Luque Carcasi",
       horario: "10:00 - 11:00",
       foto: arlindoConceicao,
       descripFoto: "foto del ponente DIODOMIRO BALDOMERO LUQUE CARCASI"
     },
     {
       tituloPonencia: "( vacío )",
-      nombrePonente: "ANTONIO PUMA CHOQUEHUANCA",
+      nombrePonente: "Antonio Puma Choquehuanca",
       horario: "11:00 - 12:00",
       foto: danielAliaga,
       descripFoto: "foto del ponente Álvaro Martín Aspilcueta Narváez"
     },
     {
-      tituloPonencia: "INGENIERÍA DE SOFTWARE: TENDENCIAS DE LAS METODOLOGÍAS ACTUALES",
-      nombrePonente: "DANY DORIAN ISUIZA PEREZ",
+      tituloPonencia: "Ingeniería De Software: Tendencias De Las Metodologías Actuales",
+      nombrePonente: "Dany Dorian Isuiza Perez",
       horario: "12:00 - 13:00",
       foto: darioVieira,
       descripFoto: "foto del ponente DANY DORIAN ISUIZA PEREZ"
     },
     {
-      tituloPonencia: "INFRAESTRUCTURA DE DATOS ESPACIALES Y CATASTRO ÚNICO REGIONAL",
-      nombrePonente: "JOSE CARLOS NAVARRO VEGA",
+      tituloPonencia: "Infraestructura De Datos Espaciales Y Catastro Único Regional",
+      nombrePonente: "Jose Carlos Navarro Vega",
       horario: "15:00 - 16:00",
       foto: rickRoberts,
       descripFoto: "foto del ponente JOSE CARLOS NAVARRO VEGA"
     },
     {
-      tituloPonencia: "OS DESAFIOS DO ENSINO, PESQUISA E EXTENSÃO DA CIÊNCIA DA COMPUTAÇÃO NA AMAZÔNIA",
-      nombrePonente: "ANSELMO FORTUNATO RUIZ RODRIGUEZ",
+      tituloPonencia: "Os Desafios Do Ensino, Pesquisa E Extensão Da Ciência Da Computação Na Amazônia",
+      nombrePonente: "Anselmo Fortunato Ruiz Rodriguez",
       horario: "16:00 - 17:00",
       foto: rickRoberts,
       descripFoto: "foto del ponente ANSELMO FORTUNATO RUIZ RODRIGUEZ"
     },
     {
-      tituloPonencia: "MODELO DE INTELIGENCIA ARTIFICIAL PARA LA DETECCIÓN DE EMOCIONES",
-      nombrePonente: "JAFFET SILLO SOSA",
+      tituloPonencia: "Modelo De Inteligencia Artificial Para La Detección De Emociones",
+      nombrePonente: "Jaffet Sillo Sosa",
       horario: "17:00 - 18:00",
       foto: rickRoberts,
       descripFoto: "foto del ponente JAFFET SILLO SOSA"
@@ -52,50 +52,50 @@ export const data = [
   ],
   [
     {
-      tituloPonencia: "ANÁLISIS BIG DATA EN LOS PROCESOS ACADÉMICOS DE LA UNIVERSIDAD AMAZÓNICA DE PANDO (UAP)",
-      nombrePonente: "JUAN CARLOS HUANCA GUANCA",
+      tituloPonencia: "Análisis Big Data En Los Procesos Académicos De La Universidad Amazónica De Pando (Uap)",
+      nombrePonente: "Juan Carlos Huanca Guanca",
       horario: "9:00 - 10:00",
       foto: arlindoConceicao,
       descripFoto: "Foto del ponente JUAN CARLOS HUANCA GUANCA"
     },
     {
-      tituloPonencia: "DETECCIÓN DEL CELO EN VACUNO DE CARNE USANDO IOT Y APRENDIZAJE AUTOMATICO",
-      nombrePonente: "JAIME PRIETO LUNA",
+      tituloPonencia: "Detección Del Celo En Vacuno De Carne Usando Iot Y Aprendizaje Automatico",
+      nombrePonente: "Jaime Prieto Luna",
       horario: "10:00 - 11:00",
       foto: danielAliaga,
       descripFoto: "Foto del ponente JAIME PRIETO LUNA"
     },
     {
-      tituloPonencia: "INTELIGENCIA ARTIFICIAL Y EDUCACIÓN UNIVERSITARIA",
-      nombrePonente: "PONCE ATENCIO YALMAR TEMISTOCLES",
+      tituloPonencia: "Inteligencia Artificial Y Educación Universitaria",
+      nombrePonente: "Ponce Atencio Yalmar Temistocles",
       horario: "11:00 - 12:00",
       foto: darioVieira,
       descripFoto: "Foto del ponente PONCE ATENCIO YALMAR TEMISTOCLES"
     },
     {
-      tituloPonencia: "IMPACTO DE LA INTELIGENCIA ARTIFICIAL EN EL DESARROLLO DE SOFTWARE",
-      nombrePonente: "ROMARIO DIAZ HOLGADO",
+      tituloPonencia: "Impacto De La Inteligencia Artificial En El Desarrollo De Software",
+      nombrePonente: "Romario Diaz Holgado",
       horario: "12:00 - 13:00",
       foto: rickRoberts,
       descripFoto: "Foto del ponente ROMARIO DIAZ HOLGADO"
     },
     {
       tituloPonencia: "( vacío )",
-      nombrePonente: "RENE YANA CHOQUE",
+      nombrePonente: "Rene Yana Choque",
       horario: "15:00 - 16:00",
       foto: rickRoberts,
       descripFoto: "Foto del ponente RENE YANA CHOQUE"
     },
     {
-      tituloPonencia: "EXPLORACIÓN DE PREDICTORES DE LA SATISFACCIÓN CON LA VIDA DE DOCENTES PERUANOS MEDIANTE UN ENSAMBLE DE MÉTODOS DE SELECCIÓN DE CARACTERÍSTICAS",
-      nombrePonente: "LUIS ALBERTO HOLGADO APAZA",
+      tituloPonencia: "Exploración De Predictores De La Satisfacción Con La Vida De Docentes Peruanos Mediante Un Ensamble De Métodos De Selección De Características",
+      nombrePonente: "Luis Alberto Holgado Apaza",
       horario: "16:00 - 17:00",
       foto: rickRoberts,
       descripFoto: "Foto del ponente LUIS ALBERTO HOLGADO APAZA"
     },
     {
       tituloPonencia: "( vacío )",
-      nombrePonente: "EDY LARICO MAMANI",
+      nombrePonente: "Edy Larico Mamani",
       horario: "17:00 - 18:00",
       foto: rickRoberts,
       descripFoto: "Foto del ponente ROMARIO DIAZ HOLGADO"
@@ -103,29 +103,29 @@ export const data = [
   ],
   [
     {
-      tituloPonencia: "INTELIGENCIA ARTIFICIAL GENERATIVA PARA CREACIÓN DE CONTENIDO VISUAL EN VISIÓN COMPUTACIONAL",
-      nombrePonente: "ANA BEATRIZ ALVAREZ MAMANI",
+      tituloPonencia: "Inteligencia Artificial Generativa Para Creación De Contenido Visual En Visión Computacional",
+      nombrePonente: "Ana Beatriz Alvarez Mamani",
       horario: "9:00 - 10:00",
       foto: arlindoConceicao,
       descripFoto: "Foto del ponente ANA BEATRIZ ALVAREZ MAMANI"
     },
     {
-      tituloPonencia: "APLICACIONES DE LA INTELIGENCIA ARTIFICIAL EN LA MINERÍA CON OPERACIONES DE TAJO ABIERTO: UN ENFOQUE SISTÉMICO",
-      nombrePonente: "NORMA CATACORA FLORES",
+      tituloPonencia: "Aplicaciones De La Inteligencia Artificial En La Minería Con Operaciones De Tajo Abierto: Un Enfoque Sistémico",
+      nombrePonente: "Norma Catacora Flores",
       horario: "10:00 - 11:00",
       foto: danielAliaga,
       descripFoto: "Foto del ponente NORMA CATACORA FLORES"
     },
     {
-      tituloPonencia: "TELEDETECCIÓN SATELITAL Y SUS APLICACIONES",
-      nombrePonente: "LUIS JOSÉ DÍAZ LÓPEZ",
+      tituloPonencia: "Teledetección Satelital Y Sus Aplicaciones",
+      nombrePonente: "Luis José Díaz López",
       horario: "11:00 - 12:00",
       foto: darioVieira,
       descripFoto: "Foto del ponente LUIS JOSÉ DÍAZ LÓPEZ"
     },
     {
-      tituloPonencia: "MODELOS GENERATIVOS MULTIMODALES",
-      nombrePonente: "CESAR ARMANDO BELTRAN CASTAÑON",
+      tituloPonencia: "Modelos Generativos Multimodales",
+      nombrePonente: "Cesar Armando Beltran Castañon",
       horario: "12:00 - 13:00",
       foto: rickRoberts,
       descripFoto: "Foto del ponente CESAR ARMANDO BELTRAN CASTAÑON"
