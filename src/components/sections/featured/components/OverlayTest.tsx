@@ -21,7 +21,7 @@ export function OverlayTest({
     <div
       className={`
 		${modalAbierto ? "" : "hidden"} 
-		fixed inset-0 bg-gray-800 bg-opacity-75 z-50 h-[100vh]`}
+		fixed inset-0 bg-gray-800 bg-opacity-75 z-50 h-full`}
     >
       <div className="flex mt-14 justify-center max-h-[100vh]">
         <div className="flex relative flex-col bg-white dark:bg-[#080808de] rounded-lg max-w-[800px] max-h-[80vh] overflow-auto overscroll-contain">

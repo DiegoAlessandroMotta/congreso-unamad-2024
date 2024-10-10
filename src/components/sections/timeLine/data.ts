@@ -93,10 +93,10 @@ export const data = [
     },
     {
       tituloPonencia: "( vacío )",
-      nombrePonente: "Rene Yana Choque",
+      nombrePonente: "Eduardo Zubieta Copeticon",
       horario: "15:00 - 16:00",
       foto: rene,
-      descripFoto: "Foto del ponente RENE YANA CHOQUE"
+      descripFoto: "Foto del ponente Eduardo Zubieta Copeticon"
     },
     {
       tituloPonencia: "Exploración De Predictores De La Satisfacción Con La Vida De Docentes Peruanos Mediante Un Ensamble De Métodos De Selección De Características",
