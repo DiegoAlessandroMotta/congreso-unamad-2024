@@ -6,7 +6,7 @@ import Title2 from "../../shared/Title2.astro";
 // import LogoPatrocinador from "./components/logoPatrocinador.astro";
 import { testimonialsSection } from "./data";
 
-import Carrusel from "./components/carrusel"
+// import Carrusel from "./components/carrusel"
 import "./components/carrusel.css"
 export interface Props {
   className?: string;
@@ -26,6 +26,52 @@ const { className } = Astro.props;
     </SubTitle2>
   </Container>
   <section>
-    <Carrusel client:visible />
+    <!-- <Carrusel client:visible /> -->
+    <div class="slider">
+      <div class="slide-track flex flex-row gap-6">
+        { 
+          testimonialsSection.testimonials.map((item)=>(
+            
+            <img src={item.logo.src} class="h-[120px] object-cover rounded-2xl" alt="">
+            
+          ))
+        }
+      </div>
+    </div>
   </section>
 </section>
+
+<style>
+.slider {
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider .slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 14);
+}
+
+.slider .slide {
+    width: 200px;
+}
+
+.slider .slide img {
+    width: 100%;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 7));
+        transform: translateX(calc(-200px * 7));
+    }
+}
+</style>

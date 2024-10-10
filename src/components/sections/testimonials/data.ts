@@ -39,6 +39,95 @@ export const testimonialsSection = {
       logo: img17,
       direccion:"#",
       styleRedondear: "rounded-md"
+    },
+    {
+      name: "apolo-tech",
+      logo: img4,
+      direccion:"#",
+      styleRedondear: "rounded-full"
+    },
+    {
+      name: "iveet-sac",
+      logo: img12,
+      direccion:"#",
+      styleRedondear: "rounded-md"
+    },
+    {
+      name: "mundo-click",
+      logo: img13,
+      direccion:"#",
+      styleRedondear: "rounded-md"
+    },
+    {
+      name: "odonto-esthetic",
+      logo: img14,
+      direccion:"#",
+      styleRedondear: "rounded-md"
+    },
+    {
+      name: "toreto-gym",
+      logo: img17,
+      direccion:"#",
+      styleRedondear: "rounded-md"
+    },
+    {
+      name: "apolo-tech",
+      logo: img4,
+      direccion:"#",
+      styleRedondear: "rounded-full"
+    },
+    {
+      name: "iveet-sac",
+      logo: img12,
+      direccion:"#",
+      styleRedondear: "rounded-md"
+    },
+    {
+      name: "mundo-click",
+      logo: img13,
+      direccion:"#",
+      styleRedondear: "rounded-md"
+    },
+    {
+      name: "odonto-esthetic",
+      logo: img14,
+      direccion:"#",
+      styleRedondear: "rounded-md"
+    },
+    {
+      name: "toreto-gym",
+      logo: img17,
+      direccion:"#",
+      styleRedondear: "rounded-md"
+    },{
+      name: "apolo-tech",
+      logo: img4,
+      direccion:"#",
+      styleRedondear: "rounded-full"
+    },
+    {
+      name: "iveet-sac",
+      logo: img12,
+      direccion:"#",
+      styleRedondear: "rounded-md"
+    },
+    {
+      name: "mundo-click",
+      logo: img13,
+      direccion:"#",
+      styleRedondear: "rounded-md"
+    },
+    {
+      name: "odonto-esthetic",
+      logo: img14,
+      direccion:"#",
+      styleRedondear: "rounded-md"
+    },
+    {
+      name: "toreto-gym",
+      logo: img17,
+      direccion:"#",
+      styleRedondear: "rounded-md"
     }
   ]
 };
