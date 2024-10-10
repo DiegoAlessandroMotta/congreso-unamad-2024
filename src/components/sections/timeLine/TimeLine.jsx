@@ -14,7 +14,7 @@ export function TimeLine(){
         <h2 className="tracking-wide antialiased mb-5 text-lg md:text-4xl font-extrabold text-center">
           <p
             className={`tracking-wide antialiased
-            mb-2 mt-14 text-lg md:text-4xl font-extrabold text-black`}
+            mb-2 mt-8 text-lg md:text-4xl font-extrabold text-black`}
           >
             <span
               className="text-4xl text-transparent bg-clip-text bg-gradient-to-br from-primary-500 from-20% via-primary via-50% to-primary-500"
