@@ -10,13 +10,14 @@ import jaime from "./assets/jaime cesar prieto.webp"
 import cesar from "./assets/cesar.jpeg"
 import ana from "./assets/ana beatriz alvares mamani.png"
 import biodimio from "./assets/biodomio baldomero luque.png"
-import marco_antonio from "./assets/marco antonio poma choquehuanca.png"
+import marco_antonio from "./assets/Marco-Antonio-Poma-Choquehuanca.jpg"
 import rene_emigdio from "./assets/rene emigdio yana choque.png"
 import juan_Carlos from "./assets/juan carlos huanca guanca.png"
 import edi_larico from "./assets/edi larico mamani.png"
 import jose_carlos from "./assets/jose carlos.jpg"
 import eduardo_zubieta from "./assets/Eduardo-Zubieta.png"
 import luisDiaz from "./assets/Luis-diaz.jpg"
+import marcoAntornio from "./assets/Marco-Antonio-Poma-Choquehuanca.jpg"
 
 import bolivia from "./banderas/bolivia.jpg"
 import peru from "./banderas/peru.jpg"
@@ -111,7 +112,7 @@ export const data = [
     nombre: "Edy Larico Mamani",
     gradoAcademico: "Doctor",
     biografia:"Edy Larico Mamani es un destacado académico y profesional peruano, reconocido por su amplia formación y experiencia en el ámbito de la educación y la ingeniería. Nació en [lugar de nacimiento] y desde joven mostró un interés por el aprendizaje y la enseñanza, lo que lo llevó a buscar una sólida educación formal.Formación Académica Edy Larico Mamani se graduó como Ingeniero de Sistemas en la Universidad Católica de Santa María (UCSM), donde adquirió conocimientos técnicos que le servirían a lo largo de su carrera. Posteriormente, obtuvo una licenciatura en Administración y Marketing en la Universidad Andina Néstor Cáceres Velásquez (UANCV), lo que amplió su visión hacia el mundo empresarial.Su deseo de contribuir a la educación lo llevó a obtener una licenciatura en Educación en la Universidad Nacional de Educación Enrique Guzmán y Valle (UNE), especializándose en Matemática. A lo largo de su carrera, también ha buscado perfeccionarse, logrando un Magíster Scientiae en Gestión Empresarial en la Universidad Nacional del Altiplano (UNA) y, posteriormente, un Doctorado en Educación en la UCSM.Experiencia ProfesionalActualmente, Edy Larico Mamani es docente ordinario en la Universidad Nacional de Juliaca, donde se desempeña en la categoría de Principal a tiempo completo. Forma parte del Departamento Académico de Ciencias de la Ingeniería, contribuyendo a la formación de futuros profesionales en las Escuelas de Ingeniería de Software y Sistemas, así como en Ingeniería Industrial.Su enfoque pedagógico se centra en la innovación y el desarrollo de competencias que preparen a sus estudiantes para enfrentar los desafíos del mundo laboral. A lo largo de su trayectoria, ha demostrado un compromiso constante con la excelencia educativa y la mejora continua.",
-    titlePonencia: "",
+    titlePonencia: "La Investigación En Ingeniería De Software",
     estudio: "Universidad Nacional de Juliaca",
     estudioAbreviado: "UNAJ",
     modalidad: 'Presencial',
@@ -217,17 +218,15 @@ export const data = [
     bandera: peru
   },
   {
-    nombre: "Eduardo Alberto Zubieta Copeticon",
-    gradoAcademico: "MsC.",
-    biografia:"Licenciado en informática por la Universidad Mayor de San Andrés de Bolivia, Director del Área de Ciencia y Tecnología de la Universidad Amazónica de Pando. Experto en la aplicación de nuevas tecnologías en la Educación",
-    titlePonencia: "(vacio)",
+    nombre: "Humberto Fernandez Calle",
+    gradoAcademico: "Ph.D.",
+    biografia:"Licenciado en Informática, Universidad Mayor de San Andrés (UMSA), Magister en Ciencias de la Educación Superior, Universidad Amazónica de Pando (UAP) y la Universidad Enrique José Barona de Cuba, Especialista en Desarrollo curricular en la enseñanza Superior, otorgada por el CEUB, Diplomado en Formación Tutorial para el desarrollo de la investigación científica y Diplomado en Formación Basada en competencias (UAP), Diplomado en seguridad en informática (UAP). Doctorado en Ciencias de la Educación (UAP). Docente universitario titular de la Carrera de Ingeniería de sistemas de la Universidad amazónica de Pando desde 1999 a la fecha. Ha desempeñado distintos cargos académico - administrativo:  Director de la carrera Ingeniería Informática 1999-2002,  Director de Área Ciencia y Tecnología 2002- 2004, Director de Información Académica (DIA) de la Universidad amazónica de Pando 2004-2009,  Director de Investigación, Ciencia, Tecnología y Postgrado de la Universidad amazónica de Pando 2010. Director Académico de la Universidad Amazónica de Pando (2011). Director de Posgrado a.i de la Universidad Amazónica de Pando (2021).  Actualmente desempeña funciones como director Académico a.i. de la Universidad amazónica de Pando.",
+    titlePonencia: "Integración De Herramientas De IA En El Proceso De Enseñanza-Aprendizaje En Ingeniería De Sistemas",
     estudio: "Universidad Amazónica de Pando",
     estudioAbreviado: "UAP",
     modalidad: 'Presencial',
-    foto: eduardo_zubieta,
-    id:17,
-    bandera: bolivia
+    foto: marcoAntornio,
+    id: 17,
+    bandera: bolivia 
   }
-  // aqui me eh quedado
-  
 ];
