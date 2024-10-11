@@ -89,7 +89,7 @@ export const data = [
     titlePonencia: "LOS DESAFÍOS DE LA ENSEÑANZA, INVESTIGACIÓN Y EXTENSIÓN DE LA INFORMÁTICA EN LA AMAZONIA",
     estudio: "Universidad Amazónica de Pando",
     estudioAbreviado: "UAP",
-    modalidad: 'Presencial',
+    modalidad: 'Virtual',
     foto:rene_emigdio,
     id:5,
     bandera: bolivia
@@ -108,7 +108,7 @@ export const data = [
   },
   {
     nombre: "Juan Carlos Huanca Guanca",
-    gradoAcademico: "Magister",
+    gradoAcademico: "Doctor",
     biografia:"Juan Carlos Huanca Guanca nació en La Paz, Bolivia. Es un académico y profesional destacado en el ámbito de la informática y la educación, con una sólida formación académica. Se graduó como Licenciado en Informática en la Universidad Mayor de San Andrés (UMSA) y cuenta con un Magíster en Educación Superior. Además, obtuvo un Máster en Dirección Estratégica en Tecnologías de la Información de la Universidad Europea Miguel de Cervantes y un Doctorado en Proyectos de la Universidad Internacional Iberoamericana (UNINI) en México. Actualmente, está cursando un Doctorado en Ciencias de la Educación Superior.Desde 2004, Juan Carlos es docente titular en la Universidad Amazónica de Pando, en Cobija, donde imparte clases tanto a nivel de pregrado como de posgrado. A lo largo de su carrera en esta institución, ha desempeñado diversos roles administrativos, incluyendo Director de la Dirección de Postgrado (2019), Director de Información Académica (2016-2018), y Responsable de la Unidad de Tecnologías de Información y Comunicación de Investigación (2014-2015).Su experiencia también incluye ser Responsable de Tecnologías de Información y Gestión Documental en la Secretaría General (2012), así como Coordinador del Departamento Docente de Tecnologías de Información y Comunicación (2006-2009). A lo largo de su trayectoria, ha trabajado en la mejora de procesos académicos y tecnológicos dentro de la universidad, contribuyendo al desarrollo de sistemas y auditorías informáticas.",
     titlePonencia: "ANÁLISIS BIG DATA EN LOS PROCESOS ACADÉMICOS DE LA UNIVERSIDAD AMAZÓNICA DE PANDO ",
     estudio: "Universidad Amazónica de Pando",
@@ -219,7 +219,7 @@ export const data = [
     nombre: "Jose Carlos Navarro Vega",
     gradoAcademico: "Doctor",
     biografia:"José Carlos Navarro Vega es un destacado ingeniero informático y académico peruano, con una sólida trayectoria en el ámbito de la gestión pública y la tecnología. Nacido en [lugar de nacimiento], ha dedicado su vida profesional a la educación, la investigación y la implementación de soluciones tecnológicas en el sector público.Formación Académica José Carlos obtuvo su título de Ingeniero Informático y de Sistemas en 2008 en la Universidad Nacional de San Antonio Abad del Cusco, donde también alcanzó el grado de Bachiller en 2005. Con un compromiso constante por su desarrollo profesional, continuó su formación académica y en 2015 se convirtió en Magíster en Gestión Pública en la Universidad César Vallejo. Posteriormente, en 2019, obtuvo su Doctorado en Gestión Pública y Gobernabilidad en la misma universidad. En 2021, logró el título de Maestro en Ciencias de Ingeniería de Sistemas, con mención en Gerencia de Tecnologías de la Información en la Universidad Nacional San Agustín de Arequipa. Actualmente, se encuentra cursando un Doctorado en Ciencias de la Computación en la Universidad Nacional del Altiplano de Puno.Experiencia Profesional Desde 2009, José Carlos ha trabajado como Analista de Sistemas PAD III en el Gobierno Regional de Madre de Dios, donde ha aplicado sus conocimientos en el desarrollo y la implementación de sistemas informáticos que mejoran la gestión pública. Entre 2020 y 2021, se desempeñó como Sub Gerente de Acondicionamiento Territorial en el mismo gobierno regional, contribuyendo al desarrollo sostenible de la región.Además de su labor en el sector público, José Carlos ha tenido una amplia experiencia docente. Ha impartido clases en la Universidad Nacional Amazónica de Madre de Dios y en la Universidad Alas Peruanas, donde ha compartido su conocimiento en ingeniería de sistemas y gestión pública con futuras generaciones de profesionales.Responsabilidad Social y Tutoría Comprometido con el desarrollo de su comunidad, José Carlos ha liderado varios proyectos de responsabilidad social en 2020 y 2021, promoviendo la educación y el bienestar social. También ha desempeñado roles de tutoría en su universidad, siendo reconocido por su dedicación y compromiso con la ética universitaria en múltiples semestres.Investigación y PublicacionesA lo largo de su carrera, José Carlos Navarro Vega ha estado involucrado en diversas investigaciones y publicaciones, aportando al conocimiento en su campo y fomentando el desarrollo de nuevas tecnologías y metodologías en la gestión pública.",
-    titlePonencia: "INFRAESTRUCTURA DE DATOS ESPACIALES Y CATASTRO UNICO REGIONAL",
+    titlePonencia: "Importancia de la Calidad de los Datos Espaciales para el Ordenamiento Territorial en Madre de Dios",
     estudio: "Gobierno Regional de Madre de Dios",
     estudioAbreviado: "GOREMAD",
     modalidad: 'Presencial',

@@ -8,7 +8,6 @@ import JuanCarlos from "./assets/juan carlos huanca guanca.png"
 import jaime from "./assets/jaime cesar prieto.webp"
 import ponce from "./assets/yalmar temistoqles.webp"
 import romario from "./assets/romario diaz.webp"
-import rene from "./assets/rene.png"
 import holgado from "./assets/luis alberto.webp"
 import edy from "./assets/edy.jpg"
 import ana from "./assets/ana.png"
@@ -42,7 +41,7 @@ export const data = [
       descripFoto: "foto del ponente DANY DORIAN ISUIZA PEREZ"
     },
     {
-      tituloPonencia: "Infraestructura De Datos Espaciales Y Catastro Único Regional",
+      tituloPonencia: "Importancia de la Calidad de los Datos Espaciales para el Ordenamiento Territorial en Madre de Dios",
       nombrePonente: "Jose Carlos Navarro Vega",
       horario: "15:00 - 16:00",
       foto: joseCarlos,
