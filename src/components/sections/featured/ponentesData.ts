@@ -16,6 +16,7 @@ import juan_Carlos from "./assets/juan carlos huanca guanca.png"
 import edi_larico from "./assets/edi larico mamani.png"
 import jose_carlos from "./assets/jose carlos.jpg"
 import eduardo_zubieta from "./assets/Eduardo-Zubieta.png"
+import luisDiaz from "./assets/Luis-diaz.jpg"
 
 import bolivia from "./banderas/bolivia.jpg"
 import peru from "./banderas/peru.jpg"
@@ -90,7 +91,7 @@ export const data = [
     estudio: "UNIVERSIDAD NACIONAL DE TRUJILLO",
     estudioAbreviado: "UNT",
     modalidad: 'Presencial',
-    foto: luis,
+    foto: luisDiaz,
     id:7,
     bandera: peru
   },

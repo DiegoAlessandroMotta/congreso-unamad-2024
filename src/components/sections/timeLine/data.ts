@@ -15,6 +15,7 @@ import norma from "./assets/norma lorena.webp";
 import luis from "./assets/luis jose.jpg";
 import cesar from "./assets/cesar.jpeg"
 import eduardo_zubieta from "./assets/Eduardo-Zubieta.png"
+import luisDiaz from "./assets/Luis-diaz.jpg"
 // LOS DATOS YA ESTÁN ACTUALIZADOS excepto la foto de cada ponente
 
 export const data = [
@@ -132,7 +133,7 @@ export const data = [
       tituloPonencia: "Teledetección Satelital Y Sus Aplicaciones",
       nombrePonente: "Luis José Díaz López",
       horario: "11:00 - 12:00",
-      foto: luis,
+      foto: luisDiaz,
       descripFoto: "Foto del ponente LUIS JOSÉ DÍAZ LÓPEZ"
     },
     {

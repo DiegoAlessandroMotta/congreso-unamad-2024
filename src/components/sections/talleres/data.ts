@@ -2,12 +2,13 @@ import dron from './assets/dron.png'
 import inteligencia from './assets/inteligencia-artificial.png';
 import luisJose from "./assets/luis jose.webp";
 import ponceAtencio from "./assets/yalmar temistoqles.webp";
+import luisDiaz from "./assets/Luis-diaz.jpg"
 
 export const data = [
     {
         nombreTaller: "TALLER DE TECNOLOGÍAS DE DRONES Y SATÉLITES APLICADAS AL SECTOR TURISMO, FORESTAL Y AGRICULTURA",
         nombrePonente: "Luis José Díaz López",
-        fotoPonente: luisJose,
+        fotoPonente: luisDiaz,
         linkMasInformacion: "/dron",
         fotoBaner: dron,
         orden: true,
