@@ -83,18 +83,6 @@ export const data = [
     bandera: bolivia
   },
   {
-    nombre: "Rene Emigdio Yana Choque",
-    gradoAcademico: "Ingeniero",
-    biografia:"",
-    titlePonencia: "LOS DESAFÍOS DE LA ENSEÑANZA, INVESTIGACIÓN Y EXTENSIÓN DE LA INFORMÁTICA EN LA AMAZONIA",
-    estudio: "Universidad Amazónica de Pando",
-    estudioAbreviado: "UAP",
-    modalidad: 'Presencial',
-    foto:rene_emigdio,
-    id:5,
-    bandera: bolivia
-  },
-  {
     nombre: "Luis José Díaz López",
     gradoAcademico: "Ingeniero",
     biografia:"Luis José Díaz López, Licenciado en Ingeniería Mecatrónica con más de seis años de experiencia en el apasionante campo de la Teledetección Satelital. Luis ha trabajado de manera extensiva con drones y satélites, utilizando imágenes multiespectrales aplicadas a sectores clave como la agricultura de precisión, la oceanografía, la silvicultura y la minería. Su trayectoria profesional incluye un sólido dominio en el uso y programación de microcontroladores, así como la integración de diversos sensores. Esto le ha permitido desarrollar soluciones innovadoras para la recopilación y análisis de datos ambientales, optimizando el uso de recursos naturales y contribuyendo a la gestión sostenible del medio ambiente. Luis también ha participado en proyectos de investigación que utilizan datos satelitales para evaluar la salud de ecosistemas y detectar cambios en la cobertura terrestre, lo que es crucial para la planificación sostenible y la conservación de nuestros recursos naturales.",
@@ -108,7 +96,7 @@ export const data = [
   },
   {
     nombre: "Juan Carlos Huanca Guanca",
-    gradoAcademico: "Magister",
+    gradoAcademico: "Doctor",
     biografia:"Juan Carlos Huanca Guanca nació en La Paz, Bolivia. Es un académico y profesional destacado en el ámbito de la informática y la educación, con una sólida formación académica. Se graduó como Licenciado en Informática en la Universidad Mayor de San Andrés (UMSA) y cuenta con un Magíster en Educación Superior. Además, obtuvo un Máster en Dirección Estratégica en Tecnologías de la Información de la Universidad Europea Miguel de Cervantes y un Doctorado en Proyectos de la Universidad Internacional Iberoamericana (UNINI) en México. Actualmente, está cursando un Doctorado en Ciencias de la Educación Superior.Desde 2004, Juan Carlos es docente titular en la Universidad Amazónica de Pando, en Cobija, donde imparte clases tanto a nivel de pregrado como de posgrado. A lo largo de su carrera en esta institución, ha desempeñado diversos roles administrativos, incluyendo Director de la Dirección de Postgrado (2019), Director de Información Académica (2016-2018), y Responsable de la Unidad de Tecnologías de Información y Comunicación de Investigación (2014-2015).Su experiencia también incluye ser Responsable de Tecnologías de Información y Gestión Documental en la Secretaría General (2012), así como Coordinador del Departamento Docente de Tecnologías de Información y Comunicación (2006-2009). A lo largo de su trayectoria, ha trabajado en la mejora de procesos académicos y tecnológicos dentro de la universidad, contribuyendo al desarrollo de sistemas y auditorías informáticas.",
     titlePonencia: "ANÁLISIS BIG DATA EN LOS PROCESOS ACADÉMICOS DE LA UNIVERSIDAD AMAZÓNICA DE PANDO ",
     estudio: "Universidad Amazónica de Pando",
@@ -158,7 +146,7 @@ export const data = [
     nombre: "Romario Diaz Holgado",
     gradoAcademico: "Ingeniero",
     biografia:"Romario Días Holgado es un ingeniero de sistemas e informática, reconocido por su experiencia y habilidades técnicas en el ámbito del desarrollo de software. Con una sólida formación en ingeniería, Romario ha cultivado un enfoque profesional centrado en la innovación y la solución de problemas.Desde el inicio de su carrera, ha demostrado un interés particular en el manejo de bases de datos y servidores, especializándose en tecnologías como Node.js, Go y GraphQL. Su capacidad para analizar, investigar e identificar problemáticas le ha permitido desarrollar soluciones efectivas y eficientes en diversos proyectos.Romario se destaca por su habilidad para trabajar en equipo, colaborando estrechamente con colegas y otros profesionales para alcanzar objetivos comunes. Su adaptabilidad al cambio le permite enfrentar nuevos retos con entusiasmo, y su capacidad de lectura rápida le proporciona una ventaja en la asimilación de nuevas tecnologías y conceptos.Apasionado por el aprendizaje continuo, busca constantemente oportunidades para expandir su conocimiento y habilidades. A lo largo de su trayectoria, ha demostrado un compromiso con el crecimiento profesional, impulsando su carrera y contribuyendo al éxito de los proyectos en los que participa.Con un enfoque proactivo y una comunicación efectiva, Romario Días Holgado es un profesional valioso en el ámbito de la ingeniería de sistemas, siempre listo para enfrentar nuevos desafíos y contribuir al avance de la tecnología",
-    titlePonencia: "IMPACTO DE LA INTELIGENCIA ARTIFICIAL EN EL DESARROLLO DE SOFTWAR",
+    titlePonencia: "IMPACTO DE LA INTELIGENCIA ARTIFICIAL EN EL DESARROLLO DE SOFTWARE",
     estudio: "Universidad Nacional Amazónica de Madre de Dios",
     estudioAbreviado: "UNAMAD",
     modalidad: 'Presencial',

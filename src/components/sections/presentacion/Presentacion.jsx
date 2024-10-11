@@ -23,7 +23,7 @@ export function Presentacion() {
       </div>
 
 
-			<a href="https://docs.google.com/forms/d/e/1FAIpQLScI6ed6wAelZQdTrL3-JxyF6L1sge7n1s-kOp6ZTLPHQVgaOQ/viewform" 
+			<a href="https://forms.gle/41NoZ23QFGHBwMkc7" 
 				target="__black"
 				className="flex flex-row justify-center"
 				>
