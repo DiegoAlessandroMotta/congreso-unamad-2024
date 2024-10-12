@@ -17,12 +17,12 @@ export interface Props {
 const {presencial, virtual}  = Astro.props;
 ---
 
-<article class="grid grid-cols-2 max-md:grid-cols-1 px-10 gap-4 text-white">
-    <section>
+<article class="flex flex-row max-md:flex-col justify-center px-10 gap-4 text-white">
+    <section class="max-w-xl">
         {
             presencial ? (
                 <h2 class="font-bold text-lg bg-gray-600 w-fit border-l-[5px] border-gray-300 py-1 px-2 rounded-[10px_10px_0px_0px]">{ presencial.title }</h2>
-                <ul class="flex flex-col gap-4 bg-gray-600 border-gray-300 border-l-[5px] rounded-[0px_10px_10px_10px] p-[0px_0px_2px_0px]">
+                <ul class="flex flex-col gap-4 bg-gray-600 border-gray-300 border-l-[5px] rounded-[0px_10px_10px_10px] p-[0px_0px_2px_0px] min-w-60">
                     {presencial.horario.map((infoHorario)=>(
                         <li>
                             <h3 class="text-center text-lg font-semibold">{ infoHorario.fecha }</h3>
@@ -38,11 +38,11 @@ const {presencial, virtual}  = Astro.props;
             )
         }
     </section>
-    <section>
+    <section class="max-w-xl">
         {
             virtual ? (
                 <h2 class="text-end font-bold text-lg bg-sky-900 w-fit border-l-[5px] border-sky-300 py-1 px-2 rounded-[10px_10px_0px_0px]">{ virtual.title }</h2>
-                <ul class="flex flex-col gap-4 bg-sky-900 border-sky-300 border-l-[5px] rounded-[0px_10px_10px_10px]">
+                <ul class="flex flex-col gap-4 bg-sky-900 border-sky-300 border-l-[5px] rounded-[0px_10px_10px_10px] min-w-60">
                     {virtual.horario.map((infoHorario)=>(
                         <li>
                             <h3 class="text-center text-lg font-semibold">{ infoHorario.fecha }</h3>
