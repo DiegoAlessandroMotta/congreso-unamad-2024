@@ -16,7 +16,50 @@ export const data = [
         colorFin: "to-gray-900",
         colorBtn: "bg-gray-800",
         colorPonente: "bg-gray-700",
-        idBtn: "dron"
+        idBtn: "dron",
+        cronograma : {
+            virtual: {
+                title: "Virtual",
+                horario: [
+                    {
+                        fecha: "14 de octubre",
+                        intervaloHoras: [
+                            "21:00 a 22:30"
+                        ]
+                    },
+                    {
+                        fecha: "15 de octubre",
+                        intervaloHoras: [
+                            "21:00 a 22:30"
+                        ]
+                    },
+                    {
+                        fecha: "16 de octubre",
+                        intervaloHoras: [
+                            "21:00 a 22:30"
+                        ]
+                    }
+                ]
+            },
+            presencial: {
+                title: "Presencial",
+                horario: [
+                    {
+                        fecha: "19 de octubre",
+                        intervaloHoras: [
+                            "9:00 a 13:00",
+                            "15:00 a 18:00" 
+                        ]
+                    },
+                    {
+                        fecha: "20 de octubre",
+                        intervaloHoras: [
+                            "9:00 a 13:00"
+                        ]
+                    }
+                ]
+            }
+        }
     },
     {
         nombreTaller: "TALLER DE INTELIGENCIA ARTIFICIAL PARA LA EDUCACIÓN Y EL TRABAJO",
@@ -29,6 +72,26 @@ export const data = [
         colorFin: "to-sky-900",
         colorBtn: "bg-sky-900",
         colorPonente: "bg-sky-800",
-        idBtn: "inteligencia"
+        idBtn: "inteligencia",
+        cronograma : {
+            virtual: {
+                title: "Virtual",
+                horario: [
+                    {
+                        fecha: " sin definir ",
+                        intervaloHoras: []
+                    },
+                ]
+            },
+            presencial: {
+                title: "Presencial",
+                horario: [
+                    {
+                        fecha: " sin definir ",
+                        intervaloHoras: []
+                    }
+                ]
+            }
+        }
     }
 ]

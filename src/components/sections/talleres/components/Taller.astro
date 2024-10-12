@@ -1,5 +1,22 @@
 ---
 
+import Horario from "./Horario.astro"
+
+interface Detalles{
+    fecha: string,
+    intervaloHoras: string[],
+};
+
+interface Cronograma{
+    title: string,
+    horario: Detalles[]
+};
+
+interface infoCronograma {
+    presencial: Cronograma,
+    virtual: Cronograma
+}
+
 export interface Props {
     nombreTaller: string,
     nombrePonente: string,
@@ -12,43 +29,47 @@ export interface Props {
     colorFin: string,
     colorBtn: string,
     colorPonente: string,
-    idBtn: string
+    idBtn: string,
+
+    cronograma: infoCronograma
 }
 
 
-const {nombreTaller, nombrePonente, fotoPonente, linkMasInformacion, fotoBaner, className, orden, colorInicio, colorFin, colorBtn, colorPonente, idBtn} = Astro.props;
+const {nombreTaller, nombrePonente, fotoPonente, linkMasInformacion, fotoBaner, className, orden, colorInicio, colorFin, colorBtn, colorPonente, idBtn,cronograma} = Astro.props;
 ---
-
-<section class={` items-center bg-gradient-to-r ${colorInicio} ${colorFin} grid 
-        ${orden? "grid-cols-[auto_1fr]" : "grid-cols-[1fr_auto]"} max-lg:grid-cols-[1fr]
-        text-white py-10 max-lg:items-center max-lg:justify-center max-lg:px-4`}>
-    <div class={`h-[300px] ${orden? "order-1" : "order-2"} flex flex-row justify-center`}>
-        <img src={fotoBaner} class="h-full object-cover" alt="foto del ponente a cardo del taller">
-    </div>
-
-    <section class={`flex flex-col max-lg:items-center ${orden? "order-2 items-start" : "order-1 items-end"} gap-4`}>
-        <h1 class={` ${orden?"text-start":"text-end"} max-lg:text-center text-5xl font-bold max-lg:text-2xl`}>{ nombreTaller }</h1>
-        <!-- seccion del ponente acargo -->
-        <div class={`flex flex-row max-lg:flex-col gap-4 ${colorPonente} p-3 rounded-md`}>
-            <div class="h-[100px] overflow-hidden rounded-md max-lg:flex max-lg:flex-row max-lg:justify-center">
-                <img class="h-full object-cover" src={ fotoPonente} alt="">
+<div class={` flex flex-col bg-gradient-to-r ${colorInicio} ${colorFin} py-10`}>
+    <section class={` items-center grid 
+            ${orden? "grid-cols-[auto_1fr]" : "grid-cols-[1fr_auto]"} max-lg:grid-cols-[1fr]
+            text-white py-10 max-lg:items-center max-lg:justify-center max-lg:px-4`}>
+        <div class={`h-[300px] ${orden? "order-1" : "order-2"} flex flex-row justify-center`}>
+            <img src={fotoBaner} class="h-full object-cover" alt="foto del ponente a cardo del taller">
+        </div>
+    
+        <section class={`flex flex-col max-lg:items-center ${orden? "order-2 items-start" : "order-1 items-end"} gap-4`}>
+            <h1 class={` ${orden ? "text-start":"text-end"} max-lg:text-center text-5xl font-bold max-lg:text-2xl`}>{ nombreTaller }</h1>
+            <!-- seccion del ponente acargo -->
+            <div class={`flex flex-row max-lg:flex-col gap-4 ${colorPonente} p-3 rounded-md`}>
+                <div class="h-[100px] overflow-hidden rounded-md max-lg:flex max-lg:flex-row max-lg:justify-center">
+                    <img class="h-full object-cover" src={ fotoPonente} alt="">
+                </div>
+                <div class="flex flex-col justify-between">
+                    <h3 class="font-bold text-xl">{ nombrePonente }</h3>
+                    <p>Responsable del taller.</p>
+                </div>
             </div>
-            <div class="flex flex-col justify-between">
-                <h3 class="font-bold text-xl">{ nombrePonente }</h3>
-                <p>Responsable del taller.</p>
-            </div>
-        </div>
-        <!-- fin de la seccion del ponente acargo -->
-        <div class="flex flex-row gap-4 flex-wrap">
-            <a href={linkMasInformacion} class=`${colorBtn} px-4 py-2 rounded-sm`>
-                Más información
-            </a>
-        </div>
-
-        <div class="flex flex-row gap-4 flex-wrap" >
-            <button id={idBtn} class=`${colorBtn} px-4 py-2 rounded-sm`> 
-                Decargar Temario
-            </button>
-        </div>
+            <!-- fin de la seccion del ponente acargo -->
+            
+            <section class="flex flex-row gap-4 flex-wrap justify-center">
+                <a href={linkMasInformacion} class=`${colorBtn} hover:bg-white hover:text-black duration-500 px-4 py-2 rounded-lg`> 
+                    Más información
+                </a>
+                <button id={idBtn} class=`${colorBtn} hover:bg-white hover:text-black duration-500 px-4 py-2 rounded-lg`> 
+                    Decargar Temario
+                </button>
+            </section>
+        </section>
     </section>
-</section>
+    <section>
+        <Horario presencial={cronograma.presencial} virtual={cronograma?.virtual}/>
+    </section>
+</div>

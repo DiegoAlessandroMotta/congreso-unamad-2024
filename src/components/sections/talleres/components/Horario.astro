@@ -1,0 +1,61 @@
+---
+interface Horario{
+    fecha: string,
+    intervaloHoras: string[],
+};
+
+interface Cronograma{
+    title: string,
+    horario: Horario[]
+};
+
+export interface Props {
+    presencial: Cronograma,
+    virtual:Cronograma
+}
+
+const {presencial, virtual}  = Astro.props;
+---
+
+<article class="grid grid-cols-2 max-md:grid-cols-1 px-10 gap-4 text-white">
+    <section>
+        {
+            presencial ? (
+                <h2 class="font-bold text-lg bg-gray-600 w-fit border-l-[5px] border-gray-300 py-1 px-2 rounded-[10px_10px_0px_0px]">{ presencial.title }</h2>
+                <ul class="flex flex-col gap-4 bg-gray-600 border-gray-300 border-l-[5px] rounded-[0px_10px_10px_10px] p-[0px_0px_2px_0px]">
+                    {presencial.horario.map((infoHorario)=>(
+                        <li>
+                            <h3 class="text-center text-lg font-semibold">{ infoHorario.fecha }</h3>
+                            { infoHorario.intervaloHoras.map((intervalor)=>(
+                                <p class="text-center">{ intervalor }</p>
+                            )) }
+                        </li>
+                    ))
+                    }
+                </ul>
+            ):(
+                <h2>No hay taller presencial</h2>
+            )
+        }
+    </section>
+    <section>
+        {
+            virtual ? (
+                <h2 class="text-end font-bold text-lg bg-sky-900 w-fit border-l-[5px] border-sky-300 py-1 px-2 rounded-[10px_10px_0px_0px]">{ virtual.title }</h2>
+                <ul class="flex flex-col gap-4 bg-sky-900 border-sky-300 border-l-[5px] rounded-[0px_10px_10px_10px]">
+                    {virtual.horario.map((infoHorario)=>(
+                        <li>
+                            <h3 class="text-center text-lg font-semibold">{ infoHorario.fecha }</h3>
+                            { infoHorario.intervaloHoras.map((intervalor)=>(
+                                <p class="text-center">{ intervalor }</p>
+                            )) }
+                        </li>
+                    ))
+                    }
+                </ul>
+            ):(
+                <h2>No hay taller Virtual</h2>
+            )
+        }
+    </section>
+</article>
