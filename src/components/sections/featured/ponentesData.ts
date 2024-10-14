@@ -18,6 +18,7 @@ import jose_carlos from "./assets/jose carlos.jpg"
 import eduardo_zubieta from "./assets/Eduardo-Zubieta.png"
 import luisDiaz from "./assets/Luis-diaz.jpg"
 import marcoAntornio from "./assets/Marco-Antonio-Poma-Choquehuanca.jpg"
+import humbertoFernandez from "./assets/Humberto-Fernandez-Calle.jpg"
 
 import bolivia from "./banderas/bolivia.jpg"
 import peru from "./banderas/peru.jpg"
@@ -225,7 +226,7 @@ export const data = [
     estudio: "Universidad Amazónica de Pando",
     estudioAbreviado: "UAP",
     modalidad: 'Presencial',
-    foto: marcoAntornio,
+    foto: humbertoFernandez,
     id: 17,
     bandera: bolivia 
   }

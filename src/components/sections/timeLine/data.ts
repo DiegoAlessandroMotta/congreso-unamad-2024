@@ -11,12 +11,12 @@ import romario from "./assets/romario diaz.webp"
 import holgado from "./assets/luis alberto.webp"
 import edy from "./assets/edy.jpg"
 import ana from "./assets/ana.png"
-import humberto from "./assets/Humberto-Fernandez-Calle.jpg"
 import norma from "./assets/norma lorena.webp";
 import luis from "./assets/luis jose.jpg";
 import cesar from "./assets/cesar.jpeg"
 import eduardo_zubieta from "./assets/Eduardo-Zubieta.png"
 import luisDiaz from "./assets/Luis-diaz.jpg"
+import humbertoFernandez from "./assets/Humberto-Fernandez-Calle.jpg"
 // LOS DATOS YA ESTÁN ACTUALIZADOS excepto la foto de cada ponente
 
 export const data = [
@@ -97,7 +97,7 @@ export const data = [
       tituloPonencia: "Integración De Herramientas De IA En El Proceso De Enseñanza-Aprendizaje En Ingeniería De Sistemas",
       nombrePonente: "Humberto Fernandez Calle",
       horario: "15:00 - 16:00",
-      foto: humberto,
+      foto: humbertoFernandez,
       descripFoto: "Foto del ponente Humberto Fernandez Calle"
     },
     {
