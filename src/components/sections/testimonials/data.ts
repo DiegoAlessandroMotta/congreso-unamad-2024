@@ -4,6 +4,9 @@ import img13 from './assets/mundo-click.jpg' // <--
 import img14 from './assets/odonto-esthetick.jpg' // <--
 import img17 from './assets/toreto-gym.jpg' // <--
 import polleria from './assets/restauran.png'
+import cabañaQuinta from './assets/cabañaQuinta.jpg'
+import hotelCentenario from './assets/HotelCentenario.jpg'
+import peruAmazonico from './assets/peruAmazonico.png'
 
 export const testimonialsSection = {
   title: "Patrocinadores",
@@ -48,10 +51,28 @@ export const testimonialsSection = {
       styleRedondear: "rounded-full"
     },
     {
-      name: "retaran-tipico-mi-Sazon",
+      name: "retauran-tipico-mi-Sazon",
       logo: polleria,
       direccion:"#",
       styleRedondear: "rounded-full"
+    },
+    {
+      name: "hotel-cabaña-quinta",
+      logo: cabañaQuinta,
+      direccion:"#",
+      styleRedondear: "rounded-md"
+    },
+    {
+      name: "hotel-centenario",
+      logo: hotelCentenario,
+      direccion:"#",
+      styleRedondear: "rounded-md"
+    },
+    {
+      name: "hotel-peru-amazonico",
+      logo: peruAmazonico,
+      direccion:"#",
+      styleRedondear: "rounded-md"
     },
   ]
 };
