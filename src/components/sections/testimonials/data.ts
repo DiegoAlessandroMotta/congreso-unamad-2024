@@ -7,6 +7,9 @@ import polleria from './assets/restauran.png'
 import cabañaQuinta from './assets/cabañaQuinta.jpg'
 import hotelCentenario from './assets/HotelCentenario.jpg'
 import peruAmazonico from './assets/peruAmazonico.png'
+import chizu from './assets/chizu.png'
+import utilmark from './assets/utilmark.png'
+import laNueva from './assets/la-nueva-linea.png'
 
 export const testimonialsSection = {
   title: "Patrocinadores",
@@ -74,5 +77,23 @@ export const testimonialsSection = {
       direccion:"#",
       styleRedondear: "rounded-md"
     },
+    {
+      name: "chizu",
+      logo: chizu,
+      direccion:"#",
+      styleRedondear: "rounded-md"
+    },
+    {
+      name: "utilmark",
+      logo: utilmark,
+      direccion:"#",
+      styleRedondear: "rounded-md"
+    },
+    {
+      name: "La nueva linea",
+      logo: laNueva,
+      direccion:"#",
+      styleRedondear: "rounded-md"
+    }
   ]
 };

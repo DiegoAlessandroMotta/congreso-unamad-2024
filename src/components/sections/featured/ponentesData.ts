@@ -1,25 +1,3 @@
-import holgado from "./assets/luis alberto.webp";
-import luis from "./assets/luis jose.webp";
-import norma from "./assets/norma lorena.webp";
-import romario from "./assets/romario diaz.webp";
-import sillo from "./assets/sillo sosa.webp";
-import yalmar from "./assets/yalmar temistoqles.webp"
-import anselmo from "./assets/anselmo rodriguez.webp"
-import dany from "./assets/dany doriam.webp"
-import jaime from "./assets/jaime cesar prieto.webp"
-import cesar from "./assets/cesar.jpeg"
-import ana from "./assets/ana beatriz alvares mamani.png"
-import biodimio from "./assets/biodomio baldomero luque.png"
-import marco_antonio from "./assets/Marco-Antonio-Poma-Choquehuanca.jpg"
-import rene_emigdio from "./assets/rene emigdio yana choque.png"
-import juan_Carlos from "./assets/juan carlos huanca guanca.png"
-import edi_larico from "./assets/edi larico mamani.png"
-import jose_carlos from "./assets/jose carlos.jpg"
-import eduardo_zubieta from "./assets/Eduardo-Zubieta.png"
-import luisDiaz from "./assets/Luis-diaz.jpg"
-import marcoAntornio from "./assets/Marco-Antonio-Poma-Choquehuanca.jpg"
-import humbertoFernandez from "./assets/Humberto-Fernandez-Calle.jpg"
-
 import bolivia from "./banderas/bolivia.jpg"
 import peru from "./banderas/peru.jpg"
 import brasil from "./banderas/brasil.jpg"
@@ -30,11 +8,11 @@ export const data = [
     nombre: "Cesar Armando Beltrán Castañon",
     gradoAcademico: "Doctor",
     biografia:"Profesor Principal e Investigador Senior en Pontificia Universidad Católica del Perú, Dpto. de Ingeniería, Sección Ing. Informática. Doctor en Bioinformática y Magister en Ciencia de la Computación por la USP Sao Paulo, Brasil. Estancia Post-Doctoral en Texas A&M University (2016). Es Presidente de la IEEE Computer Society Perú (2019-2020). Lider científico del Grupo de Inteligencia Artificial de la PUCP (IA-PUCP). Lider Científico del Centro de Innovación Científica y Desarrollo Tecnológico en Ciencias de la Computación de la PUCP. Ha dictado cátedra en diferentes universidades del país a nivel de graduación y postgrado. Sus líneas de investigación son: Machine Learning, Data Analytics, Deep Learning, Visión computacional, procesamiento de imágenes, algoritmos de recuperación de imágenes por contenido, Bioinformática, computación de alto desempeño.",
-    titlePonencia: "Modelos generativos multimodales",
+    titlePonencia: "MODELOS GENERATIVOS MULTIMODALES",
     estudio: "Pontificia Universidad Católica del Perú",
     estudioAbreviado: "PUCP",
     modalidad: 'presencial',
-    foto: cesar,
+    foto: './ponentes/cesar.jpeg',
     id:0,
     bandera: peru
   },
@@ -46,10 +24,11 @@ export const data = [
     estudio: "Universidade Federal do Acre",
     estudioAbreviado: "UFA",
     modalidad: 'Presencial',
-    foto: ana,
+    foto: './ponentes/ana beatriz alvares mamani.png',
     id:1,
     bandera: brasil
-  },{
+  },
+  {
     nombre: "Diodomio Baldomero Luque Carcasi",
     gradoAcademico: "Doctor",
     biografia:"El Doctor Diodomiro Baldomero Luque Carcasi, es especialista en las áreas de proyecto electromagnético de Generadores Síncronos, Electrónica de Potencia, Energías Renovables e Inteligencia Artificial. Es autor de inúmeros trabajos científicos publicados en revistas y conferencias; es revisor de trabajos científicos en las áreas de Máquinas Eléctricas Rotativas, Electrónica de Potencia y Energías Renovables. Ha actuado en diversos proyectos de desarrollo tecnológico «R&D» junto a la Universidad de Padua, UNIPID, Italia. Realizó un Post-Doctorado en la «Universidad Federal do ABC» donde desarrolló actividades científicas orientadas a las redes inteligentes «Smart Grids», fue asesor principal de la Comisión de Ciencia, Innovación y Tecnología del Congreso de la República del Perú. Actualmente es profesor adjunto de la «Universidad Federal del Acre, UFAC», es miembro titular del programa de posgrado en Ciencias de la Computación, PGCC.",
@@ -57,7 +36,7 @@ export const data = [
     estudio: "Universidade Federal do Acre",
     estudioAbreviado: "UFA",
     modalidad: 'Presencial',
-    foto: biodimio,
+    foto: './ponentes/biodomio baldomero luque.png',
     id:2,
     bandera: brasil
   },
@@ -69,7 +48,7 @@ export const data = [
     estudio: "Universidade Federal do Acre",
     estudioAbreviado: "UFA",
     modalidad: 'Presencial',
-    foto: anselmo,
+    foto: './ponentes/anselmo rodriguez.webp',
     id:3,
     bandera: brasil
   },
@@ -77,11 +56,11 @@ export const data = [
     nombre: "Marco Antonio Poma Choquehuanca",
     gradoAcademico: "Ingeniero",
     biografia:"",
-    titlePonencia: "LOS DESAFÍOS DE LA ENSEÑANZA, INVESTIGACIÓN Y EXTENSIÓN DE LA INFORMÁTICA EN LA AMAZONIA",
+    titlePonencia: "CONTRIBUCIÓN DEL APRENDIZAJE AUTOMÁTICO A LA RESOLUCIÓN DE PROCESOS DEL DERECHO PENAL",
     estudio: "Universidad Amazónica de Pando",
     estudioAbreviado: "UAP",
     modalidad: 'Presencial',
-    foto: marco_antonio,
+    foto: './ponentes/Marco-Antonio-Poma-Choquehuanca.jpg',
     id:4,
     bandera: bolivia
   },
@@ -93,7 +72,7 @@ export const data = [
     estudio: "UNIVERSIDAD NACIONAL DE TRUJILLO",
     estudioAbreviado: "UNT",
     modalidad: 'Presencial',
-    foto: luisDiaz,
+    foto: './ponentes/Luis-diaz.jpg',
     id:7,
     bandera: peru
   },
@@ -105,7 +84,7 @@ export const data = [
     estudio: "Universidad Amazónica de Pando",
     estudioAbreviado: "UAP",
     modalidad: 'Presencial',
-    foto:juan_Carlos,
+    foto: './ponentes/juan carlos huanca guanca.png',
     id:6,
     bandera: bolivia
   },
@@ -113,11 +92,11 @@ export const data = [
     nombre: "Edy Larico Mamani",
     gradoAcademico: "Doctor",
     biografia:"Edy Larico Mamani es un destacado académico y profesional peruano, reconocido por su amplia formación y experiencia en el ámbito de la educación y la ingeniería. Nació en [lugar de nacimiento] y desde joven mostró un interés por el aprendizaje y la enseñanza, lo que lo llevó a buscar una sólida educación formal.Formación Académica Edy Larico Mamani se graduó como Ingeniero de Sistemas en la Universidad Católica de Santa María (UCSM), donde adquirió conocimientos técnicos que le servirían a lo largo de su carrera. Posteriormente, obtuvo una licenciatura en Administración y Marketing en la Universidad Andina Néstor Cáceres Velásquez (UANCV), lo que amplió su visión hacia el mundo empresarial.Su deseo de contribuir a la educación lo llevó a obtener una licenciatura en Educación en la Universidad Nacional de Educación Enrique Guzmán y Valle (UNE), especializándose en Matemática. A lo largo de su carrera, también ha buscado perfeccionarse, logrando un Magíster Scientiae en Gestión Empresarial en la Universidad Nacional del Altiplano (UNA) y, posteriormente, un Doctorado en Educación en la UCSM.Experiencia ProfesionalActualmente, Edy Larico Mamani es docente ordinario en la Universidad Nacional de Juliaca, donde se desempeña en la categoría de Principal a tiempo completo. Forma parte del Departamento Académico de Ciencias de la Ingeniería, contribuyendo a la formación de futuros profesionales en las Escuelas de Ingeniería de Software y Sistemas, así como en Ingeniería Industrial.Su enfoque pedagógico se centra en la innovación y el desarrollo de competencias que preparen a sus estudiantes para enfrentar los desafíos del mundo laboral. A lo largo de su trayectoria, ha demostrado un compromiso constante con la excelencia educativa y la mejora continua.",
-    titlePonencia: "La Investigación En Ingeniería De Software",
+    titlePonencia: "LA INVESTIGACIÓN EN INGENIERÍA DE SOFTWARE",
     estudio: "Universidad Nacional de Juliaca",
     estudioAbreviado: "UNAJ",
     modalidad: 'Presencial',
-    foto: edi_larico,
+    foto: './ponentes/edi larico mamani.png',
     id:8,
     bandera: peru
   },
@@ -125,23 +104,23 @@ export const data = [
     nombre: "Ponce Atencio Yalmar Temistocles",
     gradoAcademico: "Doctor",
     biografia:'Ponce Atencio Yalmar Temístocles es un destacado ingeniero de sistemas peruano, formado en la Universidad Nacional del Altiplano, donde completó su licenciatura en Ingeniería de Sistemas entre 1996 y 2000. Posteriormente, continuó su educación en Brasil, obteniendo una maestría (2003-2005) y un doctorado (2005-2011) en Ingeniería de Sistemas y Computación en la prestigiosa Universidad Federal de Rio de Janeiro.Su trabajo se centra principalmente en la construcción de ambientes interactivos, animación y simulación basada en física, abarcando desde la simulación de cuerpos sólidos, deformables y elásticos hasta fluidos y la interacción entre objetos. Asimismo, ha hecho importantes aportes en la generación de mallas 2D y 3D, optimizando la calidad de los elementos generados.Ponce Atencio ha trabajado también en áreas relacionadas con la computación de propósito general, especialmente en el procesamiento y programación paralela utilizando multicore y GPUs. Su experiencia incluye el desarrollo de TICs, tecnologías web, aplicaciones móviles y software multiplataforma, con un enfoque particular en proyectos orientados a la educación en entornos colaborativos. Además, ha explorado el campo de la procesamiento de imágenes, visión computacional, geomática y fotogrametría, integrando estas tecnologías en diversas aplicaciones.Reconocido por su trayectoria académica y profesional, Yalmar Temístocles es revisor de artículos para revistas científicas y conferencias, y ha participado como ponente en múltiples eventos científicos tanto a nivel nacional como internacional. Su trabajo abarca una amplia gama de áreas en la ingeniería de sistemas, siendo un referente en el uso de tecnologías avanzadas para la simulación y el desarrollo de aplicaciones educativas.',
-    titlePonencia: "DETECCIÓN DEL CELO EN VACUNO DE CARNE USANDO IOT Y APRENDIZAJE AUTOMATICO",
+    titlePonencia: "INTELIGENCIA ARTIFICIAL PARA LA EDUCACION Y EL TRABAJO",
     estudio: "Universidad Nacional de Juliaca ",
     estudioAbreviado: "UNA",
     modalidad: 'presencial',
-    foto: yalmar,
+    foto: './ponentes/yalmar temistoqles.webp',
     id:9,
     bandera: peru
   },
   {
-    nombre: "Norma Catacora",
+    nombre: "Norma Catacora Flores",
     gradoAcademico: "Doctora",
     biografia:"Norma Cotacara es una especialista en inteligencia artificial aplicada a la minería, con una destacada trayectoria que combina tecnología e innovación en este sector. Ingeniera con especialización en inteligencia artificial, ha desarrollado soluciones que optimizan procesos y aumentan la eficiencia en la industria minera, integrando tecnologías como el aprendizaje automático y el análisis de datos. Además de su enfoque en la productividad, promueve prácticas sostenibles para reducir el impacto ambiental. Ha sido reconocida en diversos foros y ha compartido su experiencia en conferencias sobre el uso de inteligencia artificial en la minería. Norma es una líder en su campo, inspirando a profesionales a adoptar tecnologías emergentes para transformar el sector minero.",
     titlePonencia: "APLICACIONES DE LA INTELIGENCIA ARTIFICIAL EN LA MINERÍA CON OPERACIONES DE TAJO ABIERTO: UN ENFOQUE SISTÉMICO",
     estudio: "Universidad Nacional Jose Maria Arguedas",
     estudioAbreviado: "UNAJMA",
     modalidad: 'Presencial',
-    foto: norma,
+    foto: './ponentes/norma lorena.webp',
     id:10,
     bandera: peru
   },
@@ -153,7 +132,7 @@ export const data = [
     estudio: "Universidad Nacional Amazónica de Madre de Dios",
     estudioAbreviado: "UNAMAD",
     modalidad: 'Presencial',
-    foto:romario,
+    foto: './ponentes/romario diaz.webp',
     id:11,
     bandera: peru
   },
@@ -165,7 +144,7 @@ export const data = [
     estudio: "Universidad Nacional Amazónica de Madre de Dios",
     estudioAbreviado: "UNAMAD",
     modalidad: 'Presencial',
-    foto: dany ,
+    foto: './ponentes/dany doriam.webp',
     id:12,
     bandera: peru
   },
@@ -177,7 +156,7 @@ export const data = [
     estudio: "Universidad Nacional Amazónica de Madre de Dios",
     estudioAbreviado: "UNAMAD",
     modalidad: 'Presencial',
-    foto: jaime ,
+    foto: './ponentes/jaime cesar prieto.webp' ,
     id:13,
     bandera: peru
   },
@@ -189,7 +168,7 @@ export const data = [
     estudio: "UNIVERSIDAD NACIONAL AMAZONÍCA DE MADRE DE DIÓS",
     estudioAbreviado: "UNAMAD",
     modalidad: 'Presencial',
-    foto: holgado,
+    foto: './ponentes/luis alberto.webp',
     id:14,
     bandera: peru
   },
@@ -201,7 +180,7 @@ export const data = [
     estudio: "UNIVERSIDAD NACIONAL AMAZONÍCA DE MADRE DE DIÓS",
     estudioAbreviado: "UNAMAD",
     modalidad: 'Presencial',
-    foto: sillo,
+    foto: './ponentes/sillo sosa.webp',
     id:15,
     bandera: peru
 
@@ -214,7 +193,7 @@ export const data = [
     estudio: "Gobierno Regional de Madre de Dios",
     estudioAbreviado: "GOREMAD",
     modalidad: 'Presencial',
-    foto: jose_carlos,
+    foto: './ponentes/jose carlos.jpg',
     id:16,
     bandera: peru
   },
@@ -226,7 +205,7 @@ export const data = [
     estudio: "Universidad Amazónica de Pando",
     estudioAbreviado: "UAP",
     modalidad: 'Presencial',
-    foto: humbertoFernandez,
+    foto: './ponentes/Humberto-Fernandez-Calle.jpg',
     id: 17,
     bandera: bolivia 
   }

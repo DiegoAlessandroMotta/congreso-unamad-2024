@@ -23,65 +23,145 @@ const { className } = Astro.props;
       {testimonialsSection.subheading1_2}
     </SubTitle2>
   </Container>
-    <!-- <Carrusel client:visible /> -->
-    <section class="flex flex-row justify-center overflow-hidden">
-      <div class="slider">
-        <div class="slide-track flex flex-row gap-6 max-sm:h-full">
-          { 
-            testimonialsSection.testimonials.map((item)=>(
-              
-              <img src={item.logo.src} class="h-[120px] object-cover rounded-2xl" alt="">
-              
-            ))
-          }
-          { 
-            testimonialsSection.testimonials.map((item)=>(
-              
-              <img src={item.logo.src} class="h-[120px] object-cover rounded-2xl" alt="">
-              
-            ))
-          }
-          { 
-            testimonialsSection.testimonials.map((item)=>(
-              
-              <img src={item.logo.src} class="h-[120px] object-cover rounded-2xl" alt="">
-              
-            ))
-          }
-        </div>
+  <!-- <Carrusel client:visible /> -->
+  <section class="flex flex-row justify-center overflow-hidden">
+    <div class="slider flex flex-col gap-4">
+      <div class="slide-track flex flex-row gap-6 max-sm:h-full">
+        {
+          testimonialsSection.testimonials.map((item) => (
+            <img
+              src={item.logo.src}
+              class="h-[120px] object-cover rounded-2xl"
+              alt=""
+            />
+          ))
+        }
+        {
+          testimonialsSection.testimonials.map((item) => (
+            <img
+              src={item.logo.src}
+              class="h-[120px] object-cover rounded-2xl"
+              alt=""
+            />
+          ))
+        }
+        {
+          testimonialsSection.testimonials.map((item) => (
+            <img
+              src={item.logo.src}
+              class="h-[120px] object-cover rounded-2xl"
+              alt=""
+            />
+          ))
+        }
+        {
+          testimonialsSection.testimonials.map((item) => (
+            <img
+              src={item.logo.src}
+              class="h-[120px] object-cover rounded-2xl"
+              alt=""
+            />
+          ))
+        }
+        {
+          testimonialsSection.testimonials.map((item) => (
+            <img
+              src={item.logo.src}
+              class="h-[120px] object-cover rounded-2xl"
+              alt=""
+            />
+          ))
+        }
       </div>
-    </section>
+      <div class="slide-track2 flex flex-row gap-6 max-sm:h-full">
+        {
+          testimonialsSection.testimonials.map((item) => (
+            <img
+              src={item.logo.src}
+              class="h-[120px] object-cover rounded-2xl"
+              alt=""
+            />
+          ))
+        }
+        {
+          testimonialsSection.testimonials.map((item) => (
+            <img
+              src={item.logo.src}
+              class="h-[120px] object-cover rounded-2xl"
+              alt=""
+            />
+          ))
+        }
+        {
+          testimonialsSection.testimonials.map((item) => (
+            <img
+              src={item.logo.src}
+              class="h-[120px] object-cover rounded-2xl"
+              alt=""
+            />
+          ))
+        }
+        {
+          testimonialsSection.testimonials.map((item) => (
+            <img
+              src={item.logo.src}
+              class="h-[120px] object-cover rounded-2xl"
+              alt=""
+            />
+          ))
+        }
+      </div>
+    </div>
+  </section>
 </section>
 
 <style>
-.slider {
+  .slider {
     width: 90vw;
     overflow: hidden;
-}
+  }
 
-.slider .slide-track {
+  .slider .slide-track {
     display: flex;
-    animation: scroll 40s linear infinite;
-    -webkit-animation: scroll 40s linear infinite;
+    animation: scroll 70s linear infinite;
+    -webkit-animation: scroll 70s linear infinite;
     width: calc(200px * 14);
-}
+  }
 
-.slider .slide {
+  .slider .slide-track2 {
+    display: flex;
+    animation: scrollInvert 70s linear infinite;
+    -webkit-animation: scrollInvert 70s linear infinite;
+    width: calc(200px * 14);
+  }
+
+  .slider .slide {
     width: 200px;
-}
+  }
 
-.slider .slide img {
+  .slider .slide img {
     width: 100%;
-}
+  }
 
-@keyframes scroll {
+  @keyframes scroll {
     0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
     }
     100% {
-        -webkit-transform: translateX(calc(-200px * 7));
-        transform: translateX(calc(-200px * 7));
+      -webkit-transform: translateX(calc(-200px * 11));
+      transform: translateX(calc(-200px * 11));
     }
-}
+  }
+
+  @keyframes scrollInvert {
+    0% {
+      -webkit-transform: translateX(calc(200px * -14));
+      transform: translateX(calc(200px * -14));
+    }
+    100% {
+      -webkit-transform: translateX(calc(0));
+      transform: translateX(calc(0));
+    }
+  }
 </style>

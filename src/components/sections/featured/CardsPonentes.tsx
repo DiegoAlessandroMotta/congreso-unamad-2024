@@ -52,7 +52,7 @@ export function CardsPonentes({estilos=""}: Props){
 						cerrarModal={()=>{setModalAbierto(false)}}
 						modalAbierto={modalAbierto}
 						gradoAcademico={data[idPonente].gradoAcademico} 
-						foto={data[idPonente].foto.src} 
+						foto={data[idPonente].foto} 
 						universidad={data[idPonente].estudio} 
 						nombre={data[idPonente].nombre} 
 						biografia={data[idPonente].biografia} 
