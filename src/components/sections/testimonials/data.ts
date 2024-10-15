@@ -9,6 +9,7 @@ import hotelCentenario from './assets/HotelCentenario.jpg'
 import peruAmazonico from './assets/peruAmazonico.png'
 import chizu from './assets/chizu.png'
 import utilmark from './assets/utilmark.png'
+import laNueva from './assets/la-nueva-linea.png'
 
 export const testimonialsSection = {
   title: "Patrocinadores",
@@ -88,5 +89,11 @@ export const testimonialsSection = {
       direccion:"#",
       styleRedondear: "rounded-md"
     },
+    {
+      name: "La nueva linea",
+      logo: laNueva,
+      direccion:"#",
+      styleRedondear: "rounded-md"
+    }
   ]
 };

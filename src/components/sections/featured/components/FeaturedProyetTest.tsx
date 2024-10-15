@@ -2,7 +2,7 @@ interface Props {
   nombre: string,
   titlePonencia: string,
   estudio: string,
-  foto: ImageMetadata,
+  foto: string,
   bandera: string,
 	idPonente: number,
 	setIdPonente: (id: number)=>void,
@@ -18,7 +18,7 @@ export function FeaturedProyetTest({nombre,titlePonencia,estudio,foto,idPonente,
 			<div className="relative h-96">
 				<div className="overflow-hidden">
 					<img 
-						src={foto.src}
+						src={foto}
 						alt="Hero"
 						className="w-full h-96 object-cover group-hover:scale-105 duration-300 ease-in-out"
 					/>

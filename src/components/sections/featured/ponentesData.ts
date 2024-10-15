@@ -1,25 +1,3 @@
-import holgado from "./assets/luis alberto.webp";
-import luis from "./assets/luis jose.webp";
-import norma from "./assets/norma lorena.webp";
-import romario from "./assets/romario diaz.webp";
-import sillo from "./assets/sillo sosa.webp";
-import yalmar from "./assets/yalmar temistoqles.webp"
-import anselmo from "./assets/anselmo rodriguez.webp"
-import dany from "./assets/dany doriam.webp"
-import jaime from "./assets/jaime cesar prieto.webp"
-import cesar from "./assets/cesar.jpeg"
-import ana from "./assets/ana beatriz alvares mamani.png"
-import biodimio from "./assets/biodomio baldomero luque.png"
-import marco_antonio from "./assets/Marco-Antonio-Poma-Choquehuanca.jpg"
-import rene_emigdio from "./assets/rene emigdio yana choque.png"
-import juan_Carlos from "./assets/juan carlos huanca guanca.png"
-import edi_larico from "./assets/edi larico mamani.png"
-import jose_carlos from "./assets/jose carlos.jpg"
-import eduardo_zubieta from "./assets/Eduardo-Zubieta.png"
-import luisDiaz from "./assets/Luis-diaz.jpg"
-import marcoAntornio from "./assets/Marco-Antonio-Poma-Choquehuanca.jpg"
-import humbertoFernandez from "./assets/Humberto-Fernandez-Calle.jpg"
-
 import bolivia from "./banderas/bolivia.jpg"
 import peru from "./banderas/peru.jpg"
 import brasil from "./banderas/brasil.jpg"
@@ -34,7 +12,7 @@ export const data = [
     estudio: "Pontificia Universidad Católica del Perú",
     estudioAbreviado: "PUCP",
     modalidad: 'presencial',
-    foto: cesar,
+    foto: './ponentes/cesar.jpeg',
     id:0,
     bandera: peru
   },
@@ -46,10 +24,11 @@ export const data = [
     estudio: "Universidade Federal do Acre",
     estudioAbreviado: "UFA",
     modalidad: 'Presencial',
-    foto: ana,
+    foto: './ponentes/ana beatriz alvares mamani.png',
     id:1,
     bandera: brasil
-  },{
+  },
+  {
     nombre: "Diodomio Baldomero Luque Carcasi",
     gradoAcademico: "Doctor",
     biografia:"El Doctor Diodomiro Baldomero Luque Carcasi, es especialista en las áreas de proyecto electromagnético de Generadores Síncronos, Electrónica de Potencia, Energías Renovables e Inteligencia Artificial. Es autor de inúmeros trabajos científicos publicados en revistas y conferencias; es revisor de trabajos científicos en las áreas de Máquinas Eléctricas Rotativas, Electrónica de Potencia y Energías Renovables. Ha actuado en diversos proyectos de desarrollo tecnológico «R&D» junto a la Universidad de Padua, UNIPID, Italia. Realizó un Post-Doctorado en la «Universidad Federal do ABC» donde desarrolló actividades científicas orientadas a las redes inteligentes «Smart Grids», fue asesor principal de la Comisión de Ciencia, Innovación y Tecnología del Congreso de la República del Perú. Actualmente es profesor adjunto de la «Universidad Federal del Acre, UFAC», es miembro titular del programa de posgrado en Ciencias de la Computación, PGCC.",
@@ -57,7 +36,7 @@ export const data = [
     estudio: "Universidade Federal do Acre",
     estudioAbreviado: "UFA",
     modalidad: 'Presencial',
-    foto: biodimio,
+    foto: './ponentes/Marco-Antonio-Poma-Choquehuanca.jpg',
     id:2,
     bandera: brasil
   },
@@ -69,7 +48,7 @@ export const data = [
     estudio: "Universidade Federal do Acre",
     estudioAbreviado: "UFA",
     modalidad: 'Presencial',
-    foto: anselmo,
+    foto: './ponentes/anselmo rodriguez.webp',
     id:3,
     bandera: brasil
   },
@@ -81,7 +60,7 @@ export const data = [
     estudio: "Universidad Amazónica de Pando",
     estudioAbreviado: "UAP",
     modalidad: 'Presencial',
-    foto: marco_antonio,
+    foto: './ponentes/Marco-Antonio-Poma-Choquehuanca.jpg',
     id:4,
     bandera: bolivia
   },
@@ -93,7 +72,7 @@ export const data = [
     estudio: "UNIVERSIDAD NACIONAL DE TRUJILLO",
     estudioAbreviado: "UNT",
     modalidad: 'Presencial',
-    foto: luisDiaz,
+    foto: './ponentes/Luis-diaz.jpg',
     id:7,
     bandera: peru
   },
@@ -105,7 +84,7 @@ export const data = [
     estudio: "Universidad Amazónica de Pando",
     estudioAbreviado: "UAP",
     modalidad: 'Presencial',
-    foto:juan_Carlos,
+    foto: './ponentes/juan carlos huanca guanca.png',
     id:6,
     bandera: bolivia
   },
@@ -117,7 +96,7 @@ export const data = [
     estudio: "Universidad Nacional de Juliaca",
     estudioAbreviado: "UNAJ",
     modalidad: 'Presencial',
-    foto: edi_larico,
+    foto: './ponentes/edi larico mamani.png',
     id:8,
     bandera: peru
   },
@@ -129,19 +108,19 @@ export const data = [
     estudio: "Universidad Nacional de Juliaca ",
     estudioAbreviado: "UNA",
     modalidad: 'presencial',
-    foto: yalmar,
+    foto: './ponentes/yalmar temistoqles.webp',
     id:9,
     bandera: peru
   },
   {
-    nombre: "Norma Catacora",
+    nombre: "Norma Catacora Flores",
     gradoAcademico: "Doctora",
     biografia:"Norma Cotacara es una especialista en inteligencia artificial aplicada a la minería, con una destacada trayectoria que combina tecnología e innovación en este sector. Ingeniera con especialización en inteligencia artificial, ha desarrollado soluciones que optimizan procesos y aumentan la eficiencia en la industria minera, integrando tecnologías como el aprendizaje automático y el análisis de datos. Además de su enfoque en la productividad, promueve prácticas sostenibles para reducir el impacto ambiental. Ha sido reconocida en diversos foros y ha compartido su experiencia en conferencias sobre el uso de inteligencia artificial en la minería. Norma es una líder en su campo, inspirando a profesionales a adoptar tecnologías emergentes para transformar el sector minero.",
     titlePonencia: "APLICACIONES DE LA INTELIGENCIA ARTIFICIAL EN LA MINERÍA CON OPERACIONES DE TAJO ABIERTO: UN ENFOQUE SISTÉMICO",
     estudio: "Universidad Nacional Jose Maria Arguedas",
     estudioAbreviado: "UNAJMA",
     modalidad: 'Presencial',
-    foto: norma,
+    foto: './ponentes/norma lorena.webp',
     id:10,
     bandera: peru
   },
@@ -153,7 +132,7 @@ export const data = [
     estudio: "Universidad Nacional Amazónica de Madre de Dios",
     estudioAbreviado: "UNAMAD",
     modalidad: 'Presencial',
-    foto:romario,
+    foto: './ponentes/romario diaz.webp',
     id:11,
     bandera: peru
   },
@@ -165,7 +144,7 @@ export const data = [
     estudio: "Universidad Nacional Amazónica de Madre de Dios",
     estudioAbreviado: "UNAMAD",
     modalidad: 'Presencial',
-    foto: dany ,
+    foto: './ponentes/dany doriam.webp',
     id:12,
     bandera: peru
   },
@@ -177,7 +156,7 @@ export const data = [
     estudio: "Universidad Nacional Amazónica de Madre de Dios",
     estudioAbreviado: "UNAMAD",
     modalidad: 'Presencial',
-    foto: jaime ,
+    foto: './ponentes/jaime cesar prieto.webp' ,
     id:13,
     bandera: peru
   },
@@ -189,7 +168,7 @@ export const data = [
     estudio: "UNIVERSIDAD NACIONAL AMAZONÍCA DE MADRE DE DIÓS",
     estudioAbreviado: "UNAMAD",
     modalidad: 'Presencial',
-    foto: holgado,
+    foto: './ponentes/luis alberto.webp',
     id:14,
     bandera: peru
   },
@@ -201,7 +180,7 @@ export const data = [
     estudio: "UNIVERSIDAD NACIONAL AMAZONÍCA DE MADRE DE DIÓS",
     estudioAbreviado: "UNAMAD",
     modalidad: 'Presencial',
-    foto: sillo,
+    foto: './ponentes/sillo sosa.webp',
     id:15,
     bandera: peru
 
@@ -214,7 +193,7 @@ export const data = [
     estudio: "Gobierno Regional de Madre de Dios",
     estudioAbreviado: "GOREMAD",
     modalidad: 'Presencial',
-    foto: jose_carlos,
+    foto: './ponentes/jose carlos.jpg',
     id:16,
     bandera: peru
   },
@@ -226,7 +205,7 @@ export const data = [
     estudio: "Universidad Amazónica de Pando",
     estudioAbreviado: "UAP",
     modalidad: 'Presencial',
-    foto: humbertoFernandez,
+    foto: './ponentes/Humberto-Fernandez-Calle.jpg',
     id: 17,
     bandera: bolivia 
   }

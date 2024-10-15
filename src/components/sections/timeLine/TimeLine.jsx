@@ -57,7 +57,7 @@ export function TimeLine(){
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{ item.tituloPonencia }</h3>
                 <section className="flex w-fit flex-row gap-2 items-center">
                   <div>
-                    <ImgPonente src={item.foto.src} description={item.descripFoto}/>
+                    <ImgPonente src={item.foto} description={item.descripFoto}/>
                   </div>  
                   <div>
                     { item.nombrePonente }
