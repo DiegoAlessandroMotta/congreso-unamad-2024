@@ -10,6 +10,7 @@ import peruAmazonico from './assets/peruAmazonico.png'
 import chizu from './assets/chizu.png'
 import utilmark from './assets/utilmark.png'
 import laNueva from './assets/la-nueva-linea.png'
+import madreDiosenses from './assets/madrediosenses.png'
 
 export const testimonialsSection = {
   title: "Patrocinadores",
@@ -92,6 +93,12 @@ export const testimonialsSection = {
     {
       name: "La nueva linea",
       logo: laNueva,
+      direccion:"#",
+      styleRedondear: "rounded-md"
+    },
+    {
+      name: "madrediosenses",
+      logo: madreDiosenses,
       direccion:"#",
       styleRedondear: "rounded-md"
     }
