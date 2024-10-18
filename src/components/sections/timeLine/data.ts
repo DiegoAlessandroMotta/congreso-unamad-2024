@@ -127,49 +127,49 @@ export const data = [
       tituloPonencia:
         "Inteligencia Artificial Generativa Para Creación De Contenido Visual En Visión Computacional",
       nombrePonente: "Ana Beatriz Alvarez Mamani",
-      horario: "10:00 - 10:50",
+      horario: "15:30 - 16:10",
       foto: './ponentes/ana beatriz alvares mamani.png',
       descripFoto: "Foto del ponente ANA BEATRIZ ALVAREZ MAMANI"
     },
     {
       tituloPonencia: "Teledetección Satelital y Sus Aplicaciones",
       nombrePonente: "Luis José Díaz López",
-      horario: "10:50 - 11:40",
+      horario: "16:10 - 16:40",
       foto: './ponentes/Luis-diaz.jpg',
       descripFoto: "Foto del ponente Luis José Díaz López"
     },
     {
       tituloPonencia: "Modelos Generativos Multimodales",
       nombrePonente: "Cesar Armando Beltran Castañon",
-      horario: "11:40 - 12:30",
+      horario: "16:40 - 17:30",
       foto: './ponentes/cesar.jpeg',
       descripFoto: "Foto del ponente Cesar Armando Beltran Castañon"
     },
 		{
       tituloPonencia: "Presentación de Eventos Artisticos",
       nombrePonente: "Universidad Nacional Amazonica de Madre de Dios",
-      horario: "12:30 - 13:00",
+      horario: "17:30 - 18:00",
       foto: "./ponentes/LogoUnamad.png",
       descripFoto: "Logo de la UNAMAD",
     },
 		{
       tituloPonencia: "Palabras de agradecimiento",
       nombrePonente: "Universidad Nacional Amazonica de Madre de Dios",
-      horario: "13:00 - 13:15",
+      horario: "18:00 - 18:15",
       foto: "./ponentes/LogoUnamad.png",
       descripFoto: "Logo de la UNAMAD",
     },
 		{
       tituloPonencia: "Palabras de cierre",
       nombrePonente: "Universidad Nacional Amazonica de Madre de Dios",
-      horario: "13:15 - 13:30",
+      horario: "18:15 - 18:30",
       foto: "./ponentes/LogoUnamad.png",
       descripFoto: "Logo de la UNAMAD",
     },
 		{
       tituloPonencia: "Feria Sistémica Internacional",
       nombrePonente: "Universidad Nacional Amazonica de Madre de Dios",
-      horario: "16:00 - 19:00",
+      horario: "19:00 - 20:00",
       foto: "./ponentes/LogoUnamad.png",
       descripFoto: "Logo de la UNAMAD",
     },
