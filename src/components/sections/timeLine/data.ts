@@ -127,47 +127,47 @@ export const data = [
       tituloPonencia:
         "Inteligencia Artificial Generativa Para Creación De Contenido Visual En Visión Computacional",
       nombrePonente: "Ana Beatriz Alvarez Mamani",
-      horario: "9:00 - 10:00",
+      horario: "10:00 - 10:50",
       foto: './ponentes/ana beatriz alvares mamani.png',
       descripFoto: "Foto del ponente ANA BEATRIZ ALVAREZ MAMANI"
     },
     {
       tituloPonencia: "Teledetección Satelital y Sus Aplicaciones",
       nombrePonente: "Luis José Díaz López",
-      horario: "10:00 - 11:00",
+      horario: "10:50 - 11:40",
       foto: './ponentes/Luis-diaz.jpg',
       descripFoto: "Foto del ponente Luis José Díaz López"
     },
     {
       tituloPonencia: "Modelos Generativos Multimodales",
       nombrePonente: "Cesar Armando Beltran Castañon",
-      horario: "11:00 - 12:00",
+      horario: "11:40 - 12:30",
       foto: './ponentes/cesar.jpeg',
       descripFoto: "Foto del ponente Cesar Armando Beltran Castañon"
     },
 		{
       tituloPonencia: "Presentación de Eventos Artisticos",
       nombrePonente: "Universidad Nacional Amazonica de Madre de Dios",
-      horario: "12:00 - 12:30",
+      horario: "12:30 - 13:00",
       foto: "./ponentes/LogoUnamad.png",
       descripFoto: "Logo de la UNAMAD",
     },
 		{
       tituloPonencia: "Palabras de agradecimiento",
       nombrePonente: "Universidad Nacional Amazonica de Madre de Dios",
-      horario: "12:30 - 12:45",
+      horario: "13:00 - 13:15",
       foto: "./ponentes/LogoUnamad.png",
       descripFoto: "Logo de la UNAMAD",
     },
 		{
       tituloPonencia: "Palabras de cierre",
       nombrePonente: "Universidad Nacional Amazonica de Madre de Dios",
-      horario: "12:45 - 13:00",
+      horario: "13:15 - 13:30",
       foto: "./ponentes/LogoUnamad.png",
       descripFoto: "Logo de la UNAMAD",
     },
 		{
-      tituloPonencia: "Feria Sistémica internacional",
+      tituloPonencia: "Feria Sistémica Internacional",
       nombrePonente: "Universidad Nacional Amazonica de Madre de Dios",
       horario: "16:00 - 19:00",
       foto: "./ponentes/LogoUnamad.png",
