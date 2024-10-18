@@ -2,14 +2,14 @@ export const data = [
   [
     {
       tituloPonencia: "Presentación de Eventos Artisticos",
-      nombrePonente: "Universidad Nacional Amazonica de Madre de Dios",
+      nombrePonente: "",
       horario: "9:00 - 9:30",
       foto: "./ponentes/LogoUnamad.png",
       descripFoto: "Logo de la UNAMAD",
     },
     {
       tituloPonencia: "Palabras de Bienvenida e Inauguración ",
-      nombrePonente: "M.Sc. Yban Vilchez Navarro",
+      nombrePonente: "",
       horario: "( 9:30 - 9:45 ) - ( 9:45 - 10:00 )  ",
       foto: "./ponentes/LogoUnamad.png",
       descripFoto: "Logo de la UNAMAD",
@@ -127,51 +127,53 @@ export const data = [
       tituloPonencia:
         "Inteligencia Artificial Generativa Para Creación De Contenido Visual En Visión Computacional",
       nombrePonente: "Ana Beatriz Alvarez Mamani",
-      horario: "15:30 - 16:10",
+      horario: "15:30 - 16:20",
       foto: './ponentes/ana beatriz alvares mamani.png',
       descripFoto: "Foto del ponente ANA BEATRIZ ALVAREZ MAMANI"
     },
     {
       tituloPonencia: "Teledetección Satelital y Sus Aplicaciones",
       nombrePonente: "Luis José Díaz López",
-      horario: "16:10 - 16:40",
+      horario: "16:20 - 17:10",
       foto: './ponentes/Luis-diaz.jpg',
       descripFoto: "Foto del ponente Luis José Díaz López"
     },
     {
       tituloPonencia: "Modelos Generativos Multimodales",
       nombrePonente: "Cesar Armando Beltran Castañon",
-      horario: "16:40 - 17:30",
+      horario: "17:10 - 18:00",
       foto: './ponentes/cesar.jpeg',
       descripFoto: "Foto del ponente Cesar Armando Beltran Castañon"
     },
 		{
       tituloPonencia: "Presentación de Eventos Artisticos",
-      nombrePonente: "Universidad Nacional Amazonica de Madre de Dios",
-      horario: "17:30 - 18:00",
+      nombrePonente: "",
+      horario: "18:00 - 18:30",
       foto: "./ponentes/LogoUnamad.png",
       descripFoto: "Logo de la UNAMAD",
     },
 		{
-      tituloPonencia: "Palabras de agradecimiento",
-      nombrePonente: "Universidad Nacional Amazonica de Madre de Dios",
-      horario: "18:00 - 18:15",
+      tituloPonencia: "Palabras de Agradecimiento",
+      nombrePonente: "",
+      horario: "18:30 - 18:45",
       foto: "./ponentes/LogoUnamad.png",
       descripFoto: "Logo de la UNAMAD",
     },
 		{
       tituloPonencia: "Palabras de cierre",
-      nombrePonente: "Universidad Nacional Amazonica de Madre de Dios",
-      horario: "18:15 - 18:30",
+      nombrePonente: "",
+      horario: "18:45 - 19:00",
       foto: "./ponentes/LogoUnamad.png",
       descripFoto: "Logo de la UNAMAD",
     },
-		{
-      tituloPonencia: "Feria Sistémica Internacional",
-      nombrePonente: "Universidad Nacional Amazonica de Madre de Dios",
-      horario: "19:00 - 20:00",
+  ],
+  [
+    {
+      tituloPonencia: "FERIA SISTÉMICA INTERNACIONAL",
+      nombrePonente: "",
+      horario: "9:00 - 12:00",
       foto: "./ponentes/LogoUnamad.png",
       descripFoto: "Logo de la UNAMAD",
-    },
+    }
   ]
 ]
