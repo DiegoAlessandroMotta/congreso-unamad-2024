@@ -18,7 +18,7 @@ export function Contador() {
   }, [targetDate]); // Añadir targetDate como dependencia
 
   if (timeRemaining <= 0) {
-    return <p style={{textShadow: '0px 0px 10px yellow'}} className="text-white text-4xl text-center my-4 font-bold ">¡Evento en Curso!</p>;
+    return <p style={{textShadow: '0px 0px 10px red'}} className="text-red-500 text-4xl text-center my-4 font-bold ">¡Concluido!</p>;
   }
 
   const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
